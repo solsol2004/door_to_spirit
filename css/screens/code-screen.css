@@ -1,0 +1,29 @@
+html {
+  font-family: "BMHANNAAir";
+  background-image: url(../../images/intro-background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  margin: 6rem 0 17rem 1.5rem;
+}
+
+.top span:first-child {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.top span:not(:first-child) {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
