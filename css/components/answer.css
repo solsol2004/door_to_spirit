@@ -37,11 +37,9 @@
 }
 
 .sub-enter {
-  background: none;
+  background-color: rgba(255, 255, 255, 0);
   color: white;
-  width: 170px;
   height: 30px;
-  padding-bottom: 1px;
   border: none;
-  border-bottom: 2px solid white;
+  text-decoration: underline;
 }
