@@ -15,15 +15,15 @@ html {
 .top {
   display: flex;
   flex-direction: column;
-  margin: 12vh 0 40vh 6vh;
+  margin: 12vh 0 30vh 6vh;
 }
 
 .top span:first-child {
-  font-size: 12vw;
+  font-size: 10vw;
   margin-bottom: 2vh;
 }
 
 .top span:not(:first-child) {
-  font-size: 6.5vw;
+  font-size: 5vw;
   margin-bottom: 0.2vh;
 }
