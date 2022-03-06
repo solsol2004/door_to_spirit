@@ -1,0 +1,139 @@
+#fifth-page,
+#sixth-page,
+#seventh-page,
+#eigth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "HeirofLightRegular";
+}
+
+.big-haechi {
+  object-fit: cover;
+  width: 35vw;
+  height: 17vh;
+  margin: 15vh 0 8vh 0;
+}
+
+#haechi-says,
+#haechi2-says {
+  display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+  margin-bottom: 12vh;
+}
+
+#haechi-says span,
+#haechi2-says span {
+  margin-bottom: 1.5vh;
+}
+
+#haechi-says_row {
+  margin-bottom: 3vh;
+}
+
+#haechi-says span:nth-child(3) {
+  margin-bottom: 3vh;
+}
+
+#haechi2-says span:nth-child(2),
+#haechi2-says span:nth-child(4),
+#haechi2-says span:nth-child(5) {
+  margin-bottom: 3vh;
+}
+
+.small-haechi {
+  object-fit: cover;
+  width: 40vw;
+  height: 20vh;
+  margin: 3vh 0 0 50vw;
+}
+
+#haechi-top,
+#haechi1-top {
+  display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+  margin: 2vh 0 0 3vh;
+}
+
+#haechi-top span,
+#haechi1-top span {
+  margin-bottom: 1vh;
+}
+
+#haechi-top span:nth-child(3) {
+  margin-bottom: 3vh;
+}
+
+#haechi1-top span:nth-child(2) {
+  margin: 2.5vh 0 2.5vh 0;
+}
+
+#haechi1-top span:nth-child(4),
+#haechi1-top span:nth-child(6) {
+  margin-bottom: 2.5vh;
+}
+
+#haechi-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  margin: 4vh 0 7vh 0;
+  position: relative;
+}
+
+#haechi-mid span:nth-child(2) {
+  margin: 1vh;
+}
+
+#gold-frame_small {
+  object-fit: contain;
+  width: 85vw;
+  height: 12.1vh;
+  position: absolute;
+  bottom: -3.5vh;
+}
+
+#fires {
+  object-fit: contain;
+  width: 70vw;
+  height: 10vh;
+  margin: 3vh 0 3vh 0;
+}
+
+#haechi-bottom,
+#haechi1-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 8vh;
+  font-size: 4vw;
+}
+
+#haechi-bottom span,
+#haechi1-bottom span {
+  margin-bottom: 1vh;
+}
+
+#haechi-bottom span:nth-child(2) {
+  margin-bottom: 3vh;
+}
+
+.row {
+  margin-bottom: 1vh;
+}
+
+.green {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.red {
+  color: rgb(187, 37, 37);
+}

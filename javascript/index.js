@@ -1,5 +1,5 @@
-const codeForm = document.getElementById("code-bottom");
-const nameForm = document.getElementById("name-bottom");
+let codeForm = document.getElementById("code-bottom");
+let nameForm = document.getElementById("name-bottom");
 const myName = document.getElementById("name-input");
 
 const HIDDEN_CLASSNAME = "hidden";
@@ -32,5 +32,10 @@ function secondPage(event) {
   }
 }
 
-codeForm.addEventListener("submit", firstPage);
-nameForm.addEventListener("submit", secondPage);
+if (codeForm !== null) {
+  codeForm.addEventListener("submit", firstPage);
+}
+
+if (nameForm !== null) {
+  nameForm.addEventListener("submit", secondPage);
+}

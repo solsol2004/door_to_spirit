@@ -3,10 +3,13 @@
 
 /* components */
 @import "components/answer.css";
+@import "components/nav-bar.css";
 
 /* screens */
 @import "screens/code-screen.css";
-@import "screens/materials.css";
+@import "screens/intro.css";
+@import "screens/haechi.css";
+@import "screens/quiz.css";
 
 @font-face {
   font-family: "BMHANNAAir";
@@ -14,4 +17,16 @@
     format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "HeirofLightRegular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightRegular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "BMHANNAAir";
 }

@@ -1,0 +1,109 @@
+.main-background {
+  background-image: url("../../images/main-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.materials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#materials-image {
+  margin-top: 16vh;
+  width: 80vw;
+  height: 42vh;
+  object-fit: contain;
+  margin-bottom: 12vh;
+}
+
+#fourth-page,
+#four-top,
+#four-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.materials span {
+  font-size: 4vw;
+  margin-bottom: 5vh;
+}
+
+#maru-pic {
+  object-fit: contain;
+  width: 40vw;
+  height: 20vh;
+  margin: 7vh 0 3vh 0;
+}
+
+#hi-user {
+  position: relative;
+  font-size: 7vw;
+}
+
+.quotation-left {
+  font-size: 70px;
+  position: absolute;
+  left: -28px;
+  bottom: -35px;
+}
+
+#maru-says {
+  font-size: 3.8vw;
+  margin: 2vh 0 2vh 0;
+}
+
+.first-sentence {
+  margin-bottom: 0.3vh;
+}
+
+.first-sentence span:nth-child(2) {
+  color: yellow;
+}
+
+#four-bottom {
+  position: relative;
+}
+
+#scroll {
+  object-fit: cover;
+  width: 90vw;
+  height: 22vh;
+  margin-bottom: 4vh;
+}
+
+.alert {
+  font-size: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  margin-bottom: 7vh;
+}
+
+.alert span:first-child {
+  margin-bottom: 1vh;
+}
+
+.star,
+.star-two {
+  object-fit: cover;
+  width: 7vw;
+  height: 4.9vh;
+  position: absolute;
+  top: 22vh;
+  right: 80vw;
+}
+
+.star-two {
+  top: 23vh;
+  right: 85vw;
+}

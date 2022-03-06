@@ -5,7 +5,7 @@
 }
 
 .input {
-  width: 13rem;
+  width: 60vw;
   height: 38px;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -27,8 +27,8 @@
 }
 
 .enter {
-  width: 13rem;
-  height: 40px;
+  width: 70vw;
+  height: 6vh;
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   margin-bottom: 1rem;

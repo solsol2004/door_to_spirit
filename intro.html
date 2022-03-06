@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <div id="materials">
+  <div id="third-page" class="main-background" >
+    <div class="materials">
       <image id="materials-image" src="images/materials.png" />
       <span>시험 도구들이 준비 되셨나요?</span>
-      <button class="enter">네</button>
+      <button id="materials-yes" class="enter">네</button>
     </div>
+  </div>
 
-    <script src="javascript/intro.js"></script>
+  <div id="fourth-page" class="hidden main-background">
+    <div class="nav-bar">
+      <button id="image"><img src="images/이미지.png"></button>
+      <button id="map"><img src="images/지도.png"></button>
+      <button id="hint"><img src="images/전구.png"></button>
+    </div>
+    <div id="four-top">
+      <img id="maru-pic" src="images/마루.png"/>
+      <div id="hi-user" class="row">
+        <span class="quotation-left">“</span>
+        <span id="username-change">haha</span>
+      </div>
+      <div id="maru-says">
+        <div class="first-sentence">
+          <span>저는 오늘 귀문관 졸업시험을 도와드릴 </span><span>마루</span><span>입니다.</span>
+        </div>
+        <div class="second-sentence">
+          <span>귀문관 응시에 앞서 시험 규정에 대해 안내해 드리겠습니다.</span>
+        </div>
+    </div>
+    </div>
+    <div id="four-bottom">
+      <img id="scroll" src="images/두루마기.png"/>
+      <img class="star" src="images/star.png"/>
+      <img class="star-two" src="images/star.png"/>
+      <div class="alert">
+      <span>주의: 정답을 입력하면 이전 페이지로 돌아갈 수 없습니다!! </span>
+       <span>꼭 답안지에 정답을 입력하세요!</span>
+      </div>
+      <form action="haechi.html" method="get" id="gotohaechi" >
+        <input type="submit" id="go-haechi" class="enter" value="확인" />
+        </form>
+    </div>
+  </div>
+
+  
+   <!-- Javascript -->
+   <script src="javascript/index.js"></script>
+   <script src="javascript/intro.js"></script>
+   <script src="javascript/haechi.js"></script>
+
+    <script
+    src="https://kit.fontawesome.com/47c4228b8d.js"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>
