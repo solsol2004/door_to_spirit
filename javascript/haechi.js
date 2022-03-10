@@ -10,6 +10,7 @@ document.getElementById("haechi2_Btn").onclick = function () {
 
 document.getElementById("haechi3_Btn").onclick = function () {
   document.getElementById("page-seven").style.display = "none";
+  document.getElementById("page-eight").classList.remove("hidden");
 };
 
 document.getElementById("gotoquiz").onsubmit = function () {
