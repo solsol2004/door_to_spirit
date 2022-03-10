@@ -11,21 +11,21 @@
   z-index: 2;
 }
 
-#image {
+.image {
   object-fit: contain;
-  width: 6vw;
-  height: 5vh;
+  width: 5.8vw;
+  height: 4.5vh;
   margin: 0.6vh 2vw 0 0;
 }
 
-#map {
+.map {
   object-fit: contain;
   width: 6.2vw;
   height: 5vh;
   margin: 0.6vh 1vw 0 0;
 }
 
-#hint {
+.hint {
   object-fit: contain;
   width: 7.1vw;
   height: 5.2vh;

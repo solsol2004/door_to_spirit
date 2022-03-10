@@ -1,19 +1,47 @@
 body {
-  height: 200vh;
+  height: 150vh;
 }
 
 .quiz1-background {
   background-image: url("../../images/7017.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: center top 100%;
   background-repeat: no-repeat;
-  height: 150vh;
+  height: 148vh;
   width: 100vw;
   color: white;
 }
 
-.nav-bar {
-  position: fixed;
-  width: 100%;
-  box-sizing: border-box;
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 7vh;
+}
+
+.quiz-answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fire-status img {
+  object-fit: contain;
+  width: 8vw;
+  height: 6vh;
+  margin: 5vh 3vh 5vh 0;
+}
+
+.quiz-text {
+  object-fit: contain;
+  width: 80vw;
+  height: 80vh;
+  margin-bottom: 7vh;
 }

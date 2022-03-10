@@ -14,9 +14,29 @@
   <body>
     <div class="quiz1-background">
       <div class="nav-bar">
-        <button id="image"><img src="images/이미지.png" /></button>
-        <button id="map"><img src="images/지도.png" /></button>
-        <button id="hint"><img src="images/전구.png" /></button>
+        <button><img class="image" src="images/이미지.png" /></button>
+        <button><img class="map" src="images/지도.png" /></button>
+        <button><img class="hint" src="images/전구.png" /></button>
+      </div>
+      <div class="quiz">
+        <div class="title">제 1 장</div>
+
+        <div class="fire-status">
+          <button><img class="red-fire" src="images/red-fire.png" /></button>
+          <button><img class="pink-fire" src="images/pink-fire.png" /></button>
+          <button>
+            <img class="green-fire" src="images/green-fire.png" />
+          </button>
+        </div>
+
+        <div class="quiz-context">
+          <img class="quiz-text" src="images/quiz1.png" />
+        </div>
+
+        <div class="quiz-answer">
+          <input id="name-input" class="input" placeholder="정답 입력" />
+          <button id="haechi3_Btn" class="enter">확인</button>
+        </div>
       </div>
     </div>
     <!-- Javascript -->
