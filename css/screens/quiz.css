@@ -32,8 +32,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 60vw;
-  height: 20vh;
+  width: 65vw;
+  height: 15vh;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 3vh;
 }
