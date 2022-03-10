@@ -44,12 +44,12 @@ body {
   object-fit: contain;
   width: 63vw;
   height: 44vh;
-  margin-top: 8.5vh;
+  margin-top: 5vh;
 }
 
 #third-page span:nth-child(4) {
   font-size: 4vw;
-  margin: 9vh 0 8vh 0;
+  margin: 4vh 0 8vh 0;
 }
 
 #fourth-page,
