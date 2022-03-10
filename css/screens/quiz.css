@@ -22,12 +22,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   z-index: 100;
   position: fixed;
   top: 150px;
 }
 
-.hint-selection {
+.hint-selection,
+.hint-detail {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -37,6 +39,17 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   border: 1px double hsla(41, 100%, 51%, 0.9);
   border-radius: 3vh;
+}
+
+.hint-detail {
+  flex-direction: column;
+  height: 30vh;
+  padding: 2vh;
+}
+
+.hint-detail span {
+  margin-bottom: 1vh;
+  font-size: 3.3vw;
 }
 
 .hint-selection > button > img {
