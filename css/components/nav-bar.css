@@ -13,21 +13,21 @@
 
 #image {
   object-fit: contain;
-  width: 5vw;
-  height: 4vh;
+  width: 6vw;
+  height: 5vh;
   margin: 0.6vh 2vw 0 0;
 }
 
 #map {
   object-fit: contain;
-  width: 5vw;
-  height: 4.5vh;
+  width: 6.2vw;
+  height: 5vh;
   margin: 0.6vh 1vw 0 0;
 }
 
 #hint {
   object-fit: contain;
-  width: 7vw;
-  height: 5vh;
+  width: 7.1vw;
+  height: 5.2vh;
   margin-right: 3vw;
 }

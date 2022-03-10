@@ -19,7 +19,7 @@
 #haechi2-says {
   display: flex;
   flex-direction: column;
-  font-size: 4vw;
+  font-size: 3.5vw;
   margin-bottom: 12vh;
 }
 
@@ -45,7 +45,7 @@
 .small-haechi {
   object-fit: contain;
   width: 35vw;
-  height: 35vh;
+  height: 25vh;
   margin: 2vh 0 0 70vw;
 }
 
@@ -55,6 +55,10 @@
   flex-direction: column;
   font-size: 3.2vw;
   margin: 1vh 0 0 -19vw;
+}
+
+#haechi1-top {
+  margin: 1vh 0 0 -16vw;
 }
 
 #haechi-top span,
@@ -109,8 +113,8 @@
 
 #fires {
   object-fit: contain;
-  width: 70vw;
-  height: 10vh;
+  width: 50vw;
+  height: 8vh;
   margin: 3vh 0 3vh 0;
 }
 
@@ -123,7 +127,7 @@
 }
 
 #haechi-bottom {
-  margin: 6vh -19vw 8vh 0;
+  margin: 6vh -16vw 8vh 0;
 }
 
 #haechi1-bottom {
