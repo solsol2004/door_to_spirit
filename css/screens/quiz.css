@@ -43,7 +43,8 @@ body {
 
 .hint-detail {
   flex-direction: column;
-  height: 30vh;
+  align-items: flex-start;
+  justify-content: center;
   padding: 2vh;
 }
 
