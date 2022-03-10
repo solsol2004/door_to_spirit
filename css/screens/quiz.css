@@ -33,8 +33,9 @@ body {
   justify-content: center;
   align-items: center;
   width: 65vw;
-  height: 15vh;
+  height: 20vh;
   background-color: rgba(0, 0, 0, 0.9);
+  border: 1px double hsla(41, 100%, 51%, 0.9);
   border-radius: 3vh;
 }
 
