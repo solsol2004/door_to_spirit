@@ -44,8 +44,8 @@
 
 .small-haechi {
   object-fit: contain;
-  width: 20vw;
-  height: 20vh;
+  width: 35vw;
+  height: 35vh;
   margin: 2vh 0 0 70vw;
 }
 
@@ -53,7 +53,7 @@
 #haechi1-top {
   display: flex;
   flex-direction: column;
-  font-size: 4vw;
+  font-size: 3.2vw;
   margin: 1vh 0 0 -19vw;
 }
 
@@ -78,7 +78,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 5vw;
+  font-size: 4vw;
   margin: 4vh 0 7vh 0;
   position: relative;
 }
@@ -100,7 +100,7 @@
 }
 
 #haechi-mid span {
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 #haechi-mid span:nth-child(2) {
@@ -119,7 +119,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  font-size: 4vw;
+  font-size: 3.2vw;
 }
 
 #haechi-bottom {

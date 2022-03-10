@@ -67,9 +67,9 @@ body {
 
 #maru-pic {
   object-fit: contain;
-  width: 20vw;
-  height: 20vh;
-  margin: 12vh 0 3vh 0;
+  width: 30vw;
+  height: 30vh;
+  margin: 12vh 0 2vh 0;
 }
 
 #hi-user {
@@ -85,7 +85,7 @@ body {
 }
 
 #maru-says {
-  font-size: 3vw;
+  font-size: 3.5vw;
   margin: 2vh 0 2vh 0;
 }
 
@@ -103,12 +103,12 @@ body {
 
 #scroll {
   object-fit: contain;
-  width: 80vw;
-  margin-bottom: 6vh;
+  width: 85vw;
+  margin-bottom: 5vh;
 }
 
 .alert {
-  font-size: 3vw;
+  font-size: 3.5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,24 +119,4 @@ body {
 
 .alert span:first-child {
   margin-bottom: 1vh;
-}
-
-.star,
-.star-two {
-  object-fit: contain;
-  width: 6vw;
-  height: 4.9vh;
-  position: absolute;
-  top: 42vh;
-  right: 69vw;
-}
-
-.star-two {
-  top: 41vh;
-  right: 66vw;
-}
-
-.hidden {
-  display: none;
-  visibility: hidden;
 }
