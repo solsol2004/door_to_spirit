@@ -1,5 +1,5 @@
 const pageThree = document.getElementById("third-page");
-const pageFour = document.getElementById("fourth-page");
+const pageFour = document.getElementById("page-four");
 const pageFive = document.getElementById("fifth-page");
 const haechiForm = document.getElementById("gotohaechi");
 let yes = document.getElementById("materials-yes");
@@ -27,5 +27,5 @@ if (yes !== null) {
 }
 
 if (haechiForm !== null) {
-  haechiForm.addEventListener("submit", fourthPage);
+  haechiForm.addEventListener("submit", forthPage);
 }

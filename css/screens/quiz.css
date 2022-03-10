@@ -1,0 +1,19 @@
+body {
+  height: 200vh;
+}
+
+.quiz1-background {
+  background-image: url("../../images/7017.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150vh;
+  width: 100vw;
+  color: white;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}

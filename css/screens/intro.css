@@ -1,4 +1,4 @@
-.main-background {
+body {
   background-image: url("../../images/main-background.png");
   background-size: cover;
   background-position: center;
@@ -23,6 +23,34 @@
   margin-bottom: 12vh;
 }
 
+#third-page {
+  position: relative;
+}
+
+#third-page img:first-child {
+  object-fit: contain;
+  width: 50vw;
+  height: 20vh;
+  position: absolute;
+  top: 5vh;
+}
+
+#third-page span:nth-child(2) {
+  margin-top: 14vh;
+}
+
+#third-page img:nth-child(3) {
+  object-fit: contain;
+  width: 63vw;
+  height: 44vh;
+  margin-top: 8.5vh;
+}
+
+#third-page span:nth-child(4) {
+  font-size: 3vw;
+  margin: 12vh 0 8vh 0;
+}
+
 #fourth-page,
 #four-top,
 #four-bottom {
@@ -38,14 +66,14 @@
 
 #maru-pic {
   object-fit: contain;
-  width: 40vw;
+  width: 20vw;
   height: 20vh;
-  margin: 7vh 0 3vh 0;
+  margin: 12vh 0 3vh 0;
 }
 
 #hi-user {
   position: relative;
-  font-size: 7vw;
+  font-size: 5vw;
 }
 
 .quotation-left {
@@ -56,7 +84,7 @@
 }
 
 #maru-says {
-  font-size: 3.8vw;
+  font-size: 3vw;
   margin: 2vh 0 2vh 0;
 }
 
@@ -73,20 +101,19 @@
 }
 
 #scroll {
-  object-fit: cover;
-  width: 90vw;
-  height: 22vh;
-  margin-bottom: 4vh;
+  object-fit: contain;
+  width: 80vw;
+  margin-bottom: 6vh;
 }
 
 .alert {
-  font-size: 4vw;
+  font-size: 3vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: red;
-  margin-bottom: 7vh;
+  margin-bottom: 10vh;
 }
 
 .alert span:first-child {
@@ -95,15 +122,20 @@
 
 .star,
 .star-two {
-  object-fit: cover;
-  width: 7vw;
+  object-fit: contain;
+  width: 6vw;
   height: 4.9vh;
   position: absolute;
-  top: 22vh;
-  right: 80vw;
+  top: 42vh;
+  right: 69vw;
 }
 
 .star-two {
-  top: 23vh;
-  right: 85vw;
+  top: 41vh;
+  right: 66vw;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }
