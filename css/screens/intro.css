@@ -32,7 +32,7 @@ body {
   width: 50vw;
   height: 20vh;
   position: absolute;
-  top: 5vh;
+  top: 3vh;
 }
 
 #third-page span:nth-child(2) {
@@ -68,7 +68,7 @@ body {
 #maru-pic {
   object-fit: contain;
   width: 30vw;
-  height: 30vh;
+  height: 26vh;
   margin: 12vh 0 0 0;
 }
 
