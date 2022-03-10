@@ -9,6 +9,7 @@
   border-bottom: 3px solid white;
   box-sizing: border-box;
   z-index: 2;
+  position: fixed;
 }
 
 .image {
