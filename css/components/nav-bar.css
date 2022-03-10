@@ -2,14 +2,17 @@
   height: 9vh;
   width: 100vw;
   background-image: url("../../images/7017.jpg");
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
   border-bottom: 3px solid white;
   box-sizing: border-box;
   z-index: 2;
-  position: sticky;
+  position: fixed;
+}
+
+.nav-bar-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .image {
@@ -31,4 +34,52 @@
   width: 7.3vw;
   height: 7vh;
   margin-right: 3vw;
+}
+
+.nav-bar-details-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+  position: fixed;
+  top: 150px;
+}
+
+.hint-selection,
+.hint-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 17vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px double hsla(41, 100%, 51%, 0.9);
+  border-radius: 3vh;
+}
+
+.hint-detail {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2vh;
+}
+
+.hint-detail span {
+  margin-bottom: 1vh;
+  font-size: 3.3vw;
+}
+
+.hint-selection > button > img {
+  object-fit: contain;
+  width: 12vw;
+  height: 10vh;
+  margin: 0 3vh 0 3vh;
 }
