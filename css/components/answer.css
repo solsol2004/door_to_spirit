@@ -7,7 +7,7 @@
 .input {
   width: 70vw;
   height: 6vh;
-  border-radius: 5vw;
+  border-radius: 10vh;
   background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid white;
   margin-bottom: 1rem;
@@ -29,7 +29,7 @@
 .enter {
   width: 70vw;
   height: 6vh;
-  border-radius: 5vw;
+  border-radius: 10vh;
   background-color: rgb(255, 255, 255);
   margin-bottom: 1rem;
   color: black;

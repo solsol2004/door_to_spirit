@@ -37,6 +37,7 @@ body {
 
 #third-page span:nth-child(2) {
   margin-top: 14vh;
+  font-size: 5vw;
 }
 
 #third-page img:nth-child(3) {
@@ -47,8 +48,8 @@ body {
 }
 
 #third-page span:nth-child(4) {
-  font-size: 3vw;
-  margin: 12vh 0 8vh 0;
+  font-size: 4vw;
+  margin: 9vh 0 8vh 0;
 }
 
 #fourth-page,
