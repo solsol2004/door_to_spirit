@@ -43,7 +43,7 @@ body {
 #third-page img:nth-child(3) {
   object-fit: contain;
   width: 63vw;
-  height: 40vh;
+  height: 38vh;
   margin-top: 3vh;
 }
 
