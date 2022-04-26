@@ -17,7 +17,7 @@
 }
 
 .nav-bar-top button {
-  margin-right: 3.3vw;
+  margin-right: 3vw;
 }
 
 .nav-bar-top button:last-child {
@@ -26,7 +26,6 @@
 
 .nav-bar-top button i {
   color: white;
-  width: 7vw;
 }
 
 .image {
