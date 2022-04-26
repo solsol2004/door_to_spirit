@@ -23,11 +23,20 @@ html {
   margin-bottom: 2vh;
 }
 
-.top span:not(:first-child) {
+.first-row {
+  margin-top: 12vh;
+}
+
+.second-row,
+.third-row {
   font-size: 5vw;
   margin-bottom: 0.2vh;
 }
 
-.first-row {
-  margin-top: 12vh;
+.second-page-row {
+  font-size: 4vw;
+}
+
+.third-page-row {
+  font-size: 2.9vw;
 }
