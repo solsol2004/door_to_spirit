@@ -9,10 +9,24 @@
 }
 
 .nav-bar-top {
+  height: 9vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
+}
+
+.nav-bar-top button {
+  margin-right: 2.5vw;
+}
+
+.nav-bar-top button:last-child {
+  margin-right: 7vw;
+}
+
+.nav-bar-top button i {
+  color: white;
+  display: inline-block;
 }
 
 .image {
