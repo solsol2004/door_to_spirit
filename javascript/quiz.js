@@ -51,7 +51,6 @@ document.onclick = function (e) {
     e.target.id !== "hint-detail-id" &&
     e.target.id !== "select-hint" &&
     e.target.id !== "select-answer" &&
-    e.target.id !== "select-answer-active" &&
     e.target.id !== "navbardetail"
   ) {
     answerWhiteBtn.style.display = "none";
