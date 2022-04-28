@@ -112,4 +112,7 @@
 
 .map-font {
   font-family: "NanumSquare";
+  background-color: white;
+  border-radius: 5%;
+  padding: 2px;
 }

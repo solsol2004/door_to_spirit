@@ -11,7 +11,7 @@ var place = new naver.maps.LatLng(37.557687, 126.976935),
   });
 
 var contentString = [
-  '<div class="pad20 map-font">',
+  '<div class="map-font">',
   "   <span>1번 문제 장소</span>",
   "   <p>중구 퇴계로 37-2</p>",
   "</div>",
@@ -22,13 +22,11 @@ var infowindow = new naver.maps.InfoWindow({
 });
 
 naver.maps.Event.addListener(marker, "click", function (e) {
-  (position = place.getPosition()),
-    (url =
-      "http://map.naver.com/index.nhn?enc=utf8&level=2&lng=" +
-      position.lng() +
-      "&lat=" +
-      position.lat() +
-      "&pinTitle=야탑중학교&pinType=SITE");
-
-  window.open(url);
+  if (infowindow.getMap()) {
+    infowindow.close();
+  } else {
+    infowindow.open(map, marker);
+  }
 });
+
+infowindow.open(map, marker);
