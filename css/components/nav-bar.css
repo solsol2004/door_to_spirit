@@ -117,4 +117,6 @@
   background-color: white;
   border-radius: 5%;
   padding: 2px;
+  color: black;
+  z-index: 5;
 }
