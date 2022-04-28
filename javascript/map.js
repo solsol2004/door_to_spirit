@@ -2,7 +2,7 @@ var HOME_PATH = window.HOME_PATH || ".";
 var missonSpot = new naver.maps.LatLng(37.557687, 126.976935),
   map = new naver.maps.Map("mission-map", {
     center: missonSpot,
-    zoom: 15,
+    zoom: 20,
   }),
   marker = new naver.maps.Marker({
     map: map,
