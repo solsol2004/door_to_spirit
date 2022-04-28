@@ -133,5 +133,6 @@
 .iw_inner p {
   color: black;
   font-family: "NanumSquare";
-  font-size: 2vw;
+  font-size: 3vw;
+  margin-top: 3px;
 }
