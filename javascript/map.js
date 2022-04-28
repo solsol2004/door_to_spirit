@@ -2,7 +2,7 @@ var HOME_PATH = window.HOME_PATH || ".";
 var missonSpot = new naver.maps.LatLng(37.557687, 126.976935),
   map = new naver.maps.Map("mission-map", {
     center: missonSpot,
-    zoom: 20,
+    zoom: 16,
   }),
   marker = new naver.maps.Marker({
     map: map,
@@ -20,7 +20,7 @@ var contentString = [
 var infowindow = new naver.maps.InfoWindow({
   content: contentString,
   maxWidth: 140,
-  borderColor: "#ffb005e6",
+  borderColor: "white",
   borderWidth: 1,
   borderStyle: "double",
   backgroundColor: "white",
