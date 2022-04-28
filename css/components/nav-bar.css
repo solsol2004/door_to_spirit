@@ -105,6 +105,11 @@
 }
 
 #mission-map {
-  width: 60vw;
-  height: 50vh;
+  width: 80vw;
+  height: 55vh;
+  border-radius: 5%;
+}
+
+.map-font {
+  font-family: "NanumSquare";
 }
