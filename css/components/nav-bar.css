@@ -93,7 +93,7 @@
 
 .map-detail {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: fit-content;
@@ -122,4 +122,27 @@
   color: black;
   font-size: 3vw;
   margin-top: 10px;
+}
+
+.image-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px double #ffb005e6;
+  border-radius: 3vh;
+  padding: 3vw;
+  height: 55vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+.place-image {
+  width: 80vw;
+  height: 55vh;
+  object-fit: cover;
+  border-radius: 5%;
 }

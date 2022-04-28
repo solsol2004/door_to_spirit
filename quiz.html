@@ -19,7 +19,9 @@
     <div class="quiz1-background">
       <div class="nav-bar">
         <div class="nav-bar-top">
-          <button><i class="fa-regular fa-image fa-2x"></i></button>
+          <button onclick="imageFunction()">
+            <i class="fa-regular fa-image fa-2x"></i>
+          </button>
           <button onclick="mapFunction()">
             <i class="fa-regular fa-map fa-2x"></i>
           </button>
@@ -29,7 +31,15 @@
         </div>
         <div id="navbardetail" class="nav-bar-details center">
           <div class="hide">
-            <div class="image-detail"></div>
+            <div class="image-detail hidden">
+              <span class="marT100">🔎 위 장소를 찾아보세요</span>
+              <span class="marT100">🔎 위 장소를 찾아보세요</span>
+              <span class="marT100">🔎 위 장소를 찾아보세요</span>
+              <img
+                class="place-image marT100"
+                src="https://drive.google.com/uc?id=1ntBda2sXU__K57g1yoixt3YGyJOgF0Rp"
+              />
+            </div>
             <div class="map-detail hidden">
               <div id="mission-map"></div>
             </div>
