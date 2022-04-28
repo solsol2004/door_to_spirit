@@ -11,7 +11,7 @@ var place = new naver.maps.LatLng(37.557687, 126.976935),
   });
 
 var contentString = [
-  '<div class=" ">',
+  '<div class="map-font">',
   "   <span>라라핏 필라테스</span>",
   '       <img src="assets/img/logo-vertical.png" width="23" height="23" class="thumb" /><br />',
   "   <p>서울 중랑구 동일로 678-1 / 2층<br /><br />",
