@@ -110,29 +110,16 @@
   border-radius: 5%;
 }
 
-.map-font {
-  width: 50vw;
-  height: 30vh;
-  font-family: "NanumSquare";
-  font-size: 1.4vw;
-  background-color: white;
-  border-radius: 5%;
-  padding: 2px;
-  color: black;
-  z-index: 5;
-}
 .iw_inner {
   padding: 20px;
 }
 
 .iw_inner h3 {
   color: black;
-  font-family: "NanumSquare";
 }
 
 .iw_inner p {
   color: black;
-  font-family: "NanumSquare";
   font-size: 3vw;
   margin-top: 10px;
 }

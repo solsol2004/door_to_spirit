@@ -20,7 +20,7 @@ var contentString = [
 var infowindow = new naver.maps.InfoWindow({
   content: contentString,
   maxWidth: 140,
-  borderColor: "white",
+  borderColor: "#f6eaeae6",
   borderWidth: 1,
   borderStyle: "double",
   backgroundColor: "white",
