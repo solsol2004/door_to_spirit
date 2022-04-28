@@ -16,7 +16,9 @@
       <div class="nav-bar">
         <div class="nav-bar-top">
           <button><i class="fa-regular fa-image fa-2x"></i></button>
-          <button><i class="fa-regular fa-map fa-2x"></i></button>
+          <button onclick="mapFunction()">
+            <i class="fa-regular fa-map fa-2x"></i>
+          </button>
           <button onclick="hintSelectFunction()">
             <i class="fa-regular fa-lightbulb fa-2x"></i>
           </button>
@@ -24,7 +26,9 @@
         <div id="navbardetail" class="nav-bar-details center">
           <div class="hide">
             <div class="image-detail"></div>
-            <div class="map-detail"></div>
+            <div class="map-detail hidden">
+              <div class="mission-map"></div>
+            </div>
             <div class="hint-selection hidden">
               <button onclick="hintFunction()">
                 <img id="select-hint" src="images/hint-white.png" />

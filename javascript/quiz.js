@@ -3,6 +3,7 @@ const hintWhiteBtn = document.querySelector(".hint-description");
 const answerWhiteBtn = document.querySelector(".answer-description");
 const hideBox = document.querySelector(".hide");
 const hintDetailId = document.querySelector(".hint-detail");
+const mapDetail = document.querySelector(".map-detail");
 let usedHintCount = 0;
 
 function hintSelectFunction() {
@@ -34,6 +35,14 @@ function answerFunction() {
     hintBtn.style.display = "none";
   } else {
     answerWhiteBtn.style.display = "none";
+  }
+}
+
+function mapFunction() {
+  if (mapDetail.style.display === "none") {
+    mapDetail.style.display = "flex";
+  } else {
+    mapDetail.style.display = "none";
   }
 }
 

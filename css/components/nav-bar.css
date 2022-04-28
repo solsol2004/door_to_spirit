@@ -90,3 +90,21 @@
   height: 10vh;
   margin: 0 3vh 0 3vh;
 }
+
+.map-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px double hsla(41, 100%, 51%, 0.9);
+  border-radius: 3vh;
+  padding: 2vh;
+}
+
+.mission-map {
+  width: 60vw;
+  height: 30vh;
+}
