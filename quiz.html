@@ -17,17 +17,19 @@
         <div class="nav-bar-top">
           <button><i class="fa-regular fa-image fa-2x"></i></button>
           <button><i class="fa-regular fa-map fa-2x"></i></button>
-          <button><i class="fa-regular fa-lightbulb fa-2x"></i></button>
+          <button onclick="hintSelectFunction()">
+            <i class="fa-regular fa-lightbulb fa-2x"></i>
+          </button>
         </div>
-        <div id="navbardetail" class="nav-bar-details-center">
-          <div class="nav-bar-details hide">
+        <div id="navbardetail" class="center">
+          <div class="hide">
             <div class="image-detail"></div>
             <div class="map-detail"></div>
             <div class="hint-selection hidden">
               <button onclick="hintFunction()">
                 <img id="select-hint" src="images/hint-white.png" />
               </button>
-              <button>
+              <button onclick="answerFunction()">
                 <img
                   id="select-answer"
                   class="select-answer-inactive"
@@ -35,13 +37,13 @@
                 />
               </button>
             </div>
-            <div id="hint-description" class="hint-detail hidden">
+            <div class="hint-description hint-detail hidden">
               <span
                 >💡 도로의 표지판을 참고하여 각 도시명 숫자에 들어갈 알파벳을
                 순서대로 나열하세요.</span
               >
             </div>
-            <div id="answer-description" class="hint-detail hidden">
+            <div class="answer-description hint-detail hidden">
               <span>✔️ 정답은 [YELLOW]입니다.</span>
             </div>
           </div>
@@ -74,6 +76,7 @@
     <script src="javascript/intro.js"></script>
     <script src="javascript/haechi.js"></script>
     <script src="javascript/quiz.js"></script>
+    <script src="javascript/jquery.min.js"></script>
     <script
       src="https://kit.fontawesome.com/fccfaa8152.js"
       crossorigin="anonymous"

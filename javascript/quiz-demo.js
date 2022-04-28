@@ -1,9 +1,7 @@
 const hintBtn = document.querySelector(".hint-selection");
-const hintWhiteBtn = document.querySelector(".hint-description");
-const answerWhiteBtn = document.querySelector(".answer-description");
+const hintWhiteBtn = document.querySelector(".hint-detail");
 const hideBox = document.querySelector(".hide");
 const hintDetailId = document.querySelector(".hint-detail");
-let usedHintCount = 0;
 
 function hintSelectFunction() {
   if (
@@ -28,15 +26,6 @@ function hintFunction() {
   }
 }
 
-function answerFunction() {
-  if (answerWhiteBtn.style.display === "none") {
-    answerWhiteBtn.style.display = "flex";
-    hintBtn.style.display = "none";
-  } else {
-    answerWhiteBtn.style.display = "none";
-  }
-}
-
 document.onclick = function (e) {
   if (
     e.target.id !== "hint-detail-id" &&
@@ -45,7 +34,6 @@ document.onclick = function (e) {
     e.target.id !== "select-answer-active" &&
     e.target.id !== "navbardetail"
   ) {
-    answerWhiteBtn.style.display = "none";
-    hintWhiteBtn.style.display = "none";
+    hintDetailId.style.display = "none";
   }
 };
