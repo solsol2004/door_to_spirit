@@ -10,6 +10,10 @@
     />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tex4fovdj9"
+    ></script>
   </head>
   <body>
     <div class="quiz1-background">
@@ -27,7 +31,7 @@
           <div class="hide">
             <div class="image-detail"></div>
             <div class="map-detail hidden">
-              <div class="mission-map"></div>
+              <div id="mission-map"></div>
             </div>
             <div class="hint-selection hidden">
               <button onclick="hintFunction()">
@@ -80,7 +84,7 @@
     <script src="javascript/intro.js"></script>
     <script src="javascript/haechi.js"></script>
     <script src="javascript/quiz.js"></script>
-    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/map.js"></script>
     <script
       src="https://kit.fontawesome.com/fccfaa8152.js"
       crossorigin="anonymous"
