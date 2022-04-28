@@ -29,4 +29,6 @@ naver.maps.Event.addListener(marker, "click", function (e) {
       "&lat=" +
       position.lat() +
       "&pinTitle=야탑중학교&pinType=SITE");
+
+  window.open(url);
 });
