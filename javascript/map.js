@@ -22,11 +22,9 @@ var infowindow = new naver.maps.InfoWindow({
 });
 
 naver.maps.Event.addListener(marker, "click", function (e) {
-  if (infowindow.getMap()) {
-    infowindow.close();
-  } else {
-    infowindow.open(map, marker);
-  }
-});
+  var overlay = e.overlay, // marker
+       position = overlay.getPosition(),
+       url = 'http://map.naver.com/index.nhn?enc=utf8&level=2&lng='+ position.lng() +'&lat='+ position.lat() +'&pinTitle=1번 문제&pinType=SITE';
 
-infowindow.open(map, marker);
+   window.open(url);
+})];
