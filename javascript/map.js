@@ -20,11 +20,9 @@ var contentString = [
 var infowindow = new naver.maps.InfoWindow({
   content: contentString,
   maxWidth: 140,
+  color: "black",
   backgroundColor: "white",
-  borderColor: "#ffb005e6",
-  borderWidth: 5,
   anchorSize: new naver.maps.Size(30, 30),
-  anchorSkew: true,
   anchorColor: "white",
   pixelOffset: new naver.maps.Point(20, -10),
 });
