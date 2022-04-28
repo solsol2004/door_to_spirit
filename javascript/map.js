@@ -11,7 +11,7 @@ var missonSpot = new naver.maps.LatLng(37.557687, 126.976935),
 
 var contentString = [
   '<div class="iw_inner">',
-  "   <h3>1번 문제 장소</h3><br />",
+  "   <h3>1번 문제 장소</h3>",
   "   <p>📍중구 퇴계로 37-2",
   "   </p>",
   "</div>",
@@ -20,7 +20,7 @@ var contentString = [
 var infowindow = new naver.maps.InfoWindow({
   content: contentString,
   maxWidth: 140,
-  color: "black",
+  border: "1px double #ffb005e6",
   backgroundColor: "white",
   padding: 3,
   anchorColor: "white",
