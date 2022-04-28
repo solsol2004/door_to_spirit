@@ -22,7 +22,7 @@ var infowindow = new naver.maps.InfoWindow({
   maxWidth: 140,
   color: "black",
   backgroundColor: "white",
-  anchorSize: new naver.maps.Size(30, 30),
+  padding: 3,
   anchorColor: "white",
   pixelOffset: new naver.maps.Point(20, -10),
 });

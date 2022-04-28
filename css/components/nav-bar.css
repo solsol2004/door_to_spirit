@@ -99,7 +99,7 @@
   width: fit-content;
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.9);
-  border: 1px double hsla(41, 100%, 51%, 0.9);
+  border: 1px double #ffb005e6;
   border-radius: 3vh;
   padding: 2vh;
 }
@@ -120,4 +120,12 @@
   padding: 2px;
   color: black;
   z-index: 5;
+}
+
+.iw_inner h3 {
+  color: black;
+}
+
+.iw_inner p {
+  color: black;
 }
