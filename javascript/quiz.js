@@ -5,9 +5,12 @@ const hideBox = document.querySelector(".hide");
 const hintDetailId = document.querySelector(".hint-detail");
 const mapDetail = document.querySelector(".map-detail");
 const imageDetail = document.querySelector(".image-detail");
+const hideandseek = document.querySelector(".nav-bar-details");
 let usedHintCount = 0;
 
 function hintSelectFunction() {
+  imageDetail.style.display = "none";
+  mapDetail.style.display = "none";
   if (
     hintBtn.style.display === "none" ||
     hintWhiteBtn.style.display === "flex"
@@ -40,6 +43,10 @@ function answerFunction() {
 }
 
 function mapFunction() {
+  mapDetail.style.display = "none";
+  hintBtn.style.display === "none";
+  answerWhiteBtn.style.display = "none";
+  hintWhiteBtn.style.display = "none";
   if (mapDetail.style.display === "none") {
     mapDetail.style.display = "flex";
   } else {
@@ -48,6 +55,10 @@ function mapFunction() {
 }
 
 function imageFunction() {
+  mapDetail.style.display = "none";
+  hintBtn.style.display === "none";
+  answerWhiteBtn.style.display = "none";
+  hintWhiteBtn.style.display = "none";
   if (imageDetail.style.display === "none") {
     imageDetail.style.display = "flex";
   } else {
@@ -57,7 +68,7 @@ function imageFunction() {
 
 document.onclick = function (e) {
   if (
-    e.target.id !== "hint-detail-id" &&
+    e.target.id !== "nav-bar-top" &&
     e.target.id !== "select-hint" &&
     e.target.id !== "select-answer" &&
     e.target.id !== "navbardetail"

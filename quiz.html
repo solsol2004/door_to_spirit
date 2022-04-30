@@ -18,7 +18,7 @@
   <body>
     <div class="quiz1-background">
       <div class="nav-bar">
-        <div class="nav-bar-top">
+        <div id="nav-bar-top" class="nav-bar-top">
           <button onclick="imageFunction()">
             <i class="fa-regular fa-image fa-2x"></i>
           </button>
@@ -29,39 +29,37 @@
             <i class="fa-regular fa-lightbulb fa-2x"></i>
           </button>
         </div>
-        <div id="navbardetail" class="nav-bar-details center">
-          <div class="hide">
-            <div class="image-detail hidden">
+        <div id="navbardetail" class="nav-bar-details center hidden">
+          <div class="image-detail hidden">
+            <img
+              class="place-image"
+              src="https://drive.google.com/uc?id=1ntBda2sXU__K57g1yoixt3YGyJOgF0Rp"
+            />
+            <span class="marT20">🔎 위 장소를 찾아보세요</span>
+          </div>
+          <div class="map-detail hidden">
+            <div id="mission-map"></div>
+          </div>
+          <div class="hint-selection hidden">
+            <button onclick="hintFunction()">
+              <img id="select-hint" src="images/hint-white.png" />
+            </button>
+            <button onclick="answerFunction()">
               <img
-                class="place-image"
-                src="https://drive.google.com/uc?id=1ntBda2sXU__K57g1yoixt3YGyJOgF0Rp"
+                id="select-answer"
+                class="select-answer-inactive"
+                src="images/answer-gray.png"
               />
-              <span class="marT20">🔎 위 장소를 찾아보세요</span>
-            </div>
-            <div class="map-detail hidden">
-              <div id="mission-map"></div>
-            </div>
-            <div class="hint-selection hidden">
-              <button onclick="hintFunction()">
-                <img id="select-hint" src="images/hint-white.png" />
-              </button>
-              <button onclick="answerFunction()">
-                <img
-                  id="select-answer"
-                  class="select-answer-inactive"
-                  src="images/answer-gray.png"
-                />
-              </button>
-            </div>
-            <div class="hint-description hint-detail hidden">
-              <span
-                >💡 도로의 표지판을 참고하여 각 도시명 숫자에 들어갈 알파벳을
-                순서대로 나열하세요.</span
-              >
-            </div>
-            <div class="answer-description hint-detail hidden">
-              <span>✔️ 정답은 [YELLOW]입니다.</span>
-            </div>
+            </button>
+          </div>
+          <div class="hint-description hint-detail hidden">
+            <span
+              >💡 도로의 표지판을 참고하여 각 도시명 숫자에 들어갈 알파벳을
+              순서대로 나열하세요.</span
+            >
+          </div>
+          <div class="answer-description hint-detail hidden">
+            <span>✔️ 정답은 [YELLOW]입니다.</span>
           </div>
         </div>
       </div>
