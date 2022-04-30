@@ -15,4 +15,6 @@ document.getElementById("haechi3_Btn").onclick = function () {
 
 document.getElementById("gotoquiz").onsubmit = function () {
   document.getElementById("gotoquiz").submit();
+  localStorage.setItem("used-hint", 0);
+  localStorage.setItem("chapter", 1);
 };

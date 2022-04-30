@@ -21,11 +21,47 @@
     <div id="fourth-page">
       <div class="nav-bar">
         <div class="nav-bar-top">
-          <button><i class="fa-regular fa-image fa-2x"></i></button>
-          <button><i class="fa-regular fa-map fa-2x"></i></button>
-          <button><i class="fa-regular fa-lightbulb fa-2x"></i></button>
-    </div>
-  </div>
+          <button onclick="imageFunction()">
+            <i class="fa-regular fa-image fa-2x"></i>
+          </button>
+          <button onclick="mapFunction()">
+            <i class="fa-regular fa-map fa-2x"></i>
+          </button>
+          <button onclick="hintSelectFunction()">
+            <i class="fa-regular fa-lightbulb fa-2x"></i>
+          </button>
+        </div>
+        <div class="nav-bar-details center hidden">
+          <div class="image-detail hidden">
+            <img
+              class="place-image"
+              src="https://drive.google.com/uc?id=1ntBda2sXU__K57g1yoixt3YGyJOgF0Rp"
+            />
+            <span class="marT20">🔎 위 사진을 통해 문제의 장소를 찾아보세요</span>
+          </div>
+          <div class="map-detail hidden">
+            <div class="mission-map"></div>
+          </div>
+          <div class="hint-selection hidden">
+            <button onclick="hintFunction()">
+              <img class="select-hint" src="images/hint-white.png" />
+            </button>
+            <button onclick="answerFunction()">
+              <img
+                class="select-answer-inactive"
+                src="images/answer-gray.png"
+              />
+            </button>
+          </div>
+          <div class="hint-description hint-detail hidden text-center">
+            <span
+              >💡 문제에 대한 힌트를 확인할 수 있습니다.</br>클릭하면 점수가 차감됩니다</span>
+          </div>
+          <div class="answer-description hint-detail hidden text-center">
+            <span>✔️ 문제의 정답을 확인할 수 있습니다.</br>클릭하면 점수가 차감됩니다</span>
+          </div>
+        </div>
+      </div>
 
     <div id="four-top">
       <img id="maru-pic" src="images/마루.png"/>
@@ -60,6 +96,8 @@
    <script src="javascript/index.js"></script>
    <script src="javascript/intro.js"></script>
    <script src="javascript/haechi.js"></script>
+   <script src="javascript/nav-bar.js"></script>
+   <script src="javascript/map.js"></script>
 
    <script src="https://kit.fontawesome.com/fccfaa8152.js" crossorigin="anonymous"></script>
   </body>

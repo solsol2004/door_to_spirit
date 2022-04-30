@@ -14,52 +14,57 @@
       type="text/javascript"
       src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tex4fovdj9"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="quiz1-background">
       <div class="nav-bar">
-        <div id="nav-bar-top" class="nav-bar-top">
-          <button onclick="imageFunction()">
-            <i class="fa-regular fa-image fa-2x"></i>
+        <div class="nav-bar-top">
+          <button class="button" onclick="imageFunction()">
+            <i class="fa-regular fa-image fa-2x button"></i>
           </button>
-          <button onclick="mapFunction()">
-            <i class="fa-regular fa-map fa-2x"></i>
+          <button class="button" onclick="mapFunction()">
+            <i class="fa-regular fa-map fa-2x button"></i>
           </button>
           <button onclick="hintSelectFunction()">
             <i class="fa-regular fa-lightbulb fa-2x"></i>
           </button>
         </div>
-        <div id="navbardetail" class="nav-bar-details center hidden">
+        <div class="nav-bar-details center hidden">
           <div class="image-detail hidden">
-            <img
-              class="place-image"
-              src="https://drive.google.com/uc?id=1ntBda2sXU__K57g1yoixt3YGyJOgF0Rp"
-            />
-            <span class="marT20">🔎 위 장소를 찾아보세요</span>
+            <img class="place-image" src="##" />
+            <span class="marT20 image-detail-text"
+              >🔎 위 장소를 찾아보세요</span
+            >
           </div>
           <div class="map-detail hidden">
-            <div id="mission-map"></div>
+            <div class="mission-map"></div>
           </div>
           <div class="hint-selection hidden">
             <button onclick="hintFunction()">
-              <img id="select-hint" src="images/hint-white.png" />
+              <img class="select-hint" src="images/hint-white.png" />
             </button>
             <button onclick="answerFunction()">
               <img
-                id="select-answer"
                 class="select-answer-inactive"
                 src="images/answer-gray.png"
               />
             </button>
           </div>
-          <div class="hint-description hint-detail hidden">
-            <span
+          <div class="hint-description hint-detail hidden text-center">
+            <span class="hint-description-text"
               >💡 도로의 표지판을 참고하여 각 도시명 숫자에 들어갈 알파벳을
               순서대로 나열하세요.</span
             >
           </div>
-          <div class="answer-description hint-detail hidden">
-            <span>✔️ 정답은 [YELLOW]입니다.</span>
+          <div class="answer-description hint-detail hidden text-center">
+            <span class="answer-description-text"
+              >✔️ 정답은 [YELLOW]입니다.</span
+            >
           </div>
         </div>
       </div>
@@ -80,20 +85,30 @@
         </div>
 
         <div class="quiz-answer">
-          <input id="name-input" class="quiz-input" placeholder="정답 입력" />
-          <button id="haechi3_Btn" class="quiz-enter">확인</button>
+          <input class="quiz-input" placeholder="정답 입력" />
+          <button class="quiz-enter">확인</button>
         </div>
       </div>
     </div>
-    <!-- Javascript -->
-    <script src="javascript/index.js"></script>
-    <script src="javascript/intro.js"></script>
-    <script src="javascript/haechi.js"></script>
-    <script src="javascript/quiz.js"></script>
-    <script src="javascript/map.js"></script>
+
+    <!-- ============================================================== -->
+    <!--Javascript -->
+    <!-- ============================================================== -->
+    <script src="jquery/jquery.min.js"></script>
     <script
       src="https://kit.fontawesome.com/fccfaa8152.js"
       crossorigin="anonymous"
     ></script>
+
+    <!--Custom-->
+    <script src="javascript/nav-bar.js"></script>
+    <script src="javascript/map.js"></script>
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="javascript/personal-firebase.js"></script>
+    <script src="javascript/quiz.js"></script>
   </body>
 </html>
