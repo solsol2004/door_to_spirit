@@ -1,19 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
-    <div id="materials">
-      <image id="materials-image" src="images/materials.png" />
-      <span>시험 도구들이 준비 되셨나요?</span>
-      <button class="enter">네</button>
-    </div>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tex4fovdj9"></script> 
 
-    <script src="javascript/intro.js"></script>
+  </head>
+  <div id="third-page" class="main-background" >
+    <div class="materials">
+      <img src="images/작은 금테.png"/>
+      <span>시 험 도 구</span>
+      <img src="images/material.png"/>
+      <span>시험 도구들이 준비 되셨나요?</span>
+      <button id="materials-yes" class="enter">네</button>
+    </div>
+  </div>
+
+  <div id="page-four"  class="hidden">
+    <div id="fourth-page">
+      <div class="nav-bar">
+        <div class="nav-bar-top">
+          <button class="button image-button">
+            <i class="fa-regular fa-image fa-2x button"></i>
+          </button>
+          <button class="button map-button">
+            <i class="fa-regular fa-map fa-2x button"></i>
+          </button>
+          <button class="hint-select-button">
+            <i class="fa-regular fa-lightbulb fa-2x"></i>
+          </button>
+        </div>
+        <div class="nav-bar-details center hidden">
+          <div class="image-detail hidden text-center">
+            <img class="place-image" src="images/샘플 이미지.jpg" />
+            <h5 class="marT20 image-detail-text"
+              >🔎 위 사진을 통해 문제의 장소를 찾아보세요(예시)</h5>
+          </div>
+          <div class="map-detail hidden">
+            <div id="sample-map" class="mission-map"></div>
+          </div>
+          <div class="hint-selection hint-toggle hidden text-center">
+            <button class="hint-button">
+              <img class="select-hint" src="images/hint-white.png" />
+            </button>
+            <button class="answer-button">
+              <img
+                class="select-answer-inactive"
+                src="images/answer-gray.png"
+              />
+            </button>
+          </div>
+          <div class="hint-description hint-detail hidden text-center">
+            <span class="hint-description-text"
+              >💡 문제에 대한 힌트를 확인할 수 있습니다.</br>클릭하면 점수가 차감됩니다</span
+            >
+          </div>
+          <div class="answer-description hint-detail hidden text-center">
+            <span class="answer-description-text"
+              >✔️ 문제의 정답을 확인할 수 있습니다.</br>클릭하면 점수가 차감됩니다</span
+            >
+          </div>
+        </div>
+      </div>
+ 
+    <div id="four-top">
+      <img id="maru-pic" src="images/마루.png"/>
+      <div id="hi-user" class="row">
+        <span class="quotation-left">“</span>
+        <span id="username-change">haha</span>
+      </div>
+      <div id="maru-says">
+        <div class="first-sentence">
+          <span>저는 오늘 귀문관 졸업시험을 도와드릴 </span><span>마루</span><span>입니다.</span>
+        </div>
+        <div class="second-sentence">
+          <span>귀문관 응시에 앞서 시험 규정에 대해 안내해 드리겠습니다.</span>
+        </div>
+    </div>
+    </div>
+    <div id="four-bottom">
+      <img id="scroll" src="images/두루마기.png"/>
+      <div class="alert">
+      <span>*주의: 정답을 입력하면 이전 페이지로 돌아갈 수 없습니다!! </span>
+       <span>꼭 답안지에 정답을 입력하세요!</span>
+      </div>
+      <form action="haechi.html" method="get" id="gotohaechi" >
+        <input type="submit" id="go-haechi" class="enter" value="확인" />
+        </form>
+    </div>
+  </div>
+</div>
+
+  
+   <!-- Javascript -->
+   <script src="jquery/jquery.min.js"></script>
+   <script src="javascript/intro.js"></script>
+   <script src="javascript/nav-bar-example.js"></script>
+   <script src="javascript/map.js"></script>
+
+   <script src="https://kit.fontawesome.com/fccfaa8152.js" crossorigin="anonymous"></script>
   </body>
 </html>

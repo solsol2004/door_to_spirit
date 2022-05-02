@@ -1,0 +1,148 @@
+#fifth-page,
+#sixth-page,
+#seventh-page,
+#eigth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "HeirofLightRegular";
+}
+
+.big-haechi {
+  object-fit: contain;
+  width: 50vw;
+  height: 30vh;
+  margin: 12vh 0 8vh 0;
+}
+
+#haechi-says,
+#haechi2-says {
+  display: flex;
+  flex-direction: column;
+  font-size: 3.5vw;
+  margin-bottom: 12vh;
+}
+
+#haechi-says span,
+#haechi2-says span {
+  margin-bottom: 1.5vh;
+}
+
+#haechi-says_row {
+  margin-bottom: 4vh;
+}
+
+#haechi-says span:nth-child(3) {
+  margin-bottom: 4vh;
+}
+
+#haechi2-says span:nth-child(2),
+#haechi2-says span:nth-child(4),
+#haechi2-says span:nth-child(5) {
+  margin-bottom: 4vh;
+}
+
+.small-haechi {
+  object-fit: contain;
+  width: 10vw;
+  height: 8vh;
+  margin: 2vh 0 0 73vw;
+}
+
+#haechi-top,
+#haechi1-top {
+  display: flex;
+  flex-direction: column;
+  font-size: 3.2vw;
+  margin: 7vh 0 0 -19vw;
+}
+
+#haechi1-top {
+  margin: 7vh 0 0 -11vw;
+}
+
+#haechi-top span,
+#haechi1-top span {
+  margin-bottom: 1.3vh;
+}
+
+#haechi-top span:nth-child(3) {
+  margin-bottom: 3vh;
+}
+
+#haechi1-top span:nth-child(4) {
+  margin-top: 4vh;
+}
+#haechi1-top span:nth-child(5) {
+  margin-bottom: 4vh;
+}
+
+#haechi-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  margin: 4vh 0 4vh 0;
+  position: relative;
+}
+
+#haechi-mid img {
+ width:70vw;
+ height: fit-content;
+ object-fit: contain;
+}
+
+
+#haechi1-mid {
+  margin-top: 4vh;
+}
+
+
+#fires {
+  object-fit: contain;
+  width: 50vw;
+  height: 8vh;
+  margin: 3vh 0 3vh 0;
+}
+
+#haechi-bottom,
+#haechi1-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 3.2vw;
+}
+
+#haechi-bottom {
+  margin: 3vh -16vw 11vh 0;
+}
+
+#haechi1-bottom {
+  margin: 6vh -6vw 10vh 0;
+}
+
+#haechi-bottom span,
+#haechi1-bottom span {
+  margin-bottom: 1vh;
+}
+
+#haechi-bottom span:nth-child(2) {
+  margin-bottom: 4vh;
+}
+
+.row {
+  margin-bottom: 1vh;
+}
+
+.text-blue {
+  color: rgb(80, 115, 255);
+}
+
+.yellow {
+  color: yellow;
+}
+
+.red {
+  color: rgb(187, 37, 37);
+}

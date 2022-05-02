@@ -1,0 +1,142 @@
+.nav-bar {
+  height: 9vh;
+  width: 100vw;
+  background-image: url("../../images/7017.jpg");
+  border-bottom: 3px solid white;
+  box-sizing: border-box;
+  z-index: 2;
+  position: fixed;
+}
+
+.nav-bar-top {
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-bar-top button {
+  margin-right: 3.2vw;
+}
+
+.nav-bar-top button:last-child {
+  margin-right: 5vw;
+}
+
+.nav-bar-top button i {
+  color: white;
+  font-size: 6.3vw;
+}
+
+.image {
+  object-fit: contain;
+  width: 6.2vw;
+  height: 5.6vh;
+  margin: 0.6vh 3vw 0 0;
+}
+
+.map {
+  object-fit: contain;
+  width: 7.2vw;
+  height: 6.2vh;
+  margin: 0.6vh 2vw 0 0;
+}
+
+.hint {
+  object-fit: contain;
+  width: 7.3vw;
+  height: 6.5vh;
+  margin-right: 3vw;
+}
+
+.nav-bar-details {
+  z-index: 100;
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+}
+
+.hint-selection,
+.hint-detail {
+  width: 70vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px double hsla(41, 100%, 51%, 0.9);
+  border-radius: 3vh;
+}
+
+.hint-selection {
+  height: 17vh;
+}
+
+.hint-detail {
+  height: fit-content;
+  padding: 3vh;
+}
+
+
+.hint-detail span {
+  font-size: 3.3vw;
+
+}
+
+.hint-selection button {
+  transform: translateY(40%);
+}
+
+
+.hint-selection > button > img {
+  object-fit: contain;
+  width: 12vw;
+  height: 10vh;
+  margin: 0 3vh 0 3vh;
+}
+
+.map-detail {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px double #ffb005e6;
+  border-radius: 3vh;
+  padding: 2vh;
+}
+
+.mission-map {
+  width: 85vw;
+  height: 55vh;
+  border-radius: 5%;
+}
+
+.iw_inner {
+  padding: 20px;
+}
+
+.iw_inner h3 {
+  color: black;
+}
+
+.iw_inner p {
+  color: black;
+  font-size: 3vw;
+  margin-top: 10px;
+}
+
+.image-detail {
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px double #ffb005e6;
+  border-radius: 3vh;
+  padding: 3vw;
+  height: fit-content;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.place-image {
+  width: 85vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 5%;
+}

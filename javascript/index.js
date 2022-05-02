@@ -1,5 +1,5 @@
-const codeForm = document.getElementById("code-bottom");
-const nameForm = document.getElementById("name-bottom");
+let codeForm = document.getElementById("code-bottom");
+let nameForm = document.getElementById("name-bottom");
 const myName = document.getElementById("name-input");
 
 const HIDDEN_CLASSNAME = "hidden";
@@ -13,6 +13,8 @@ function firstPage(event) {
   if (codeNum === "1") {
     pageOne.classList.add(HIDDEN_CLASSNAME);
     pageTwo.classList.remove(HIDDEN_CLASSNAME);
+    localStorage.setItem("used-hint", 0);
+    localStorage.setItem("chapter", 1);
   } else if (codeNum === "") {
     alert("코드를 입력해주세요!");
   } else {
@@ -32,5 +34,10 @@ function secondPage(event) {
   }
 }
 
-codeForm.addEventListener("submit", firstPage);
-nameForm.addEventListener("submit", secondPage);
+if (codeForm !== null) {
+  codeForm.addEventListener("submit", firstPage);
+}
+
+if (nameForm !== null) {
+  nameForm.addEventListener("submit", secondPage);
+}

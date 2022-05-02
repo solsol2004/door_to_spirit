@@ -1,21 +1,21 @@
 html {
-  font-family: "BMHANNAAir";
-  background-image: url(../../images/intro-background.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-size: cover;
+}
+
+.intro-background {
+  background-image: url("../../images/intro-background.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 105%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   color: white;
 }
 
 .top {
   display: flex;
   flex-direction: column;
-  margin: 12vh 0 30vh 6vh;
+  margin: 0 0 45vh 6vh;
 }
 
 .top span:first-child {
@@ -23,7 +23,20 @@ html {
   margin-bottom: 2vh;
 }
 
-.top span:not(:first-child) {
+.first-row {
+  margin-top: 12vh;
+}
+
+.second-row,
+.third-row {
   font-size: 5vw;
   margin-bottom: 0.2vh;
+}
+
+.second-page-row {
+  font-size: 4vw;
+}
+
+.third-page-row {
+  font-size: 2.9vw;
 }

@@ -1,0 +1,71 @@
+body {
+  height: 150vh;
+}
+
+.quiz1-background {
+  background-image: url("../../images/7017.jpg");
+  background-size: cover;
+  background-position: center top 100%;
+  background-repeat: no-repeat;
+  height: 148vh;
+  width: 100vw;
+  color: white;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 12vh;
+}
+
+.quiz-answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fire-status img {
+  object-fit: contain;
+  width: 12vw;
+  height: 10vh;
+  margin: 3vh 1.2vh 1.5vh 1.2vh;
+}
+
+.quiz-text {
+  object-fit: contain;
+  width: 90vw;
+  height: 75vh;
+  margin-bottom: 7vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrong-answer {
+  position: fixed;
+  color: white;
+  font-family: "BMHANNAAir";
+  font-size: 3.6vw;
+  z-index: 200;
+  width: 70vw;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px double hsla(41, 100%, 51%, 0.9);
+  border-radius: 3vh;
+  padding: 5vh 0 5vh 0;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
