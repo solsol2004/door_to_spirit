@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tex4fovdj9"></script> 
+
   </head>
   <div id="third-page" class="main-background" >
     <div class="materials">
@@ -40,7 +42,7 @@
             <span class="marT20">🔎 위 사진을 통해 문제의 장소를 찾아보세요(예시)</span>
           </div>
           <div class="map-detail hidden">
-            <div id="missionMap" class="mission-map"></div>
+            <div id="mission-map" class="mission-map"></div>
           </div>
           <div class="hint-selection hidden">
             <button onclick="hintFunction()">
@@ -93,9 +95,7 @@
 
   
    <!-- Javascript -->
-   <script src="javascript/index.js"></script>
    <script src="javascript/intro.js"></script>
-   <script src="javascript/haechi.js"></script>
    <script src="javascript/nav-bar.js"></script>
    <script src="javascript/map.js"></script>
 

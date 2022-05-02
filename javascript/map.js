@@ -1,6 +1,6 @@
 var HOME_PATH = window.HOME_PATH || ".";
 var missonSpot = new naver.maps.LatLng(37.557687, 126.976935),
-  map = new naver.maps.Map("missionMap", {
+  map = new naver.maps.Map("mission-map", {
     center: missonSpot,
     zoom: 16,
   }),
@@ -8,7 +8,6 @@ var missonSpot = new naver.maps.LatLng(37.557687, 126.976935),
     map: map,
     position: missonSpot,
   });
-
 var contentString = [
   '<div class="iw_inner">',
   "   <h3>1번 문제 장소</h3>",
@@ -16,7 +15,6 @@ var contentString = [
   "   </p>",
   "</div>",
 ].join("");
-
 var infowindow = new naver.maps.InfoWindow({
   content: contentString,
   maxWidth: 140,
@@ -28,7 +26,6 @@ var infowindow = new naver.maps.InfoWindow({
   anchorColor: "white",
   pixelOffset: new naver.maps.Point(20, -10),
 });
-
 naver.maps.Event.addListener(marker, "click", function (e) {
   if (infowindow.getMap()) {
     infowindow.close();
