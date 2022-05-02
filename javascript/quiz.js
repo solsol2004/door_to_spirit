@@ -29,8 +29,8 @@ db.collection("quiz")
 
     if (chapter < 6) {
       $(".red-fire").attr("src", `images/fire/red_${chapter.toString()}.png`);
-      $(".map-title").html(result.data().mapTitle);
-      $(".map-description").html(`📍 ${result.data().mapAddress}`);
+      $(".map-title").html(1);
+      $(".map-description").html(1);
     } else if (chapter > 6 && chapter < 15) {
       $(".red-fire").attr("src", "images/fire/red_6.png");
       $(".pink-fire").attr("src", `images/fire/pink_${chapter.toString()}.png`);
