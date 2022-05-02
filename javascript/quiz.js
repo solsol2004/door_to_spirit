@@ -10,6 +10,9 @@ const storage = firebase.storage();
 let lat = null;
 let long = null;
 
+let mapTitle = null;
+let mapAddress = null;
+
 db.collection("quiz")
   .doc(chapter.toString())
   .get()
@@ -23,9 +26,13 @@ db.collection("quiz")
     $(".answer-description-text").html(`✔️ ${result.data().hintAnswer}`);
     lat = parseFloat(result.data().lat)
     long = parseFloat(result.data().long)
+    mapTitle = result.data().mapTitle
+    mapAddress = result.data().mapAddress
     map();
 
-
+    $(".map-button").click(function () {
+      $(".map-title").text(mapTitle);
+      $(".map-description").text(`📍 ${mapAddress}`);})
 
 
     if (chapter < 6) {
@@ -43,9 +50,6 @@ db.collection("quiz")
       $(".green-fire").attr("src", "images/fire/green_24.png");
     }
 
-    $(".map-button").click(function () {
-      $(".map-title").html(result.data().mapTitle);
-      $(".map-description").html(`📍 ${result.data().mapAddress}`);})
 
 
     $(".quiz-enter").click(function () {
