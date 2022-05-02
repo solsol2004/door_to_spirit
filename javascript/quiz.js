@@ -10,6 +10,9 @@ const storage = firebase.storage();
 let lat = null;
 let long = null;
 
+let addressTitle = null;
+let addressDescription = null;
+
 db.collection("quiz")
   .doc(chapter.toString())
   .get()
@@ -21,8 +24,11 @@ db.collection("quiz")
     $(".answer-description-text").html(`✔️ ${result.data().hintAnswer}`);
     $(".quiz-text").attr("src", result.data().text);
     $(".title").html(`제 ${chapter.toString()} 장`);
-    lat = parseFloat(result.data().lat)
-    long = parseFloat(result.data().long)
+    lat = parseFloat(result.data().lat);
+    long = parseFloat(result.data().long);
+    addressTitle = result.data().mapTitle;
+    addressDescription = result.data().mapAddress;
+
     map();
 
 
@@ -76,8 +82,8 @@ var missonSpot = new naver.maps.LatLng(lat, long),
   });
 var contentString = [
   '<div class="iw_inner">',
-  "   <h3>1번 문제 장소</h3>",
-  "   <p>📍중구 퇴계로 37-2",
+  "   <h3>`${addressTitle}`</h3>",
+  "   <p>`📍${addressDescription}`",
   "   </p>",
   "</div>",
 ].join("");
