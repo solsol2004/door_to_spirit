@@ -10,8 +10,8 @@
 
 .big-haechi {
   object-fit: contain;
-  width: 30vw;
-  height: 20vh;
+  width: 50vw;
+  height: 30vh;
   margin: 12vh 0 8vh 0;
 }
 
@@ -119,7 +119,7 @@
 }
 
 #haechi1-bottom {
-  margin: 6vh -6vw 11vh 0;
+  margin: 6vh -6vw 10vh 0;
 }
 
 #haechi-bottom span,
@@ -135,8 +135,8 @@
   margin-bottom: 1vh;
 }
 
-.green {
-  color: green;
+.text-blue {
+  color: rgb(80, 115, 255);
 }
 
 .yellow {

@@ -17,18 +17,18 @@
     <div class="quiz1-background">
       <div class="nav-bar">
         <div class="nav-bar-top">
-          <button class="button" onclick="imageFunction()">
+          <button class="button image-button" onclick="imageFunction()">
             <i class="fa-regular fa-image fa-2x button"></i>
           </button>
-          <button class="button" onclick="mapFunction()">
+          <button class="button map-button" onclick="mapFunction()">
             <i class="fa-regular fa-map fa-2x button"></i>
           </button>
-          <button onclick="hintSelectFunction()">
+          <button class="hint-select-button" onclick="hintSelectFunction()">
             <i class="fa-regular fa-lightbulb fa-2x"></i>
           </button>
         </div>
         <div class="nav-bar-details center hidden">
-          <div class="image-detail hidden">
+          <div class="image-detail hidden text-center">
             <img class="place-image" src="##" />
             <span class="marT20 image-detail-text"
               >🔎 위 장소를 찾아보세요</span
@@ -37,11 +37,11 @@
           <div class="map-detail hidden">
             <div id="mission-map" class="mission-map"></div>
           </div>
-          <div class="hint-selection hidden">
-            <button onclick="hintFunction()">
+          <div class="hint-selection hint-toggle hidden text-center">
+            <button class="hint-button" onclick="hintFunction()">
               <img class="select-hint" src="images/hint-white.png" />
             </button>
-            <button onclick="answerFunction()">
+            <button class="answer-button" onclick="answerFunction()">
               <img
                 class="select-answer-inactive"
                 src="images/answer-gray.png"
@@ -97,7 +97,8 @@
     ></script>
 
     <!--Custom-->
-    <script src="javascript/nav-bar.js"></script>
+
+    <script src="javascript/nav-bar-demo.js"></script>
 
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>

@@ -1,3 +1,4 @@
+
 const hintBtn = document.querySelector(".hint-selection");
 const hintWhiteBtn = document.querySelector(".hint-description");
 const answerWhiteBtn = document.querySelector(".answer-description");
@@ -8,7 +9,7 @@ const imageDetail = document.querySelector(".image-detail");
 const hideandseek = document.querySelector(".nav-bar-details");
 
 //힌트를 사용했었는지 확인하는 코드//
-let hintClicked = false;
+let hintClicked = localStorage.getItem("hint-clicked");
 //정답을 사용했었는지 확인하는 코드//
 let answerClicked = false;
 //사용한 총 힌트수//
@@ -30,11 +31,11 @@ function hintSelectFunction() {
 }
 
 function hintFunction() {
-  if (hintClicked === false) {
+  if (hintClicked !== "true") {
     localStorage.setItem("used-hint", ++usedHint);
     document.querySelector(".select-answer-inactive").src =
       "images/answer-white.png";
-    hintClicked = true;
+    localStorage.setItem("hint-clicked", true);
     hintWhiteBtn.style.display = "flex";
     hintBtn.style.display = "none";
   } else {
@@ -45,7 +46,7 @@ function hintFunction() {
 }
 
 function answerFunction() {
-  if (hintClicked === false) {
+  if (hintClicked !== "true") {
     return false;
   } else {
     if (answerClicked === false) {
@@ -81,6 +82,7 @@ function imageFunction() {
     imageDetail.style.display = "none";
   }
 }
+
 
 document.onclick = function (e) {
   if (

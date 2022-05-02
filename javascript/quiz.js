@@ -76,5 +76,3 @@ naver.maps.Event.addListener(marker, "click", function (e) {
   }
 });
 }
-
-

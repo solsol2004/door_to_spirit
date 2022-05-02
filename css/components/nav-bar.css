@@ -61,10 +61,7 @@
 
 .hint-selection,
 .hint-detail {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   width: 70vw;
   height: 17vh;
   background-color: rgba(0, 0, 0, 0.9);
@@ -82,6 +79,11 @@
 .hint-detail span {
   margin-bottom: 1vh;
   font-size: 3.3vw;
+}
+
+.hint-selection button {
+  transform: translateY(40%);
+
 }
 
 .hint-selection > button > img {
