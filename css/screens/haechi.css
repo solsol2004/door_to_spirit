@@ -83,33 +83,23 @@
   justify-content: center;
   align-items: center;
   font-size: 4vw;
-  margin: 4vh 0 7vh 0;
+  margin: 4vh 0 4vh 0;
   position: relative;
 }
+
+#haechi-mid img {
+ width:70vw;
+ height: fit-content;
+ object-fit: contain;
+}
+
 
 #haechi1-mid {
   margin-top: 4vh;
 }
 
-#haechi-mid span:nth-child(2) {
-  margin: 1vh;
-}
 
-#gold-frame_small {
-  object-fit: contain;
-  width: 85vw;
-  height: 15vh;
-  position: absolute;
-  bottom: -4.5vh;
-}
 
-#haechi-mid span {
-  font-size: 4vw;
-}
-
-#haechi-mid span:nth-child(2) {
-  margin-top: 6vh;
-}
 
 #fires {
   object-fit: contain;
@@ -127,7 +117,7 @@
 }
 
 #haechi-bottom {
-  margin: 6vh -16vw 8vh 0;
+  margin: 3vh -16vw 10vh 0;
 }
 
 #haechi1-bottom {
