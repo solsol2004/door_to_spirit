@@ -25,6 +25,7 @@ db.collection("quiz")
     long = parseFloat(result.data().long)
     map();
 
+
     if (chapter < 6) {
       $(".red-fire").attr("src", `images/fire/red_${chapter.toString()}.png`);
     } else if (chapter > 6 && chapter < 15) {
