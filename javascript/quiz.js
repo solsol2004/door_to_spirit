@@ -26,8 +26,6 @@ db.collection("quiz")
     $(".answer-description-text").html(`✔️ ${result.data().hintAnswer}`);
     lat = parseFloat(result.data().lat)
     long = parseFloat(result.data().long)
-    $(".map-title").text(mapTitle)
-    mapAddress = result.data().mapAddress
     map();
 
     if (chapter < 6) {
