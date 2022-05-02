@@ -1,5 +1,5 @@
 var HOME_PATH = window.HOME_PATH || ".";
-var missonSpot = new naver.maps.LatLng(37.557687, 126.976935),
+var missonSpot = new naver.maps.LatLng(37.5579733, 126.9772788),
   map = new naver.maps.Map("sample-map", {
     center: missonSpot,
     zoom: 16,
