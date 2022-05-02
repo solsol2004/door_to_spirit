@@ -26,14 +26,9 @@ db.collection("quiz")
     $(".answer-description-text").html(`✔️ ${result.data().hintAnswer}`);
     lat = parseFloat(result.data().lat)
     long = parseFloat(result.data().long)
-    mapTitle = result.data().mapTitle
+    $(".map-title").text(mapTitle)
     mapAddress = result.data().mapAddress
     map();
-
-    $(".map-button").click(function () {
-      $(".map-title").text(mapTitle);
-      $(".map-description").text(`📍 ${mapAddress}`);})
-
 
     if (chapter < 6) {
       $(".red-fire").attr("src", `images/fire/red_${chapter.toString()}.png`);
@@ -53,12 +48,22 @@ db.collection("quiz")
 
 
     $(".quiz-enter").click(function () {
+      //정답 맞을 때 //
       if($(".quiz-input").val().toUpperCase()===result.data().answer){
         localStorage.setItem("chapter", ++chapter);
         localStorage.setItem("hint-clicked", false);
         localStorage.setItem("answer-clicked", false);
+
+        if (chapter > 1) {
+        $(".map-title").text(mapTitle);
+        $(".map-description").text(`📍 ${mapAddress}`);}
+
         location.reload();
-      } else if ($(".quiz-input").val().toUpperCase() === "") {return false;} 
+      } 
+      //정답이 비어있을 때 //
+      else if ($(".quiz-input").val().toUpperCase() === "") {return false;} 
+
+      //정답 틀릴 때 //
       else {
       $(".wrong-answer").show();
       $(".nav-bar").css('opacity', 0.2);
