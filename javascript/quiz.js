@@ -17,9 +17,10 @@ db.collection("quiz")
     $(".answer-description-text").html(`✔️ ${result.data().hintAnswer}`);
     $(".quiz-text").attr("src", result.data().text);
     $(".title").html(`제 ${chapter.toString()} 장`);
-    lat = result.data().lat
-    long = result.data().long
+    lat = parseFloat(result.data().lat)
+    long = parseFloat(result.data().long)
     chapterAnswer = result.data().answer;
+
 
     if (chapter < 6) {
       $(".red-fire").attr("src", `images/fire/red_${chapter.toString()}.png`);
