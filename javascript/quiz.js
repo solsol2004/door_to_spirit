@@ -36,10 +36,8 @@ db.collection("quiz")
     } else {
       $(".green-fire").attr("src", "images/fire/green_24.png");
     }
-  });
 
-
-var HOME_PATH = window.HOME_PATH || ".";
+    var HOME_PATH = window.HOME_PATH || ".";
 var missonSpot = new naver.maps.LatLng(lat, long),
   map = new naver.maps.Map("mission-map", {
     center: missonSpot,
@@ -74,3 +72,6 @@ naver.maps.Event.addListener(marker, "click", function (e) {
     infowindow.open(map, marker);
   }
 });
+  });
+
+
