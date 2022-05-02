@@ -21,11 +21,11 @@ db.collection("quiz")
     $(".image-detail-text").html(`🔎 ${result.data().imageText}`);
     $(".hint-description-text").html(`💡 ${result.data().hint}`);
     $(".answer-description-text").html(`✔️ ${result.data().hintAnswer}`);
+    lat = parseFloat(result.data().lat)
+    long = parseFloat(result.data().long)
     map();
     $(".map-title").html(result.data().mapTitle);
     $(".map-description").html(`📍 ${result.data().mapAddress}`);
-    lat = parseFloat(result.data().lat)
-    long = parseFloat(result.data().long)
   
 
 
