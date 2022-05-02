@@ -20,7 +20,7 @@ db.collection("quiz")
     lat = parseFloat(result.data().lat)
     long = parseFloat(result.data().long)
     chapterAnswer = result.data().answer;
-
+    map();
 
     if (chapter < 6) {
       $(".red-fire").attr("src", `images/fire/red_${chapter.toString()}.png`);
@@ -36,8 +36,11 @@ db.collection("quiz")
     } else {
       $(".green-fire").attr("src", "images/fire/green_24.png");
     }
+  });
 
-    var HOME_PATH = window.HOME_PATH || ".";
+
+function map(){
+  var HOME_PATH = window.HOME_PATH || ".";
 var missonSpot = new naver.maps.LatLng(lat, long),
   map = new naver.maps.Map("mission-map", {
     center: missonSpot,
@@ -72,6 +75,6 @@ naver.maps.Event.addListener(marker, "click", function (e) {
     infowindow.open(map, marker);
   }
 });
-  });
+}
 
 
