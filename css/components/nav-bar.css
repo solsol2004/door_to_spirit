@@ -141,8 +141,8 @@
 }
 
 .place-image {
-  width: 70vw;
-  height: 50vh;
+  width: 85vw;
+  height: 55vh;
   object-fit: cover;
   border-radius: 5%;
 }
