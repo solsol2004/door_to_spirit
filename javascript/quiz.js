@@ -1,8 +1,12 @@
 //현 챕터//
 let chapter = parseInt(localStorage.getItem("chapter"));
-let chapterAnswer = null;
+
+
+//Firebase//
 const db = firebase.firestore();
 const storage = firebase.storage();
+
+//경도 위도 Firebase에서 불러올때//
 let lat = null;
 let long = null;
 
@@ -19,7 +23,6 @@ db.collection("quiz")
     $(".title").html(`제 ${chapter.toString()} 장`);
     lat = parseFloat(result.data().lat)
     long = parseFloat(result.data().long)
-    chapterAnswer = result.data().answer;
     map();
 
     if (chapter < 6) {
@@ -36,6 +39,26 @@ db.collection("quiz")
     } else {
       $(".green-fire").attr("src", "images/fire/green_24.png");
     }
+
+    $(".quiz-enter").click(function () {
+      if($(".quiz-input").val().toUpperCase()===result.data().answer){
+        localStorage.setItem("chapter", ++chapter);
+        localStorage.setItem("hint-clicked", false);
+        localStorage.setItem("answer-clicked", false);
+        location.reload();
+      } else if ($(".quiz-input").val().toUpperCase() === "") {return false;} 
+      else {
+      $(".wrong-answer").show();
+      $(".nav-bar").css('opacity', 0.2);
+      $(".quiz").css('opacity', 0.2);}
+
+      });
+
+      $(".wrong-answer").click(function () {
+        $(".wrong-answer").hide();
+      $(".nav-bar").css('opacity', 1);
+      $(".quiz").css('opacity', 1)});
+
   });
 
 
@@ -76,3 +99,4 @@ naver.maps.Event.addListener(marker, "click", function (e) {
   }
 });
 }
+

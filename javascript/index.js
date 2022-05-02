@@ -13,6 +13,8 @@ function firstPage(event) {
   if (codeNum === "1") {
     pageOne.classList.add(HIDDEN_CLASSNAME);
     pageTwo.classList.remove(HIDDEN_CLASSNAME);
+    localStorage.setItem("used-hint", 0);
+    localStorage.setItem("chapter", 1);
   } else if (codeNum === "") {
     alert("코드를 입력해주세요!");
   } else {

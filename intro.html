@@ -23,32 +23,30 @@
     <div id="fourth-page">
       <div class="nav-bar">
         <div class="nav-bar-top">
-          <button onclick="imageFunction()">
-            <i class="fa-regular fa-image fa-2x"></i>
+          <button class="button image-button">
+            <i class="fa-regular fa-image fa-2x button"></i>
           </button>
-          <button onclick="mapFunction()">
-            <i class="fa-regular fa-map fa-2x"></i>
+          <button class="button map-button">
+            <i class="fa-regular fa-map fa-2x button"></i>
           </button>
-          <button onclick="hintSelectFunction()">
+          <button class="hint-select-button">
             <i class="fa-regular fa-lightbulb fa-2x"></i>
           </button>
         </div>
         <div class="nav-bar-details center hidden">
-          <div class="image-detail hidden">
-            <img
-              class="place-image"
-              src="images/샘플 이미지.jpg"
-            />
-            <span class="marT20">🔎 위 사진을 통해 문제의 장소를 찾아보세요(예시)</span>
+          <div class="image-detail hidden text-center">
+            <img class="place-image" src="images/샘플 이미지.jpg" />
+            <h5 class="marT20 image-detail-text"
+              >🔎 위 사진을 통해 문제의 장소를 찾아보세요(예시)</h5>
           </div>
           <div class="map-detail hidden">
             <div id="sample-map" class="mission-map"></div>
           </div>
-          <div class="hint-selection hidden">
-            <button onclick="hintFunction()">
+          <div class="hint-selection hint-toggle hidden text-center">
+            <button class="hint-button">
               <img class="select-hint" src="images/hint-white.png" />
             </button>
-            <button onclick="answerFunction()">
+            <button class="answer-button">
               <img
                 class="select-answer-inactive"
                 src="images/answer-gray.png"
@@ -56,15 +54,18 @@
             </button>
           </div>
           <div class="hint-description hint-detail hidden text-center">
-            <span
-              >💡 문제에 대한 힌트를 확인할 수 있습니다.</br>클릭하면 점수가 차감됩니다</span>
+            <span class="hint-description-text"
+              >💡 문제에 대한 힌트를 확인할 수 있습니다.</br>클릭하면 점수가 차감됩니다</span
+            >
           </div>
           <div class="answer-description hint-detail hidden text-center">
-            <span>✔️ 문제의 정답을 확인할 수 있습니다.</br>클릭하면 점수가 차감됩니다</span>
+            <span class="answer-description-text"
+              >✔️ 문제의 정답을 확인할 수 있습니다.</br>클릭하면 점수가 차감됩니다</span
+            >
           </div>
         </div>
       </div>
-
+ 
     <div id="four-top">
       <img id="maru-pic" src="images/마루.png"/>
       <div id="hi-user" class="row">
@@ -95,8 +96,9 @@
 
   
    <!-- Javascript -->
+   <script src="jquery/jquery.min.js"></script>
    <script src="javascript/intro.js"></script>
-   <script src="javascript/nav-bar.js"></script>
+   <script src="javascript/nav-bar-example.js"></script>
    <script src="javascript/map.js"></script>
 
    <script src="https://kit.fontawesome.com/fccfaa8152.js" crossorigin="anonymous"></script>

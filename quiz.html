@@ -15,15 +15,16 @@
   </head>
   <body>
     <div class="quiz1-background">
+      
       <div class="nav-bar">
         <div class="nav-bar-top">
-          <button class="button image-button" onclick="imageFunction()">
+          <button class="button image-button">
             <i class="fa-regular fa-image fa-2x button"></i>
           </button>
-          <button class="button map-button" onclick="mapFunction()">
+          <button class="button map-button">
             <i class="fa-regular fa-map fa-2x button"></i>
           </button>
-          <button class="hint-select-button" onclick="hintSelectFunction()">
+          <button class="hint-select-button">
             <i class="fa-regular fa-lightbulb fa-2x"></i>
           </button>
         </div>
@@ -37,10 +38,10 @@
             <div id="mission-map" class="mission-map"></div>
           </div>
           <div class="hint-selection hint-toggle hidden text-center">
-            <button class="hint-button" onclick="hintFunction()">
+            <button class="hint-button">
               <img class="select-hint" src="images/hint-white.png" />
             </button>
-            <button class="answer-button" onclick="answerFunction()">
+            <button class="answer-button">
               <img
                 class="select-answer-inactive"
                 src="images/answer-gray.png"
@@ -61,6 +62,10 @@
         </div>
       </div>
 
+      <button class="wrong-answer hidden">
+        <span>다시 한번 생각해 보세요!</span>
+      </button>
+
       <div class="quiz">
         <div class="title">제 1 장</div>
 
@@ -74,16 +79,20 @@
           </button>
         </div>
 
+
         <div class="quiz-context">
-          <img class="quiz-text" src="images/quiz1.png" />
+          <img class="quiz-text" src="images/transparent.png" />
         </div>
 
         <div class="quiz-answer">
           <input class="quiz-input" placeholder="정답 입력" />
-          <button class="quiz-enter">확인</button>
+          <button type="button" class="quiz-enter">확인</button>
         </div>
       </div>
     </div>
+
+    
+  
 
     <!-- ============================================================== -->
     <!--Javascript -->
@@ -97,7 +106,7 @@
 
     <!--Custom-->
 
-    <script src="javascript/nav-bar-demo.js"></script>
+    <script src="javascript/nav-bar.js"></script>
 
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>

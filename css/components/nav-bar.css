@@ -61,30 +61,31 @@
 
 .hint-selection,
 .hint-detail {
-  position: relative;
   width: 70vw;
-  height: 17vh;
   background-color: rgba(0, 0, 0, 0.9);
   border: 1px double hsla(41, 100%, 51%, 0.9);
   border-radius: 3vh;
 }
 
-.hint-detail {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2vh;
+.hint-selection {
+  height: 17vh;
 }
 
+.hint-detail {
+  height: fit-content;
+  padding: 3vh;
+}
+
+
 .hint-detail span {
-  margin-bottom: 1vh;
   font-size: 3.3vw;
+
 }
 
 .hint-selection button {
   transform: translateY(40%);
-
 }
+
 
 .hint-selection > button > img {
   object-fit: contain;
@@ -94,10 +95,6 @@
 }
 
 .map-detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: fit-content;
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.9);
@@ -127,24 +124,19 @@
 }
 
 .image-detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: fit-content;
   background-color: rgba(0, 0, 0, 0.9);
   border: 1px double #ffb005e6;
   border-radius: 3vh;
   padding: 3vw;
-  height: 60vh;
+  height: fit-content;
   overflow-x: hidden;
   overflow-y: auto;
-  text-align: justify;
 }
 
 .place-image {
   width: 85vw;
-  height: 55vh;
+  height: 50vh;
   object-fit: cover;
   border-radius: 5%;
 }

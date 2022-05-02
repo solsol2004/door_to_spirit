@@ -49,3 +49,23 @@ body {
 .hidden {
   display: none;
 }
+
+.wrong-answer {
+  position: fixed;
+  color: white;
+  font-family: "BMHANNAAir";
+  font-size: 3.6vw;
+  z-index: 200;
+  width: 70vw;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px double hsla(41, 100%, 51%, 0.9);
+  border-radius: 3vh;
+  padding: 5vh 0 5vh 0;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
