@@ -59,8 +59,8 @@ function answerFunction() {
 }
 
 function mapFunction() {
-  mapDetail.style.display = "none";
-  hintBtn.style.display === "none";
+  imageDetail.style.display = "none";
+  hintBtn.style.display = "none";
   answerWhiteBtn.style.display = "none";
   hintWhiteBtn.style.display = "none";
   if (mapDetail.style.display === "none") {
@@ -72,7 +72,7 @@ function mapFunction() {
 
 function imageFunction() {
   mapDetail.style.display = "none";
-  hintBtn.style.display === "none";
+  hintBtn.style.display = "none";
   answerWhiteBtn.style.display = "none";
   hintWhiteBtn.style.display = "none";
   if (imageDetail.style.display === "none") {

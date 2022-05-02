@@ -10,15 +10,8 @@
     />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script
-      type="text/javascript"
-      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tex4fovdj9"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tex4fovdj9"></script> 
+
   </head>
   <body>
     <div class="quiz1-background">
@@ -42,7 +35,7 @@
             >
           </div>
           <div class="map-detail hidden">
-            <div class="mission-map"></div>
+            <div id="mission-map" class="mission-map"></div>
           </div>
           <div class="hint-selection hidden">
             <button onclick="hintFunction()">
@@ -96,6 +89,7 @@
     <!-- ============================================================== -->
     <!--Javascript -->
     <!-- ============================================================== -->
+    <script src="javascript/map.js"></script>
     <script src="jquery/jquery.min.js"></script>
     <script
       src="https://kit.fontawesome.com/fccfaa8152.js"
@@ -104,7 +98,6 @@
 
     <!--Custom-->
     <script src="javascript/nav-bar.js"></script>
-    <script src="javascript/map.js"></script>
 
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>

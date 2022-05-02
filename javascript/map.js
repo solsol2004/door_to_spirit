@@ -1,6 +1,6 @@
 var HOME_PATH = window.HOME_PATH || ".";
 var missonSpot = new naver.maps.LatLng(37.557687, 126.976935),
-  map = new naver.maps.Map("mission-map", {
+  map = new naver.maps.Map("missionMap", {
     center: missonSpot,
     zoom: 16,
   }),
