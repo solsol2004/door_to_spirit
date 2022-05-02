@@ -24,13 +24,13 @@ db.collection("quiz")
     lat = parseFloat(result.data().lat)
     long = parseFloat(result.data().long)
     map();
-    $(".map-title").html(result.data().mapTitle);
-    $(".map-description").html(`📍 ${result.data().mapAddress}`);
   
 
 
     if (chapter < 6) {
       $(".red-fire").attr("src", `images/fire/red_${chapter.toString()}.png`);
+      $(".map-title").html(result.data().mapTitle);
+      $(".map-description").html(`📍 ${result.data().mapAddress}`);
     } else if (chapter > 6 && chapter < 15) {
       $(".red-fire").attr("src", "images/fire/red_6.png");
       $(".pink-fire").attr("src", `images/fire/pink_${chapter.toString()}.png`);
