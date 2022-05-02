@@ -24,8 +24,10 @@ db.collection("quiz")
     $(".image-detail-text").html(`🔎 ${result.data().imageText}`);
     $(".hint-description-text").html(`💡 ${result.data().hint}`);
     $(".answer-description-text").html(`✔️ ${result.data().hintAnswer}`);
-    lat = parseFloat(result.data().lat)
-    long = parseFloat(result.data().long)
+    lat = parseFloat(result.data().lat);
+    long = parseFloat(result.data().long);
+    mapTitle = result.data().mapTitle;
+    mapAddress = result.data().mapAddress;
     map();
 
     if (chapter < 6) {
