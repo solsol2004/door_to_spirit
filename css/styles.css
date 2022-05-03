@@ -33,9 +33,14 @@
 
 body {
   font-family: "BMHANNAAir";
+    height: 100vh;
+    text-align: center;
+  
 }
 
-input {
+input,
+button,
+button span {
   font-family: "NanumSquare";
 }
 
@@ -63,6 +68,7 @@ a:visited {
   -ms-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
 }
+
 
 .text-center {
   text-align: center;
