@@ -20,7 +20,9 @@ db.collection("quiz")
     console.log(result.data());
     $(".title").html(`제 ${chapter.toString()} 장`);
     $(".quiz-text").attr("src", result.data().text);
-    $(".place-image").attr("src", result.data().image);
+    if (result.data().image==="0") {
+      $(".place-image").hide(); 
+    } else { $(".place-image").attr("src", result.data().image);}
     $(".image-detail-text").html(`🔎 ${result.data().imageText}`);
     $(".hint-description-text").html(`💡 ${result.data().hint}`);
     $(".answer-description-text").html(`✔️ ${result.data().hintAnswer}`);
@@ -44,7 +46,6 @@ db.collection("quiz")
     } else {
       $(".green-fire").attr("src", "images/fire/green_24.png");
     }
-
 
 
     $(".quiz-enter").click(function () {
