@@ -32,12 +32,21 @@ db.collection("quiz")
     mapAddress = result.data().mapAddress;
     map();
 
-    if (chapter < 6) {
+    if(chapter <6){
+      $(".quiz1-background").css({"background-image":"url(images/7017.jpg)"});
+    }
+     else if(chapter >=6 && chapter <15) {
+      $(".quiz1-background").css({"background-image":"url(images/덕수궁.jpg)"}); 
+    } else if(chapter >= 15) {$(".quiz1-background").css({"background-image":"url(images/돈의문.jpg)"}); }
+    
+
+    if (chapter < 7) {
       $(".red-fire").attr("src", `images/fire/red_${chapter.toString()}.png`);
-    } else if (chapter > 6 && chapter < 15) {
+    } else if (chapter >= 7 && chapter < 16) {
       $(".red-fire").attr("src", "images/fire/red_6.png");
       $(".pink-fire").attr("src", `images/fire/pink_${chapter.toString()}.png`);
     } else if (chapter > 15 && chapter < 24) {
+      $(".red-fire").attr("src", "images/fire/red_6.png");
       $(".pink-fire").attr("src", "images/fire/pink_15.png");
       $(".green-fire").attr(
         "src",
@@ -47,6 +56,11 @@ db.collection("quiz")
       $(".green-fire").attr("src", "images/fire/green_24.png");
     }
 
+    if (chapter === 4) {
+      $(".piano").show();} else {$(".piano").hide();}
+
+    if (chapter === 18) {
+     $(".history-museum").show();} else {$(".history-museum").hide();}
 
     $(".quiz-enter").click(function () {
       //정답 맞을 때 //

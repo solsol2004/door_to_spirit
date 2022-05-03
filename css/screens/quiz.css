@@ -1,22 +1,27 @@
 body {
-  height: 150vh;
+  height: 100vh;
+  text-align: center;
 }
 
 .quiz1-background {
-  background-image: url("../../images/7017.jpg");
+  background-image: url("../../images/background-forloading.jpg");
   background-size: cover;
   background-position: center top 100%;
   background-repeat: no-repeat;
-  height: 148vh;
-  width: 100vw;
+  height: 100vh;
+  width: 102vw;
   color: white;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .quiz {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 150vh;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 .title {

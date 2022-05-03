@@ -124,17 +124,24 @@
 }
 
 .image-detail {
-  width: fit-content;
+  width: 87vw;
   background-color: rgba(0, 0, 0, 0.9);
   border: 1px double #ffb005e6;
   border-radius: 3vh;
   padding: 3vw;
-  height: fit-content;
+  height: 60vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .place-image {
+  width: 85vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.drawer {
   width: 85vw;
   height: 50vh;
   object-fit: cover;

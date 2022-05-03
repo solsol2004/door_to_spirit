@@ -30,9 +30,14 @@
         </div>
         <div class="nav-bar-details center hidden">
           <div class="image-detail hidden text-center">
-            <img class="place-image" src="##" />
+            <img class="place-image marT10" src="##" />
             <h5 class="padTB20 image-detail-text"
               >🔎 위 장소를 찾아보세요</h5>
+            <div class="history-museum marT20 hidden">
+              <img class="drawer" src="images/서랍.jpg" />
+              <h5 class="padTB20"
+              >🏷️ 위 서랍을 찾아 문제를 풀어보세요!</h5>
+            </div>
           </div>
           <div class="map-detail hidden">
             <div id="mission-map" class="mission-map"></div>
@@ -69,15 +74,15 @@
 
 
       <div class="quiz">
-        <div class="title">제   장</div>
+        <div class="title">제&nbsp;&nbsp;&nbsp;장</div>
 
         <div class="fire-status">
           <button><img class="red-fire" src="images/fire/red_1.png" /></button>
           <button>
-            <img class="pink-fire" src="images/fire/pink_7.png" />
+            <img class="pink-fire" src="images/fire/pink_0.png" />
           </button>
           <button>
-            <img class="green-fire" src="images/fire/green_16.png" />
+            <img class="green-fire" src="images/fire/green_0.png" />
           </button>
         </div>
       
@@ -85,8 +90,9 @@
         <div class="quiz-context">
           <img class="quiz-text" src="https://img.wattpad.com/515215e8f0e31abab33bdad46d1be2e1bbcc0a4d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f703874644952486c4d326c6972413d3d2d3930323432373338302e313631386563336564396130363965653635303033303038363438392e676966" />
           </div>
-
-          <button class="piano marB50">
+          
+          <button class="piano marB50 hidden" onclick="document.getElementById('piano-sound').play()">
+            <audio id="piano-sound" src="assets/피아노.mp3"></audio>
             <i class="fa-solid fa-volume-high fa-3x text-white"></i>
           </button>
 
