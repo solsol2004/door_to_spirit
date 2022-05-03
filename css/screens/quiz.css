@@ -3,7 +3,7 @@ body {
 }
 
 .quiz1-background {
-  background-image: url("../../images/7017.jpg");
+  background-image: url("../../images/background-forloading.jpg");
   background-size: contain;
   background-position: center top 100%;
   background-repeat: no-repeat;
@@ -41,7 +41,8 @@ body {
   margin: 3vh 1.2vh 1.5vh 1.2vh;
 }
 
-.quiz-text {
+.quiz-text,
+.sesil-text {
   object-fit: contain;
   width: 90vw;
   height: 75vh;
@@ -69,5 +70,9 @@ body {
   left: 0;
   right: 0;
   top: 50%;
+}
+
+.wrong-answer span {
+  font-family: "BMHANNAAir";
 }
 

@@ -86,6 +86,14 @@ db.collection("quiz")
       $(".nav-bar").css('opacity', 0.2);
       $(".quiz").css('opacity', 0.2);}
 
+      if(chapter === 6) {
+        window.location.href='direction-deoksu.html';
+      }
+
+      if(chapter === 12) {
+        window.location.href='sesil.html';
+      }
+
       });
 
       $(".wrong-answer").click(function () {
