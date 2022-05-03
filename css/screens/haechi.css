@@ -1,8 +1,7 @@
 #fifth-page,
 #sixth-page,
 #seventh-page,
-#eigth-page,
-#direction-page {
+#eigth-page {
   display: flex;
   flex-direction: column;
   align-items: center;
