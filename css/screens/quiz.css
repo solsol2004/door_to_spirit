@@ -1,26 +1,24 @@
 body {
-  height: 100vh;
+  height: 150vh;
 }
 
 .quiz1-background {
-  background-image: url("../../images/background-forloading.jpg");
+  background-image: url("../../images/7017.jpg");
   background-size: cover;
   background-position: center top 100%;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 102vw;
+  height: 148vh;
+  width: 100vw;
   color: white;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .quiz {
-  height: 150vh;
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
+  text-align: center;
 }
 
 .title {
