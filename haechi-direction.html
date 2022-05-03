@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
 
 <body>
 <div>
-  <div id="direction-page"">
+  <div id="direction-page" style="display: none;">
     <img class="big-haechi" src="images/파랑 해치.png" />
     <div id="haechi3-says">
       <span>성공적으로 검은 혼을 정화했군.</span>
@@ -20,10 +21,28 @@
     </div>
     
     <div class="direction-choice">
-      <a href="maru-direction.html"><button type="button" class="enter">이동방법 보기</button></a>
+      <button type="button" class="enter">이동방법 보기</button>
       <a href="quiz.html"><button type="button" class="enter">다음으로 넘기기</button></a>
     </div>
   </div>
+
+  <div id="maru-direction" style="display: none;" class="text-center">
+    <img class="center-center padT20" src="images/마루-덕수궁.png"/> 
+    <button type="button" class="enter marT60">확인</button>
+  </div>
+
+  <div class="confirmation text-center">
+    <lottie-player class="padT40" src="https://assets9.lottiefiles.com/packages/lf20_5xqvi8pf.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    <span class="marT70" >덕수궁에 도착하셨나요?</span>
+    <button type="button" class="enter marT100">확인</button>
+  </div>
+
+  <div class="confirmation text-center">
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_5xqvi8pf.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    <span>덕수궁에 도착하셨나요?</span>
+    <button type="button" class="enter marT60">확인</button>
+  </div>
+  
 </div>
 </body>
   
