@@ -129,7 +129,7 @@
   border: 1px double #ffb005e6;
   border-radius: 3vh;
   padding: 3vw;
-  height: 60vh;
+  height: fit-content;
   overflow-x: hidden;
   overflow-y: auto;
 }

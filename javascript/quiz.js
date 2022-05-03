@@ -60,7 +60,9 @@ db.collection("quiz")
       $(".piano").show();} else {$(".piano").hide();}
 
     if (chapter === 18) {
-     $(".history-museum").show();} else {$(".history-museum").hide();}
+     $(".history-museum").show();
+     $('.image-detail').css('height', 60 + "vh");} else {$(".history-museum").hide();
+   }
 
     $(".quiz-enter").click(function () {
       //정답 맞을 때 //

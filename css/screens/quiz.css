@@ -4,10 +4,10 @@ body {
 
 .quiz1-background {
   background-image: url("../../images/7017.jpg");
-  background-size: cover;
-  background-position: center top 102%;
+  background-size: contain;
+  background-position: center top 100%;
   background-repeat: no-repeat;
-  height: 148vh;
+  height: 150vh;
   width: 100vw;
   color: white;
   position: relative;
