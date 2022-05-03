@@ -7,19 +7,17 @@
   flex-direction: column;
   align-items: center;
   font-family: "HeirofLightRegular";
-  
 }
 
 .big-haechi {
   object-fit: contain;
   width: 50vw;
   height: 30vh;
-  margin: 7vh 0 6vh 0;
+  margin: 12vh 0 8vh 0;
 }
 
 #haechi-says,
-#haechi2-says,
-#haechi3-says {
+#haechi2-says {
   display: flex;
   flex-direction: column;
   font-size: 3.5vw;
@@ -27,8 +25,7 @@
 }
 
 #haechi-says span,
-#haechi2-says span,
-#haechi3-says span {
+#haechi2-says span {
   margin-bottom: 1.5vh;
 }
 
@@ -44,11 +41,6 @@
 #haechi2-says span:nth-child(4),
 #haechi2-says span:nth-child(5) {
   margin-bottom: 4vh;
-}
-
-#haechi3-says {
-  justify-content: start;
-  align-items: flex-start;
 }
 
 .small-haechi {
