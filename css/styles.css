@@ -35,8 +35,11 @@ body {
   font-family: "BMHANNAAir";
 }
 
-input {
+input,
+button,
+button span {
   font-family: "NanumSquare";
+  font-weight: 600;
 }
 
 

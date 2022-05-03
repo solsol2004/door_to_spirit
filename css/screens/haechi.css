@@ -1,7 +1,8 @@
 #fifth-page,
 #sixth-page,
 #seventh-page,
-#eigth-page {
+#eigth-page,
+#direction-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +17,8 @@
 }
 
 #haechi-says,
-#haechi2-says {
+#haechi2-says,
+#haechi3-says {
   display: flex;
   flex-direction: column;
   font-size: 3.5vw;
@@ -24,7 +26,8 @@
 }
 
 #haechi-says span,
-#haechi2-says span {
+#haechi2-says span,
+#haechi3-says span {
   margin-bottom: 1.5vh;
 }
 
@@ -129,6 +132,10 @@
 
 #haechi-bottom span:nth-child(2) {
   margin-bottom: 4vh;
+}
+
+.direction-choice {
+  text-align: center;
 }
 
 .row {
