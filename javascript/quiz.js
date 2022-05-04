@@ -1,6 +1,12 @@
 //현 챕터//
 let chapter = parseInt(localStorage.getItem("chapter"));
 
+//다음 장소로 가는 지시사항아 보였는 지 확인법//
+let directionDeoksuShowed = localStorage.getItem("direction-deoksu-showed");
+let directionSesilShowed = localStorage.getItem("direction-sesil-showed");
+let directionRestShowed = localStorage.getItem("direction-rest-showed");
+
+
 
 //Firebase//
 const db = firebase.firestore();
@@ -13,7 +19,26 @@ let long = null;
 let mapTitle = null;
 let mapAddress = null;
 
-self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+if(chapter === 6) {
+  if(directionDeoksuShowed !== "true"){
+  $(".quiz1-background").hide();
+  $(".direction-deoksu").show();
+}}
+
+if(chapter === 12) {
+  if(directionSesilShowed !== "true"){
+    $(".quiz1-background").hide();
+    $(".direction-sesil").show();
+    sesilMap();
+  }}
+
+
+if(chapter === 14) {
+    if(directionRestShowed !== "true"){
+      $(".quiz1-background").hide();
+      $(".direction-rest").show();
+    }}
+
 
 db.collection("quiz")
   .doc(chapter.toString())
@@ -93,18 +118,6 @@ db.collection("quiz")
       $(".nav-bar").css('opacity', 0.2);
       $(".quiz").css('opacity', 0.2);}
 
-      if(chapter === 6) {
-        window.location.href='direction-deoksu.html';
-      }
-
-      if(chapter === 12) {
-        window.location.href='sesil.html';
-      }
-
-      if(chapter === 14) {
-        window.location.href='direction-donyi.html';
-      }
-
       });
 
       $(".wrong-answer").click(function () {
@@ -150,6 +163,44 @@ naver.maps.Event.addListener(marker, "click", function (e) {
   if (infowindow.getMap()) {
     infowindow.close();
   } else {
+    infowindow.open(map, marker);
+  }
+});
+}
+
+function sesilMap(){
+  var HOME_PATH = window.HOME_PATH || ".";
+var sesilSpot = new naver.maps.LatLng(37.56670600, 126.97596600),
+  map = new naver.maps.Map("sesil-map", {
+    center: sesilSpot,
+    zoom: 16,
+  }),
+  marker = new naver.maps.Marker({
+    map: map,
+    position: sesilSpot,
+  });
+var contentString = [
+  '<div class="iw_inner">',
+  '<h3 class="map-title">',
+  "   12번 문제 장소</h3>",
+  '<p class="map-description">',
+  "   📍중구 세종대로19길 16",
+  "   </p>",
+  "</div>",
+].join("");
+var infowindow = new naver.maps.InfoWindow({
+  content: contentString,
+  maxWidth: 140,
+  borderColor: "#606060e6",
+  borderWidth: 1,
+  borderStyle: "double",
+  backgroundColor: "white",
+  padding: 3,
+  anchorColor: "white",
+  pixelOffset: new naver.maps.Point(20, -10),
+});
+naver.maps.Event.addListener(marker, "click", function (e) {
+  if (infowindow.getMap())  {
     infowindow.open(map, marker);
   }
 });

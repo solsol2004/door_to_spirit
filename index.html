@@ -18,9 +18,10 @@
         <span class="second-row">제 1회 졸업시험</span>
         <span class="third-row">귀문관에 응시하시겠습니까?</span>
       </div>
+      <div class="text-center">
       <form method="get" id="code-bottom" class="answer">
         <input id="code-input" class="input" placeholder="코드 입력" style="font-family: NanumSquare; font-weight: 500;"/>
-        <input type="submit" id="code-enter" class="enter" value="시험 입장" style="font-family: NanumSquare; font-weight: 500;"/>
+        <button type="submit" id="name-enter" class="enter enter-test" style="font-family: NanumSquare; font-weight: 500;">시험 입장</button>
         <input
           type="submit"
           id="minor-enter"
@@ -29,7 +30,10 @@
           style="font-family: NanumSquare; font-weight: 500;"
         />
       </form>
+      <input class="input code-already-entered hidden" placeholder="이미 코드를 입력했습니다!" style="font-family: NanumSquare; font-weight: 500;"/>
+      <a href="intro.html"><button type="submit" class="enter hidden resume-test" style="font-family: NanumSquare; font-weight: 500;">시험 계속하기</button></a>
     </div>
+  </div>
 
     <div id="second-page" class="hidden intro-background">
       <div id="name-top" class="top">
@@ -49,9 +53,8 @@
     </div>
 
     <!-- Javascript -->
+    <script src="jquery/jquery.min.js"></script>
     <script src="javascript/index.js"></script>
-    <script src="javascript/intro.js"></script>
-    <script src="javascript/haechi.js"></script>
     <script
       src="https://kit.fontawesome.com/fccfaa8152.js"
       crossorigin="anonymous"
