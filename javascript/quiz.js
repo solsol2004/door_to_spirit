@@ -13,7 +13,7 @@ let long = null;
 let mapTitle = null;
 let mapAddress = null;
 
-
+self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
 
 db.collection("quiz")
   .doc(chapter.toString())
