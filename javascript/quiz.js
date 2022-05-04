@@ -6,6 +6,8 @@ let directionDeoksuShowed = localStorage.getItem("direction-deoksu-showed");
 let directionSesilShowed = localStorage.getItem("direction-sesil-showed");
 let directionRestShowed = localStorage.getItem("direction-rest-showed");
 let directionDonyiShowed = localStorage.getItem("direction-donyi-showed");
+let directionTrainShowed = localStorage.getItem("direction-train-showed");
+
 
 
 
@@ -19,6 +21,14 @@ let long = null;
 
 let mapTitle = null;
 let mapAddress = null;
+
+window.onload = function() {
+  setTimeout (function () {
+    scrollTo(0,0);
+
+  },100);
+
+}
 
 if(chapter === 6) {
   if(directionDeoksuShowed !== "true"){
@@ -46,6 +56,17 @@ if(chapter === 15) {
       $(".direction-donyi").show();
     }}
 
+if(chapter === 20) {
+    $(".quiz-context").hide();
+    $(".gurakbu").show();
+}
+
+if(chapter === 21) {
+  if(directionTrainShowed !== "true"){
+    $(".quiz1-background").hide();
+    $(".direction-train").show();
+    trainMap();
+  }}
 
 db.collection("quiz")
   .doc(chapter.toString())
@@ -192,6 +213,44 @@ var contentString = [
   "   12번 문제 장소</h3>",
   '<p class="map-description">',
   "   📍중구 세종대로19길 16",
+  "   </p>",
+  "</div>",
+].join("");
+var infowindow = new naver.maps.InfoWindow({
+  content: contentString,
+  maxWidth: 140,
+  borderColor: "#606060e6",
+  borderWidth: 1,
+  borderStyle: "double",
+  backgroundColor: "white",
+  padding: 3,
+  anchorColor: "white",
+  pixelOffset: new naver.maps.Point(20, -10),
+});
+naver.maps.Event.addListener(marker, "click", function (e) {
+  if (infowindow.getMap())  {
+    infowindow.open(map, marker);
+  }
+});
+}
+
+function trainMap(){
+  var HOME_PATH = window.HOME_PATH || ".";
+var trainSpot = new naver.maps.LatLng(37.57002400, 126.97596600),
+  map = new naver.maps.Map("train-map", {
+    center: trainSpot,
+    zoom: 16,
+  }),
+  marker = new naver.maps.Marker({
+    map: map,
+    position: trainSpot,
+  });
+var contentString = [
+  '<div class="iw_inner">',
+  '<h3 class="map-title">',
+  "   21번 문제 장소</h3>",
+  '<p class="map-description">',
+  "   📍종로구 신문로2가 1-15",
   "   </p>",
   "</div>",
 ].join("");

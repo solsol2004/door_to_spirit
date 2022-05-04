@@ -46,3 +46,9 @@ $(".close-direction-donyi").click(function () {
     localStorage.setItem("direction-donyi-showed", true);
     location.reload();
 });
+
+$(".close-train").click(function () {
+    $(".direction-train").hide();
+    localStorage.setItem("direction-train-showed", true);
+    location.reload();
+});

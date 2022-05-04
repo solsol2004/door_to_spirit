@@ -107,6 +107,10 @@ body {
 
 .gurakbu-buttons div button img {
   border-radius: 5%;
+  width: 25vw;
+  height: 14vh;
   object-fit: cover;
+  z-index: 20 !important;
 }
+
 
