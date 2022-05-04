@@ -147,3 +147,9 @@
   object-fit: cover;
   border-radius: 5%;
 }
+
+.deoksu-sideway {
+  border-radius: 5%;
+  width: 85vw;
+  height: fit-content;
+}

@@ -12,7 +12,3 @@ $(".deoksu-arrive-confirm").click(function () {
     $(".deoksu-arrive").hide();
     $(".deoksu-ticket").show(); 
 });
-
-$(".deoksu-ticket-confirmation").click(function () {
-    window.location.href='quiz.html';
-});

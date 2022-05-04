@@ -13,6 +13,8 @@ let long = null;
 let mapTitle = null;
 let mapAddress = null;
 
+
+
 db.collection("quiz")
   .doc(chapter.toString())
   .get()
@@ -59,6 +61,11 @@ db.collection("quiz")
     if (chapter === 4) {
       $(".piano").show();} else {$(".piano").hide();}
 
+    if (chapter === 13) {
+      $(".sesil-gusaegun").show();
+      $('.image-detail').css('height', 60 + "vh");} else {$(".sesil-gusaegun").hide();
+   }  
+
     if (chapter === 18) {
      $(".history-museum").show();
      $('.image-detail').css('height', 60 + "vh");} else {$(".history-museum").hide();
@@ -92,6 +99,10 @@ db.collection("quiz")
 
       if(chapter === 12) {
         window.location.href='sesil.html';
+      }
+
+      if(chapter === 14) {
+        window.location.href='direction-donyi.html';
       }
 
       });

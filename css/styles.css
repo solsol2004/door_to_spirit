@@ -33,7 +33,9 @@
 
 body {
   font-family: "BMHANNAAir";
+  overscroll-behavior-x: none;
 }
+
 
 input,
 button,
