@@ -5,6 +5,7 @@ let chapter = parseInt(localStorage.getItem("chapter"));
 let directionDeoksuShowed = localStorage.getItem("direction-deoksu-showed");
 let directionSesilShowed = localStorage.getItem("direction-sesil-showed");
 let directionRestShowed = localStorage.getItem("direction-rest-showed");
+let directionDonyiShowed = localStorage.getItem("direction-donyi-showed");
 
 
 
@@ -37,6 +38,12 @@ if(chapter === 14) {
     if(directionRestShowed !== "true"){
       $(".quiz1-background").hide();
       $(".direction-rest").show();
+    }}
+
+if(chapter === 15) {
+    if(directionDonyiShowed !== "true"){
+      $(".quiz1-background").hide();
+      $(".direction-donyi").show();
     }}
 
 

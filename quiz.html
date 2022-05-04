@@ -92,7 +92,7 @@
         </div>
       
 
-        <div class="quiz-context">
+        <div class="quiz-context hidden">
           <img class="quiz-text" src="https://img.wattpad.com/515215e8f0e31abab33bdad46d1be2e1bbcc0a4d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f703874644952486c4d326c6972413d3d2d3930323432373338302e313631386563336564396130363965653635303033303038363438392e676966" />
           </div>
           
@@ -100,6 +100,16 @@
             <audio id="piano-sound" src="assets/피아노.mp3"></audio>
             <i class="fa-solid fa-volume-high fa-3x text-white"></i>
           </button>
+
+        <div class="gurakbu">
+          <img class="gurakbu-text" src="images/gurakbu-buttons.png" />
+          <div class="gurakbu-buttons">
+            <div><button class="gurakbu-buttons_1"><img class="hidden" src="images/서랍.jpg"><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_lt4dife4.json"  background="transparent"  speed="3"   autoplay></lottie-player></button><button class="gurakbu-buttons_2"><img class="hidden" src="images/서랍.jpg"><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_lt4dife4.json"  background="transparent"  speed="3"   autoplay> </lottie-player></button><button class="gurakbu-buttons_3"><img class="hidden" src="images/서랍.jpg"><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_lt4dife4.json"  background="transparent"  speed="3"   autoplay> </lottie-player></button></div>
+            <div><button class="gurakbu-buttons_4"><img class="hidden" src="images/서랍.jpg"><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_lt4dife4.json"  background="transparent"  speed="3"   autoplay> </lottie-player></button><button class="gurakbu-buttons_4"><img class="hidden" src="images/서랍.jpg"><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_lt4dife4.json"  background="transparent"  speed="3"   autoplay> </lottie-player></button><button class="gurakbu-buttons_6"><img class="hidden" src="images/서랍.jpg"><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_lt4dife4.json"  background="transparent"  speed="3"   autoplay> </lottie-player></button></div>
+            <div><button class="gurakbu-buttons_6"><img class="hidden" src="images/서랍.jpg"><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_lt4dife4.json"  background="transparent"  speed="3"   autoplay> </lottie-player></button><button class="gurakbu-buttons_8"><img class="hidden" src="images/서랍.jpg"><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_lt4dife4.json"  background="transparent"  speed="3"   autoplay> </lottie-player></button><button class="gurakbu-buttons_9"><img class="hidden" src="images/서랍.jpg"><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_lt4dife4.json"  background="transparent"  speed="3"   autoplay> </lottie-player></button></div>
+           
+          </div>
+        </div>
 
         <div class="quiz-answer">
           <input class="quiz-input" placeholder="정답 입력" style="font-family: NanumSquare; font-weight: 500;" />
@@ -205,6 +215,25 @@
           <span class="marT50">덕수궁 입장을 위한 입장권이 준비되셨나요?</span>
           <button type="button" class="enter marT100 deoksu-ticket-confirmation">입장하기</button>
         </div> 
+    </div>
+
+    <div class="direction-donyi hidden">
+      <div class="confirmation donyi-arrive text-center" >
+        <lottie-player class="padT40 lottie-map" src="https://assets10.lottiefiles.com/packages/lf20_72GGiU.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        <span>충분히 휴식을 취하셨나요?</span>
+        <button type="button" class="enter marT100 rest-finish-confirm">네</button>
+      </div>
+    
+      <div class="confirmation donyi-ticket text-center hidden">
+        <img class="donyi-ticket-text padT50" src="images/donyi-ticket.png" />
+        <button type="button" class="enter donyi-arrive-confirm">다음</button>
+      </div> 
+
+      <div class="confirmation donyi-start text-center hidden" >
+        <lottie-player class="padT40 lottie-map" src="https://assets8.lottiefiles.com/packages/lf20_k0nhf5cn.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        <span>입장권을 받으셨나요? 이제 마지막 혼을 정화해주세요!</span>
+        <button type="button" class="enter marT100 close-direction-donyi">시작</button>
+      </div>
     </div>
 
     

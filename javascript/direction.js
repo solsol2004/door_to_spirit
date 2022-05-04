@@ -13,6 +13,16 @@ $(".deoksu-arrive-confirm").click(function () {
     $(".deoksu-ticket").show(); 
 });
 
+$(".rest-finish-confirm").click(function () {
+    $(".donyi-arrive").hide();
+    $(".donyi-ticket").show(); 
+});
+
+$(".donyi-arrive-confirm").click(function () {
+    $(".donyi-ticket").hide();
+    $(".donyi-start").show(); 
+});
+
 $(".close-direction-deoksu").click(function () {
     $(".direction-deoksu").hide();
     localStorage.setItem("direction-deoksu-showed", true);
@@ -28,5 +38,11 @@ $(".close-sesil").click(function () {
 $(".close-rest").click(function () {
     $(".direction-rest").hide();
     localStorage.setItem("direction-rest-showed", true);
+    location.reload();
+});
+
+$(".close-direction-donyi").click(function () {
+    $(".direction-donyi").hide();
+    localStorage.setItem("direction-donyi-showed", true);
     location.reload();
 });

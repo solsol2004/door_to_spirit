@@ -45,11 +45,23 @@ body {
 }
 
 .quiz-text,
-.sesil-text {
+.sesil-text,
+.donyi-ticket-text {
   object-fit: contain;
   width: 90vw;
   height: 75vh;
   margin-bottom: 7vh;
+}
+
+.donyi-ticket-text {
+  width: 80vw;
+}
+
+.gurakbu-text {
+  object-fit: contain;
+  width: 80vw;
+  height: fit-content;
+  margin: 5vh 0 7vh 0;
 }
 
 .hidden {
@@ -78,3 +90,25 @@ body {
 .wrong-answer span {
   font-family: "BMHANNAAir";
 }
+
+.gurakbu {
+  margin-bottom: 9vh;
+}
+
+.gurakbu-buttons div {
+  margin-bottom: 2vh;
+}
+
+.gurakbu-buttons div button {
+  margin-right: 3vw;
+  width: 25vw;
+  height: 14vh;
+}
+
+.gurakbu-buttons div button img {
+  width: 25vw;
+  height: 14vh;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
