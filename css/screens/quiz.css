@@ -58,7 +58,6 @@ body {
 }
 
 .gurakbu-text {
-  object-fit: contain;
   width: 80vw;
   height: fit-content;
   margin: 5vh 0 7vh 0;
