@@ -151,5 +151,6 @@
 .deoksu-sideway {
   border-radius: 5%;
   width: 85vw;
-  height: fit-content;
+  height: 50vh;
+  object-fit: cover;
 }
