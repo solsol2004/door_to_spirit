@@ -256,7 +256,9 @@ var infowindow = new naver.maps.InfoWindow({
   pixelOffset: new naver.maps.Point(20, -10),
 });
 naver.maps.Event.addListener(marker, "click", function (e) {
-  if (infowindow.getMap())  {
+  if (infowindow.getMap()) {
+    infowindow.close();
+  } else {
     infowindow.open(map, marker);
   }
 });
@@ -294,7 +296,9 @@ var infowindow = new naver.maps.InfoWindow({
   pixelOffset: new naver.maps.Point(20, -10),
 });
 naver.maps.Event.addListener(marker, "click", function (e) {
-  if (infowindow.getMap())  {
+  if (infowindow.getMap()) {
+    infowindow.close();
+  } else {
     infowindow.open(map, marker);
   }
 });
@@ -332,7 +336,9 @@ var infowindow = new naver.maps.InfoWindow({
   pixelOffset: new naver.maps.Point(20, -10),
 });
 naver.maps.Event.addListener(marker, "click", function (e) {
-  if (infowindow.getMap())  {
+  if (infowindow.getMap()) {
+    infowindow.close();
+  } else {
     infowindow.open(map, marker);
   }
 });
