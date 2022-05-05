@@ -154,7 +154,7 @@ db.collection("quiz")
 
     $(".quiz-enter").click(function () {
       //정답 맞을 때 //
-      if($(".quiz-input").val().toUpperCase()===result.data().answer){
+      if($(".quiz-input").val().toUpperCase().trim()===result.data().answer){
         localStorage.setItem("chapter", ++chapter);
         localStorage.setItem("hint-clicked", false);
         localStorage.setItem("answer-clicked", false);
