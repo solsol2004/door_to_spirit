@@ -58,3 +58,19 @@ $(".close-river").click(function () {
     localStorage.setItem("direction-river-showed", true);
     location.reload();
 });
+
+$(".blue-yellow").click(function () {
+    $(".quiz-input").val("DEATH");
+});
+
+$(".blue-red").click(function () {
+    $(".quiz-input").val("LIFE");
+});
+
+$(".yellow-red").click(function () {
+    $(".quiz-input").val("BIRTH");
+});
+
+$(".blue-green").click(function () {
+    $(".quiz-input").val("MEMORY");
+});

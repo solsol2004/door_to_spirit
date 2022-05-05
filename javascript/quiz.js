@@ -77,7 +77,12 @@ if(chapter === 22) {
       $(".quiz1-background").hide();
       $(".direction-river").show();
       riverMap();
+    } else {
+      $(".quiz-context").hide();
+    $(".chapter-22").show();
     }}
+
+
 
 db.collection("quiz")
   .doc(chapter.toString())

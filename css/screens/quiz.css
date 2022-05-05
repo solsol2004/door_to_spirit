@@ -132,3 +132,25 @@ body {
   right: 0;
   text-align: center;
 }
+
+
+.chapter22-text {
+  width: 85vw;
+  height: 40vh;
+  object-fit: contain;
+  margin: 5vh 0 3vh 0;
+}
+
+
+
+
+.chapter22-buttons div button img {
+  width: 120px;
+  height: 140px;
+  object-fit: contain;
+  margin: 0 5vw 3vh 5vw
+}
+
+.chapter22-buttons {
+  margin-bottom: 3vh;
+}
