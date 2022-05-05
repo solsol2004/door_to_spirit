@@ -104,9 +104,9 @@ db.collection("quiz")
     $(".answer-description-text").html(`✔️ ${result.data().hintAnswer}`);
     lat = parseFloat(result.data().lat);
     long = parseFloat(result.data().long);
-    mapTitle = result.data().mapTitle;
-    mapAddress = result.data().mapAddress;
     map();
+    $(".map-title").html(result.data().mapTitle);
+    $(".map-description").html(`📍 ${result.data().mapAddress}`);
 
     if (chapter > 1) {
       $(".map-title").text(mapTitle);
