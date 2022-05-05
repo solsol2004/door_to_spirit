@@ -82,6 +82,9 @@ if(chapter === 22) {
     $(".chapter-22").show();
     }}
 
+   
+if(chapter === 24) {
+  window.location.href = "final.html";}
 
 
 
