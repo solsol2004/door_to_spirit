@@ -108,6 +108,10 @@ db.collection("quiz")
     mapAddress = result.data().mapAddress;
     map();
 
+    if (chapter > 1) {
+      $(".map-title").text(mapTitle);
+      $(".map-description").text(`📍 ${mapAddress}`);}
+
     if(chapter <6){
       $(".quiz1-background").css({"background-image":"url(images/7017.jpg)"});
     }
@@ -158,10 +162,6 @@ db.collection("quiz")
         localStorage.setItem("chapter", ++chapter);
         localStorage.setItem("hint-clicked", false);
         localStorage.setItem("answer-clicked", false);
-
-        if (chapter > 1) {
-        $(".map-title").text(mapTitle);
-        $(".map-description").text(`📍 ${mapAddress}`);}
 
         location.reload();
       } 
