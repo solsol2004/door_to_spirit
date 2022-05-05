@@ -13,7 +13,8 @@
 
 #maru-direction img{
   width:80vw; 
-  height:fit-content;
+  height:80vh;
+  object-fit: contain;
 }
 
 .confirmation {
