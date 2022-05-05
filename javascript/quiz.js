@@ -84,6 +84,8 @@ if(chapter === 22) {
 
 
 
+
+
 db.collection("quiz")
   .doc(chapter.toString())
   .get()
@@ -139,6 +141,13 @@ db.collection("quiz")
      $(".history-museum").show();
      $('.image-detail').css('height', 60 + "vh");} else {$(".history-museum").hide();
    }
+
+   if(chapter === 23) {
+    $(".chapter-23").show();
+    $(".quiz1-background").css({"background-image":"url(images/background-forloading.jpg)"});
+    $('body').css('height', 220 + "vh");
+    $('quiz1-background').css('height', 220 + "vh");
+  }
 
     $(".quiz-enter").click(function () {
       //정답 맞을 때 //

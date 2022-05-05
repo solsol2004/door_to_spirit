@@ -144,7 +144,8 @@ body {
 
 
 
-.chapter22-buttons div button img {
+.chapter22-buttons div button img,
+.chapter23-buttons div button img {
   width: 120px;
   height: 140px;
   object-fit: contain;

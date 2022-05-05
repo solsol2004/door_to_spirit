@@ -74,3 +74,19 @@ $(".yellow-red").click(function () {
 $(".blue-green").click(function () {
     $(".quiz-input").val("MEMORY");
 });
+
+$(".haechi-face-1").click(function () {
+    $(".quiz-input").val("LAST");
+});
+
+$(".haechi-face-2").click(function () {
+    $(".quiz-input").val("STAGE");
+});
+
+$(".haechi-face-3").click(function () {
+    $(".quiz-input").val("FINAL");
+});
+
+$(".haechi-face-4").click(function () {
+    $(".quiz-input").val("CHANCE");
+});
