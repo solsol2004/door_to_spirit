@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>귀문관</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="fit-height">
+    <div class="call-background incoming-call">
+      <div class="call-top text-center">
+        <h1>해치 감독관님</h1>
+        <h1 class="marT20">연결 중...</h1>
+      </div>
+      <div class="text-center call-buttons">
+        <button class="accept-call">
+            <audio id="call-sound">
+                <source src="assets/2차 괴물 2.mp3"></source>
+            </audio>
+            <img src="images/응답.png"/>
+          </button>
+       <button><img src="images/거절.png"/></button>
+    </div>
+  </div>
+
+  <div class="call-background calling hidden">
+    <div class="incoming-call-top text-center">
+      <h1>해치 감독관님</h1>
+      <img src="images/call-display-buttons.png"/>
+    </div>
+    <div class="text-center">
+        <img class="dont-quit-alert" src="images/거절.png"/></button>
+  </div>
+</div>
+
+    <!-- Javascript -->
+    <script src="jquery/jquery.min.js"></script>
+    <script>
+     var callSound = document.getElementById('call-sound');
+         $(".accept-call").click(function () {
+            alert("볼륨을 높여주세요!");
+            callSound.play();
+            $(".incoming-call").hide();
+            $(".calling").show();
+         });
+
+         $("audio").on("ended", function() {
+            localStorage.setItem("direction-call-showed", true);
+            window.location.href = "quiz.html";
+        });
+
+        $(".dont-quit-alert").click(function () {
+            alert("음성을 끝까지 들어주세요")
+        });
+
+    </script>
+  </body>
+</html>

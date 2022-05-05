@@ -52,3 +52,9 @@ $(".close-train").click(function () {
     localStorage.setItem("direction-train-showed", true);
     location.reload();
 });
+
+$(".close-river").click(function () {
+    $(".direction-river").hide();
+    localStorage.setItem("direction-river-showed", true);
+    location.reload();
+});

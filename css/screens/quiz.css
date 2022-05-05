@@ -64,6 +64,13 @@ body {
   margin: 5vh 0 7vh 0;
 }
 
+.river-text {
+  width: 85vw;
+  height: 40vh;
+  object-fit: contain;
+  margin: 5vh 0 7vh 0;
+}
+
 .hidden {
   display: none;
 }
@@ -114,3 +121,14 @@ body {
 }
 
 
+.direction-river-center {
+  position: relative;
+}
+
+#river-map {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

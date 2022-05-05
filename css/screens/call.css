@@ -1,0 +1,47 @@
+.fit-height {
+    height: 100vh;
+}
+
+
+.call-background {
+    background-image: url("../../images/a244f5f2-ad91-43eb-9516-29758222bb6b.png");
+    background-size: cover;
+    background-position: center top 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+  }
+
+.call-top,
+.incoming-call-top {
+    font-family: "NanumSquare";
+}
+
+.incoming-call-top h1 {
+    font-size: 5.5vw;
+    padding-top: 15vh;
+}
+
+
+.incoming-call-top img {
+ padding: 10vh 0 17vh 0;
+}
+
+.call-top h1:first-child {
+    padding-top: 9vh;
+    font-size: 5.5vw;
+}
+
+.call-top h1:nth-child(2) {
+    font-size: 4.6vw;
+}
+
+.call-buttons {
+    margin-top: 55vh;
+}
+
+.call-buttons button {
+    margin: 0 15vw 0 15vw;
+}
+

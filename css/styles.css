@@ -11,6 +11,7 @@
 @import "screens/intro.css";
 @import "screens/haechi.css";
 @import "screens/quiz.css";
+@import "screens/call.css";
 
 @font-face {
   font-family: "BMHANNAAir";

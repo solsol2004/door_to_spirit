@@ -7,6 +7,8 @@ let directionSesilShowed = localStorage.getItem("direction-sesil-showed");
 let directionRestShowed = localStorage.getItem("direction-rest-showed");
 let directionDonyiShowed = localStorage.getItem("direction-donyi-showed");
 let directionTrainShowed = localStorage.getItem("direction-train-showed");
+let directionCallShowed = localStorage.getItem("direction-call-showed");
+let directionRiverShowed = localStorage.getItem("direction-river-showed");
 
 
 
@@ -67,6 +69,15 @@ if(chapter === 21) {
     $(".direction-train").show();
     trainMap();
   }}
+
+if(chapter === 22) {
+  if(directionCallShowed !== "true"){
+    window.location.href = "phone.html";
+    } else if (directionCallShowed === "true" && directionRiverShowed !== "true") {
+      $(".quiz1-background").hide();
+      $(".direction-river").show();
+      riverMap();
+    }}
 
 db.collection("quiz")
   .doc(chapter.toString())
@@ -251,6 +262,44 @@ var contentString = [
   "   21번 문제 장소</h3>",
   '<p class="map-description">',
   "   📍종로구 신문로2가 1-15",
+  "   </p>",
+  "</div>",
+].join("");
+var infowindow = new naver.maps.InfoWindow({
+  content: contentString,
+  maxWidth: 140,
+  borderColor: "#606060e6",
+  borderWidth: 1,
+  borderStyle: "double",
+  backgroundColor: "white",
+  padding: 3,
+  anchorColor: "white",
+  pixelOffset: new naver.maps.Point(20, -10),
+});
+naver.maps.Event.addListener(marker, "click", function (e) {
+  if (infowindow.getMap())  {
+    infowindow.open(map, marker);
+  }
+});
+}
+
+function riverMap(){
+  var HOME_PATH = window.HOME_PATH || ".";
+var riverSpot = new naver.maps.LatLng(37.56919300, 126.97754600),
+  map = new naver.maps.Map("river-map", {
+    center: riverSpot,
+    zoom: 16,
+  }),
+  marker = new naver.maps.Marker({
+    map: map,
+    position: riverSpot,
+  });
+var contentString = [
+  '<div class="iw_inner">',
+  '<h3 class="map-title">',
+  "   비밀의 장소</h3>",
+  '<p class="map-description">',
+  "   📍중구 청계광장 부근",
   "   </p>",
   "</div>",
 ].join("");
