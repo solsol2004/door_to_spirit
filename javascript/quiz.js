@@ -148,8 +148,8 @@ db.collection("quiz")
    if(chapter === 23) {
     $(".chapter-23").show();
     $(".quiz1-background").css({"background-image":"url(images/background-forloading.jpg)"});
-    $('body').css('height', 220 + "vh");
-    $('quiz1-background').css('height', 220 + "vh");
+    $('body').css('height', 190 + "vh");
+    $('quiz1-background').css('height', 190 + "vh");
   }
 
     $(".quiz-enter").click(function () {
