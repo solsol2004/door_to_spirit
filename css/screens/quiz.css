@@ -154,3 +154,21 @@ margin-bottom: 7vh;
 .chapter22-buttons {
   margin-bottom: 3vh;
 }
+
+
+.donyi-arrive {
+  position: relative;
+}
+
+.donyi-arrive lottie-player {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.donyi-arrive span {
+  display: inline-block;
+  margin-top: 60vh;
+}
