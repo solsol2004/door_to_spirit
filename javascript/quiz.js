@@ -105,8 +105,8 @@ db.collection("quiz")
     lat = parseFloat(result.data().lat);
     long = parseFloat(result.data().long);
     map();
-    $(".map-title").html(result.data().mapTitle);
-    $(".map-description").html(`📍 ${result.data().mapAddress}`);
+    $(".map-title").html("hi");
+    $(".map-description").html("hola");
 
     if (chapter > 1) {
       $(".map-title").text(mapTitle);
