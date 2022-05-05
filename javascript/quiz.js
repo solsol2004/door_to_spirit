@@ -108,9 +108,6 @@ db.collection("quiz")
     $(".map-title").html("hi");
     $(".map-description").html("hola");
 
-    if (chapter > 1) {
-      $(".map-title").text(mapTitle);
-      $(".map-description").text(`📍 ${mapAddress}`);}
 
     if(chapter <6){
       $(".quiz1-background").css({"background-image":"url(images/7017.jpg)"});
