@@ -43,7 +43,8 @@
   background-color: rgb(255, 255, 255);
   margin-bottom: 1rem;
   color: black;
-  font-weight: 200;
+  font-weight: 500;
+  font-family: NanumSquare;
 }
 
 .quiz-enter {
@@ -57,4 +58,5 @@
   height: 30px;
   border: none;
   text-decoration: underline;
+  font-family: NanumSquare;
 }

@@ -10,7 +10,8 @@ let directionTrainShowed = localStorage.getItem("direction-train-showed");
 let directionCallShowed = localStorage.getItem("direction-call-showed");
 let directionRiverShowed = localStorage.getItem("direction-river-showed");
 
-
+//불이 보였는 지 확인법//
+let fireShowed = localStorage.getItem("fire-showed");
 
 
 //Firebase//
@@ -32,10 +33,16 @@ window.onload = function() {
 
 }
 
+if(chapter === 2) {
+  if(fireShowed !== "true"){
+  window.location.href = "fire.html";
+}}
+
+
 if(chapter === 6) {
   if(directionDeoksuShowed !== "true"){
-  $(".quiz1-background").hide();
-  $(".direction-deoksu").show();
+    window.location.href = "fire.html";
+    $(".red-fire-page").show();
 }}
 
 if(chapter === 12) {

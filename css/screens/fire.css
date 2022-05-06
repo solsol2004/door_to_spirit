@@ -1,0 +1,46 @@
+.fire-background {
+    position: relative;
+}
+
+.brush {
+    width: 330px;
+    height: 330px;
+    object-fit: stretch;
+    z-index: 0;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10vh
+}
+
+.fire-background lottie-player {
+    z-index: 20;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10vh
+}
+
+.fire-background-text {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 63vh
+}
+
+.fire-background-text h3:first-child {
+    margin-bottom: 1.5vh;
+}
+
+.fire-background-text h3:nth-child(2) {
+    margin-bottom: 9vh;
+}
+
+.story {
+    width: 86vw;
+    height: 80vh;
+    object-fit: contain;
+}
