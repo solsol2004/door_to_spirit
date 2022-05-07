@@ -60,7 +60,7 @@ if(chapter === 12) {
     $(".quiz1-background").hide();
     $(".direction-sesil").show();
     sesilMap();
-    $(".map-link").attr("src", "https://m.place.naver.com/place/1644478135/home");
+    $(".map-link").attr("src", "https://m.place.naver.com/place/1644478135/location?subtab=location");
   }}
 
 
@@ -95,8 +95,7 @@ if(chapter === 21) {
     $(".quiz1-background").hide();
     $(".direction-train").show();
     trainMap();
-    $(".map-link").attr("src", "https://m.map.naver.com/search2/search.naver?query=%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%8B%A0%EB%AC%B8%EB%A1%9C2%EA%B0%80%201-15&sm=hty&style=v5");
-    }}
+    $(".map-link").attr("src", "https://m.map.naver.com/search2/search.naver?query=%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%8B%A0%EB%AC%B8%EB%A1%9C2%EA%B0%80%201-15&sm=hty&style=v5#/map")}}
 
 if(chapter === 22) {
   if(directionCallShowed !== "true"){
@@ -110,7 +109,7 @@ if(chapter === 22) {
       $(".quiz1-background").hide();
       $(".direction-river").show();
       riverMap();
-      $(".map-link").attr("src", "https://m.place.naver.com/place/13543936/home");
+      $(".map-link").attr("src", "https://m.map.naver.com/search2/search.naver?query=%EC%B2%AD%EA%B3%84%EA%B4%91%EC%9E%A5&sm=hty&style=v5#/map/1/13543936");
     } else {
       $(".quiz-context").hide();
     $(".chapter-22").show();
