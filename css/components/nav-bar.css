@@ -163,8 +163,9 @@
   background-color: #00C73C;
   margin-bottom: 1rem;
   color: rgb(249, 249, 249);
-  font-weight: 500;
+  font-weight: 600;
   font-family: NanumSquare;
+  font-size: 13px;
   z-index: 200;
   position: absolute;
   margin:0 auto;
