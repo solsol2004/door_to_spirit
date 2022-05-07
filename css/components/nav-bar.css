@@ -101,6 +101,7 @@
   border: 1px double #ffb005e6;
   border-radius: 3vh;
   padding: 2vh;
+  position: relative;
 }
 
 .mission-map {
@@ -153,4 +154,21 @@
   width: 85vw;
   height: 50vh;
   object-fit: cover;
+}
+
+.naver-map-button {
+  width: 160px;
+  height: 45px;
+  border-radius: 10vh;
+  background-color: #00C73C;
+  margin-bottom: 1rem;
+  color: rgb(249, 249, 249);
+  font-weight: 500;
+  font-family: NanumSquare;
+  z-index: 200;
+  position: absolute;
+  margin:0 auto;
+  left: 0;
+  right: 0;
+  top:7%;
 }

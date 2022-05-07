@@ -60,6 +60,7 @@ if(chapter === 12) {
     $(".quiz1-background").hide();
     $(".direction-sesil").show();
     sesilMap();
+    $(".map-link").attr("src", "https://m.place.naver.com/place/1644478135/home");
   }}
 
 
@@ -94,7 +95,8 @@ if(chapter === 21) {
     $(".quiz1-background").hide();
     $(".direction-train").show();
     trainMap();
-  }}
+    $(".map-link").attr("src", "https://m.map.naver.com/search2/search.naver?query=%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%8B%A0%EB%AC%B8%EB%A1%9C2%EA%B0%80%201-15&sm=hty&style=v5");
+    }}
 
 if(chapter === 22) {
   if(directionCallShowed !== "true"){
@@ -108,6 +110,7 @@ if(chapter === 22) {
       $(".quiz1-background").hide();
       $(".direction-river").show();
       riverMap();
+      $(".map-link").attr("src", "https://m.place.naver.com/place/13543936/home");
     } else {
       $(".quiz-context").hide();
     $(".chapter-22").show();
@@ -133,6 +136,7 @@ db.collection("quiz")
     $(".image-detail-text").html(`🔎 ${result.data().imageText}`);
     $(".hint-description-text").html(`💡 ${result.data().hint}`);
     $(".answer-description-text").html(`✔️ ${result.data().hintAnswer}`);
+    $(".map-link").attr("href", result.data().mapLink);
     lat = parseFloat(result.data().lat);
     long = parseFloat(result.data().long);
     map();
@@ -223,33 +227,6 @@ var missonSpot = new naver.maps.LatLng(lat, long),
     map: map,
     position: missonSpot,
   });
-var contentString = [
-  '<div class="iw_inner">',
-  '<h3 class="map-title">',
-  "   1번 문제 장소</h3>",
-  '<p class="map-description">',
-  "   📍중구 퇴계로 37-2",
-  "   </p>",
-  "</div>",
-].join("");
-var infowindow = new naver.maps.InfoWindow({
-  content: contentString,
-  maxWidth: 140,
-  borderColor: "#606060e6",
-  borderWidth: 1,
-  borderStyle: "double",
-  backgroundColor: "white",
-  padding: 3,
-  anchorColor: "white",
-  pixelOffset: new naver.maps.Point(20, -10),
-});
-naver.maps.Event.addListener(marker, "click", function (e) {
-  if (infowindow.getMap()) {
-    infowindow.close();
-  } else {
-    infowindow.open(map, marker);
-  }
-});
 }
 
 function sesilMap(){
@@ -263,33 +240,7 @@ var sesilSpot = new naver.maps.LatLng(37.56670600, 126.97596600),
     map: map,
     position: sesilSpot,
   });
-var contentString = [
-  '<div class="iw_inner">',
-  '<h3 class="map-title">',
-  "   12번 문제 장소</h3>",
-  '<p class="map-description">',
-  "   📍중구 세종대로19길 16",
-  "   </p>",
-  "</div>",
-].join("");
-var infowindow = new naver.maps.InfoWindow({
-  content: contentString,
-  maxWidth: 140,
-  borderColor: "#606060e6",
-  borderWidth: 1,
-  borderStyle: "double",
-  backgroundColor: "white",
-  padding: 3,
-  anchorColor: "white",
-  pixelOffset: new naver.maps.Point(20, -10),
-});
-naver.maps.Event.addListener(marker, "click", function (e) {
-  if (infowindow.getMap()) {
-    infowindow.close();
-  } else {
-    infowindow.open(map, marker);
-  }
-});
+
 }
 
 function trainMap(){
@@ -303,34 +254,8 @@ var trainSpot = new naver.maps.LatLng(37.57002400, 126.97596600),
     map: map,
     position: trainSpot,
   });
-var contentString = [
-  '<div class="iw_inner">',
-  '<h3 class="map-title">',
-  "   21번 문제 장소</h3>",
-  '<p class="map-description">',
-  "   📍종로구 신문로2가 1-15",
-  "   </p>",
-  "</div>",
-].join("");
-var infowindow = new naver.maps.InfoWindow({
-  content: contentString,
-  maxWidth: 140,
-  borderColor: "#606060e6",
-  borderWidth: 1,
-  borderStyle: "double",
-  backgroundColor: "white",
-  padding: 3,
-  anchorColor: "white",
-  pixelOffset: new naver.maps.Point(20, -10),
-});
-naver.maps.Event.addListener(marker, "click", function (e) {
-  if (infowindow.getMap()) {
-    infowindow.close();
-  } else {
-    infowindow.open(map, marker);
-  }
-});
 }
+
 
 function riverMap(){
   var HOME_PATH = window.HOME_PATH || ".";
@@ -343,32 +268,5 @@ var riverSpot = new naver.maps.LatLng(37.56919300, 126.97754600),
     map: map,
     position: riverSpot,
   });
-var contentString = [
-  '<div class="iw_inner">',
-  '<h3 class="map-title">',
-  "   비밀의 장소</h3>",
-  '<p class="map-description">',
-  "   📍중구 청계광장 부근",
-  "   </p>",
-  "</div>",
-].join("");
-var infowindow = new naver.maps.InfoWindow({
-  content: contentString,
-  maxWidth: 140,
-  borderColor: "#606060e6",
-  borderWidth: 1,
-  borderStyle: "double",
-  backgroundColor: "white",
-  padding: 3,
-  anchorColor: "white",
-  pixelOffset: new naver.maps.Point(20, -10),
-});
-naver.maps.Event.addListener(marker, "click", function (e) {
-  if (infowindow.getMap()) {
-    infowindow.close();
-  } else {
-    infowindow.open(map, marker);
-  }
-});
 }
 
