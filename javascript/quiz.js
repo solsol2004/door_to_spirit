@@ -12,6 +12,7 @@ let directionRiverShowed = localStorage.getItem("direction-river-showed");
 
 //불이 보였는 지 확인법//
 let fireShowed = localStorage.getItem("fire-showed");
+let lottieFireSrc = "https://assets8.lottiefiles.com/packages/lf20_myxwinqq.json"
 
 
 //Firebase//
@@ -34,16 +35,25 @@ window.onload = function() {
 }
 
 if(chapter === 2) {
-  if(fireShowed !== "true"){
-  window.location.href = "fire.html";
-}}
+  $(".quiz1-background").hide();
+  $(".black-fire-page").show();
+  $(".black-red-fire-text").show();
+}
 
 
 if(chapter === 6) {
   if(directionDeoksuShowed !== "true"){
-    window.location.href = "fire.html";
-    $(".red-fire-page").show();
-}}
+    $(".quiz1-background").hide();
+    $(".lottie-fire-page").show();
+    $(".lottie-red-fire").show();
+    $(".first-story-show").show();
+  }}
+
+if(chapter === 8) {
+  $(".quiz1-background").hide();
+  $(".black-fire-page").show();
+  $(".black-pink-fire-text").show();
+}
 
 if(chapter === 12) {
   if(directionSesilShowed !== "true"){
@@ -56,7 +66,11 @@ if(chapter === 12) {
 if(chapter === 14) {
     if(directionRestShowed !== "true"){
       $(".quiz1-background").hide();
-      $(".direction-rest").show();
+      $(".fire-active-text h3:first-child").text("네가 나를 깨워준거야?");
+      $(".fire-active-text h3:nth-child(2)").text("생각났어! 정말 순수했었고 행복했었던 그때 그 기억이.");
+      $(".lottie-fire-page").show();
+      $(".lottie-pink-fire").show();
+      $(".second-story-show").show();
     }}
 
 if(chapter === 15) {
@@ -65,8 +79,13 @@ if(chapter === 15) {
       $(".direction-donyi").show();
     }}
 
+if(chapter === 16) {
+    $(".quiz1-background").hide();
+    $(".black-fire-page").show();
+    $(".black-green-fire-text").show();
+}
 if(chapter === 20) {
-    $(".quiz-context").hide();
+$(".quiz-context").hide();
     $(".gurakbu").show();
 }
 
@@ -79,7 +98,12 @@ if(chapter === 21) {
 
 if(chapter === 22) {
   if(directionCallShowed !== "true"){
-    window.location.href = "phone.html";
+    $(".quiz1-background").hide();
+    $(".fire-active-text h3:first-child").text("뭐지? 네가 내 기억을 찾아준거야?");
+    $(".fire-active-text h3:nth-child(2)").text("뭔가 엄청나게 신나고 무모했던 것 같은 기억이 났어!");
+      $(".lottie-fire-page").show();
+      $(".lottie-green-fire").show();
+      $(".third-story-show").show();
     } else if (directionCallShowed === "true" && directionRiverShowed !== "true") {
       $(".quiz1-background").hide();
       $(".direction-river").show();
@@ -119,9 +143,9 @@ db.collection("quiz")
     if(chapter <6){
       $(".quiz1-background").css({"background-image":"url(images/7017.jpg)"});
     }
-     else if(chapter >=6 && chapter <15) {
+     else if(chapter >=6 && chapter <14) {
       $(".quiz1-background").css({"background-image":"url(images/덕수궁.jpg)"}); 
-    } else if(chapter >= 15) {$(".quiz1-background").css({"background-image":"url(images/돈의문.jpg)"}); }
+    } else if(chapter >= 14) {$(".quiz1-background").css({"background-image":"url(images/돈의문.jpg)"}); }
     
 
     if (chapter < 7) {

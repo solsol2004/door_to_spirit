@@ -82,11 +82,11 @@
         <div class="title">제&nbsp;&nbsp;&nbsp;장</div>
 
         <div class="fire-status">
-          <button><img class="red-fire" src="images/fire/red_1.png" /></button>
-          <button>
+          <button id="red-fire-story"><img class="red-fire" src="images/fire/red_1.png" /></button>
+          <button id="pink-fire-story">
             <img class="pink-fire" src="images/fire/pink_0.png" />
           </button>
-          <button>
+          <button id="green-fire-story">
             <img class="green-fire" src="images/fire/green_0.png" />
           </button>
         </div>
@@ -239,7 +239,7 @@
       </div>
     
       <div class="confirmation donyi-ticket text-center hidden">
-        <img class="donyi-ticket-text padT20" src="images/donyi-ticket.png" />
+        <img class="donyi-ticket-text" src="images/donyi-ticket.png" />
         <button type="button" class="enter donyi-arrive-confirm">다음</button>
       </div> 
 
@@ -295,6 +295,49 @@
         </div>
     </div>
 
+    <div class="fire-story">
+      <div class="black-fire-page fire-background hidden">
+        <img class="brush" src="images/brush.png" />
+        <lottie-player class="lottie-map" src="https://assets5.lottiefiles.com/packages/lf20_y6barpsd.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        <div class="fire-background-text black-red-fire-text text-center hidden">
+            <h3>근처에 <span class="red">첫 번째</span> 검은 혼이 나타난 거 같아요!</h3>
+            <h3>문제를 풀어 검은 혼의 이야기를 들어주세요</h3>
+            <button type="button" class="fire-enter enter">확인</button>
+        </div>  
+        <div class="fire-background-text black-pink-fire-text text-center hidden">
+          <h3><span class="pink">두 번째</span> 검은 혼이 나타났어요</h3>
+          <h3>마법학교에서 배운 과목들로 검은 혼을 정화해주세요!</h3>
+          <button type="button" class="fire-enter enter">확인</button>
+      </div>
+      <div class="fire-background-text black-green-fire-text text-center hidden">
+        <h3>드디어 마지막 검은 혼이 나타났어요!</h3>
+        <h3><span class="green">세 번째</span> 검은 혼을 정화하고 귀문관 시험을 통과하세요</h3>
+        <button type="button" class="fire-enter enter">확인</button>
+    </div>
+    </div>
+    
+    <div class="fire-background lottie-fire-page hidden">
+        <img class="brush" src="images/brush.png" />
+        <lottie-player class="lottie-map lottie-red-fire hidden" src="https://assets9.lottiefiles.com/packages/lf20_pu83ip46.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        <lottie-player class="lottie-map lottie-pink-fire hidden" src="https://assets8.lottiefiles.com/packages/lf20_myxwinqq.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        <lottie-player class="lottie-map lottie-green-fire hidden" src="https://assets4.lottiefiles.com/packages/lf20_vsacmts5.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        <div class="fire-active-text text-center">
+            <h3>"정말 고마워 너 덕분에 그때의 따듯했던 기억이 생각났어"</h3>
+            <h3>"너라면, 다른 검은 혼들도 다시 본래의 모습으로 되돌려 줄 수 있을 거야!"</h3>
+            <button type="button" class="first-story-show enter hidden">확인</button>
+            <button type="button" class="second-story-show enter hidden">확인</button>
+            <button type="button" class="third-story-show enter hidden">확인</button>
+        </div> 
+      </div>
+    
+    <div class="fire-ending-story text-center hidden">
+          <img class="story" src="images/첫번째 이야기.png" />
+          <button type="button" class="close-first-fire enter hidden">닫기</button>
+          <button type="button" class="close-second-fire enter hidden">닫기</button>
+          <button type="button" class="close-third-fire enter hidden">닫기</button>
+      </div>
+
+    </div>
 
     
 
@@ -317,6 +360,8 @@
     <script src="javascript/nav-bar.js"></script>
     <script src="javascript/direction.js"></script>
     <script src="javascript/gurakbu-buttons.js"></script>
+    <script src="javascript/fire.js"></script>
+    
 
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
