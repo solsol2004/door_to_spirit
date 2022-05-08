@@ -27,6 +27,8 @@
     object-fit: contain;
 }
 
+
+
 .reborn-animation {
     position: relative;
 }
@@ -64,4 +66,30 @@
     right: 0;
     top: 85vh;
     bottom: 0;
+}
+
+.flip-coin-img {
+  object-fit: contain;
+  width: 97vw;
+  height: 80vh;
+  margin: 7vh 0 10vh 0;
+}
+
+.very-last-haechi {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.very-last-haechi-img {
+  object-fit: contain;
+  width: 70vw;
+  height:70vh;
+  margin: 0 0 7vh 0;
+}
+
+.very-final-word-video {
+    width: 100vw;
+    height: 80vh;
+    object-fit: contain;
 }

@@ -92,3 +92,18 @@ $(".quiz-enter").click(function () {
      $(".close-animal").click(function () {
         $(".reborn-animal").hide();
         $(".flip-coin").show();});
+    
+    $(".close-flip-coin").click(function () {
+        $(".flip-coin").hide();
+        $('body').css('height', 100 + "vh");
+        $('body').css('width', 100 + "vw");
+        $('.very-last-haechi').delay(300).fadeIn('slow');
+        $('.very-final-word-video').playbackRate = 0.5; 
+        setTimeout(function(){
+            $('.end-test').show();
+         }, 10000);
+    } );
+
+    $(".end-test").click(function () {
+        window.location.href = "menu.html";
+    })
