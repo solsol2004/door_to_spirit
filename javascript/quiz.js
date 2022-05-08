@@ -117,7 +117,9 @@ if(chapter === 22) {
 
    
 if(chapter === 24) {
-  window.location.href = "final.html";}
+  window.location.href = "final.html";
+  localStorage.setItem("hint-clicked", false);
+  localStorage.setItem("answer-clicked", false);}
 
 
 
@@ -189,7 +191,7 @@ db.collection("quiz")
 
     $(".quiz-enter").click(function () {
       //정답 맞을 때 //
-      if($(".quiz-input").val().toUpperCase().trim()===result.data().answer){
+      if($(".quiz-input").val().toUpperCase().replace(/ /g, '')===result.data().answer){
         localStorage.setItem("chapter", ++chapter);
         localStorage.setItem("hint-clicked", false);
         localStorage.setItem("answer-clicked", false);

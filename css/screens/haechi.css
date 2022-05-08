@@ -3,7 +3,9 @@
 #seventh-page,
 #eigth-page,
 .direction-page,
-.final-first {
+.final-first,
+.haechi-final-words,
+.haechi-final-words2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +43,9 @@
 #haechi2-says,
 #haechi3-says,
 #haechi4-says,
-#haechi5-says {
+#haechi5-says,
+#haechi6-says,
+#haechi7-says {
   display: flex;
   flex-direction: column;
   font-size: 3.5vw;
@@ -55,7 +59,9 @@
 #haechi2-says span,
 #haechi3-says span,
 #haechi4-says span,
-#haechi5-says span {
+#haechi5-says span,
+#haechi6-says h3,
+#haechi7-says h3 {
   margin-bottom: 1.5vh;
 }
 
@@ -71,6 +77,14 @@
 #haechi2-says span:nth-child(4),
 #haechi2-says span:nth-child(5) {
   margin-bottom: 4vh;
+}
+
+#haechi6-says h3 {
+  font-size: 3.1vw;
+}
+
+#haechi7-says h3 {
+  font-size: 3.1vw;
 }
 
 .small-haechi {

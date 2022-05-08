@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "firestore-export-import": "^1.1.0",
     "jquery": "^3.6.0"
-  }
+  },
+  "name": "door_to_spirit",
+  "version": "1.0.0",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solsol2004/door_to_spirit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solsol2004/door_to_spirit/issues"
+  },
+  "homepage": "https://github.com/solsol2004/door_to_spirit#readme",
+  "description": ""
 }

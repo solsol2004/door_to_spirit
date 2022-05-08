@@ -1,0 +1,67 @@
+
+
+.final-quiz-text {
+    object-fit: contain;
+    width: 95vw;
+    height: 80vh;
+    margin: 15vh 0 15vh 0;
+}
+
+.hint-answersheet {
+    width: 85vw;
+    height: 50vh;
+    object-fit: contain;
+    border-radius: 5%;
+    margin-bottom: 3vh;
+}
+
+.animation-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.final-word-video {
+    width: 100vw;
+    height: 98vh;
+    object-fit: contain;
+}
+
+.reborn-animation {
+    position: relative;
+}
+
+.reborn-animation div {
+    position: absolute;
+    margin:0 auto;
+    left: 0;
+    right: 0;
+    top: 40vh;
+    bottom: 0;
+    color: rgb(222, 255, 101);
+    font-size: 4vw;
+
+}
+
+.reborn-animation lottie-player {
+    position: absolute;
+    margin:0 auto;
+    left: 0;
+    right: 0;
+    top: 8vh;
+    bottom: 0;
+    opacity: 60%;
+    width: 95vw;
+    height: 70vh;
+    object-fit: contain;
+}
+
+
+.reborn-animation button {
+    position: absolute;
+    margin:0 auto;
+    left: 0;
+    right: 0;
+    top: 85vh;
+    bottom: 0;
+}

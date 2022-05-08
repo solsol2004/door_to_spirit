@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>마법도술학교-귀문관</title>
+
+    <link
+      rel="shortcut icon"
+      href="images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/screens/final.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
   </head>
 
+  <body>
   <div class="final-first main-background">
     <img class="big-haechi" src="images/파랑 해치.png" />
     <div id="haechi5-says">
@@ -19,16 +35,140 @@
       </div>
       <span>답들에 숨겨진 비밀을 풀어 마지막 서술형 답을 작성해주게.</span>
     </div>
-    <button class="enter">다음</button>
+    <button class="enter show-last-quiz">다음</button>
   </div>
 
-  
-   <!-- Javascript -->
-   <script src="javascript/haechi.js"></script>
+  <div class="quiz1-background hidden">
+      
+    <div class="nav-bar">
+      <div class="nav-bar-top">
+        <button class="hint-select-button">
+          <i class="fa-regular fa-lightbulb fa-2x"></i>
+        </button>
+      </div>
+      <div class="nav-bar-details center hidden">
+        <div class="hint-selection hint-toggle hidden text-center">
+          <button class="hint-button">
+            <img class="select-hint" src="images/hint-white.png" />
+          </button>
+          <button class="answer-button">
+            <img
+              class="select-answer-inactive"
+              src="images/answer-gray.png"
+            />
+          </button>
+        </div>
+        <div class="hint-description hint-detail hidden text-center">
+          <img class="hint-answersheet" src="images/답안지.jpg" />
+          <span class="hint-description-text"
+            >💡 위 사진 속 답안지를 참고하세요!</span
+          >
+        </div>
+        <div class="answer-description hint-detail hidden text-center">
+          <span class="answer-description-text"
+            >✔️ 정답: [YOU WERE KILLED BY YOURSELF]</span
+          ><button class="enter marT30 paste-final-answer">정답 붙여넣기</button>
+        </div>
+      </div>
+    </div>
 
+    <button class="wrong-answer hidden">
+      <span>다시 한번 생각해 보세요!</span>
+    </button>
+
+
+
+    <div class="quiz">
+
+      <div class="quiz-context">
+        <img class="final-quiz-text" src="images/final-quiz.png" />
+        </div>
+      
+      <div class="quiz-answer">
+        <input class="quiz-input" placeholder="정답 입력" style="font-family: NanumSquare; font-weight: 500;" />
+        <button type="button" class="quiz-enter">확인</button>
+      </div>
+    </div>
+  </div>
+
+ <div class="animation-background hidden"> 
+  <video class="final-word-video" autoplay muted>
+    <source src="assets/youwerekilledbyyourself.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="main-background haechi-final-words text-center hidden">
+  <img class="big-haechi" src="images/파랑 해치.png" />
+  <div id="haechi6-says">
+    <h3>그래... 이제 어느정도 눈치챘겠지</h3>
+    <h3>이제 자네의 이야기를 들려주겠네.</h3>
+    <div class="padTB30">
+      <h3>혹시 처음 마법도술학교에 왔던 날을 기억하나?</h3
+      ><h3>아마 기억이 없을걸세.</h3>
+    </div>
+    <h3>이곳 마법도술학교는 죽은 자들만 올 수 있는 곳이라네.</h3>
+    <h3>그중에서도 스스로 생을 마감한 이들을 위한 곳이지.</h3>
+    <div class="padTB30">
+      <h3>그들 모두는 입학과 동시에 전생에 대한 기억을 잃고,</h3>
+      <h3>학생 신분으로서 그들의 잘못을 씻어내기 위한 준비를 한다네.</h3>
+    </div>
+    <div class="padTB30">
+    <h3>그 마지막 단계가 바로 <span class="red">[귀문관]</span> 시험이지.</h3>
+  </div>
+  </div>
+  <button class="enter haechi-reborn">다음</button>
+</div>
+
+<div class="main-background haechi-final-words2 text-center hidden">
+  <img class="big-haechi" src="images/파랑 해치.png" />
+  <div id="haechi7-says">
+    <h3>자네가 오늘 마주했던 검은 혼들은 저번생에서 행복했던 기억이</h3>
+    <h3>자네의 마지막 선택으로 인해 어둡게 변해버린 감정의 응어리라네</h3>
+    <div class="padTB30">
+      <h3>이번 시험으로 자네를 묶어왔던 감정들을 모두 풀어냈으니</h3>
+      <h3>이제 자네는 귀문관 시험의 진정한 목적인 <span class="yellow">환생 자격</span>을 갖춘걸세.</h3>
+    </div>
+  </div>
+  <button class="enter ready-reborn">다음</button>
+</div>
+
+<div class="text-center reborn-animation hidden">
+  <div class="text-center">
+    <h3>본 시험에서 힌트를 사용한 횟수는 <span class="hint-used-number">0</span>번으로</h3>
+    <h3 class="padT20">귀하의 종합 등급은 [<span class="hint-used-rating">수</span>] 입니다.</h3>
+  </div>
+  <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_pqts4ilz/energyorb.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player> 
+  <button class="enter view-my-animal">나의 환생 보기</button>
+</div> 
+
+<div class="text-center reborn-animal hidden">
+  <div class="text-center">
+    <h3>카드 나오는 화면</h3>
+  </div>
+   
+  <button class="enter close-animal">나의 환생 보기</button>
+</div> 
+
+<div class="text-center flip-coin hidden">
+  <div class="text-center">
+    <h3>카드 나오는 화면</h3>
+    <h3>공유 아이콘</h3>
+  </div>
+   
+  <button class="enter close-animal">다음</button>
+</div>
+  <!-- Javascript -->
+
+   <script src="jquery/jquery.min.js"></script>
     <script
-    src="https://kit.fontawesome.com/47c4228b8d.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/fccfaa8152.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+   <script src="javascript/nav-bar.js"></script>
+   <script src="javascript/haechi.js"></script>
+   <script src="javascript/final.js"></script>
+
   </body>
 </html>

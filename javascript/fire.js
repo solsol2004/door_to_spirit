@@ -37,8 +37,6 @@
          });
 
          $(".close-third-fire").click(function () {
-            $(".quiz1-background").hide();
-            $(".fire-story").hide(); 
-             $(".direction-deoksu").show();
+            window.location.href = "phone.html";
          });
  
