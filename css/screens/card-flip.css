@@ -25,11 +25,8 @@ img {
 
 .flip-card {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 550px;
-  height: 700px;
+  width: 85vw;
+  height: 80vh;
   perspective: 1600px;
   cursor: pointer;
   transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
@@ -43,30 +40,17 @@ img {
 }
 
 .flip-card div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   backface-visibility: hidden;
   transition: 0.7s;
 
 }
 
 .flip-card div img {
-  width: 550px;
-  height: 700px;
+  width: 85vw;
+  height: 80vh;
   object-fit: contain;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 
 .front {
@@ -85,10 +69,4 @@ img {
 .flip-card:hover .back {
   transform: rotateY(0);
   filter: drop-shadow(0 0 20px rgb(120, 185, 232));
-}
-
-.flip-card-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
