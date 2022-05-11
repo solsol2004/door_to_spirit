@@ -25,8 +25,8 @@ img {
 
 .flip-card {
   position: relative;
-  width: 85vw;
-  height: 80vh;
+  width: 350px;
+  height: 600px;
   perspective: 1600px;
   cursor: pointer;
   transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
@@ -42,14 +42,18 @@ img {
 .flip-card div {
   position: absolute;
   margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   backface-visibility: hidden;
   transition: 0.7s;
 
 }
 
 .flip-card div img {
-  width: 85vw;
-  height: 80vh;
+  width: 350px;
+  height: 600px;
   object-fit: contain;
 }
 
@@ -75,5 +79,4 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 10vh;
 }
