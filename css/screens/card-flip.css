@@ -43,6 +43,10 @@ img {
 }
 
 .flip-card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   margin: 0 auto;
   left: 0;
