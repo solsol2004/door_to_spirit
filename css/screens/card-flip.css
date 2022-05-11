@@ -25,7 +25,7 @@ img {
 }
 
 .flip-card {
-  width: 90vw;
+  width: 100vw;
   height: 70vh;
   perspective: 1600px;
   cursor: pointer;
