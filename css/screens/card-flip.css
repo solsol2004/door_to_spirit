@@ -42,8 +42,14 @@ img {
 .flip-card div {
   position: absolute;
   top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   backface-visibility: hidden;
   transition: 0.7s;
+  width: 100vw;
+  height: 80vh;
+
 }
 
 .flip-card div img {
