@@ -109,3 +109,20 @@ $(".quiz-enter").click(function () {
     $(".end-test").click(function () {
         window.location.href = "menu.html";
     })
+
+
+const title = document.title;
+const url = document.querySelector('link[rel=canonical]') ? document.querySelector('link[rel=canonical]').href : document.location.href;
+const shareButton = document.querySelector(".saveThisAnimal")
+
+shareButton.addEventListener('click', event => {
+    if (navigator.share) {
+      navigator.share({
+        title: '나의 환생',
+        url: '../../images/인간.png'
+      }).then(() => {
+        console.log('Thanks for sharing!');
+      })
+      .catch(console.error);
+    } 
+  });
