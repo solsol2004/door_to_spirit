@@ -47,8 +47,8 @@ img {
 }
 
 .flip-card div img {
-  width: 488px;
-  height: 800px;
+  width: 90vw;
+  height: 70vh;
   object-fit: contain;
 }
 
