@@ -89,10 +89,12 @@ $(".quiz-enter").click(function () {
         $(".reborn-animation").hide();
         $(".reborn-animal").show();});
 
-     $(".close-animal").click(function () {
+
+     $(".view-flip-coin").click(function () {
         $(".reborn-animal").hide();
         $(".flip-coin").show();});
     
+
     $(".close-flip-coin").click(function () {
         $(".flip-coin").hide();
         $('body').css('height', 100 + "vh");
