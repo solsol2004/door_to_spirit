@@ -20,15 +20,13 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  perspective: 1400px;
 }
 
 .flip-card {
   position: relative;
-  width: 550px;
-  height: 809px;
+  width: 90vw;
+  height: 70vh;
   cursor: pointer;
-  perspective: 1600px;
   transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
   animation: movement 5s infinite;
   margin-top: 20vh;
