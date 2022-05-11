@@ -26,7 +26,7 @@ img {
     width: 550px;
     height: 809px;
     cursor: pointer;
-    perspective: 1600px;
+    perspective: 800px;
     transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
     animation: movement 5s infinite;
 }
