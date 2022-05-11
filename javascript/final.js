@@ -1,5 +1,6 @@
 let lastQuizEntered = localStorage.getItem("last-quiz-entered");
 let usedHintResult = parseInt(localStorage.getItem("used-hint"));
+let myAnimal = '../../images/인간.png'
 
 window.onload = function() {
     setTimeout (function () {
@@ -78,10 +79,16 @@ $(".quiz-enter").click(function () {
             $(".hint-used-rating").text("수");
         } else if(usedHintResult >5 && usedHintResult >=10) {
             $(".hint-used-rating").text("우");
+            $(".card-front").attr("src", "images/호랑이.png");
+            myAnimal = '../../images/호랑이.png'
         } else if(usedHintResult >10 && usedHintResult >=15) {
             $(".hint-used-rating").text("미");
+            $(".card-front").attr("src", "images/토끼.png");
+            myAnimal = '../../images/토끼.png'
         } else {
             $(".hint-used-rating").text("양");
+            $(".card-front").attr("src", "images/강아지풀.png");
+            myAnimal = '../../images/강아지풀.png'
         }
     });
 
@@ -119,7 +126,7 @@ shareButton.addEventListener('click', event => {
     if (navigator.share) {
       navigator.share({
         title: '나의 환생',
-        url: '../../images/인간.png'
+        url: myAnimal
       }).then(() => {
         console.log('Thanks for sharing!');
       })
