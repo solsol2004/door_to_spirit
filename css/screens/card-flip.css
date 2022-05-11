@@ -26,9 +26,6 @@ img {
 .flip-card {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 80vw;
   height: 70vh;
   perspective: 1600px;
@@ -53,9 +50,6 @@ img {
   bottom: 0;
   backface-visibility: hidden;
   transition: 0.7s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
 }
 
