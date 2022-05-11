@@ -51,7 +51,7 @@ img {
 }
 
 .flip-card div img {
-  width: 85vw;
+  width: 100vw;
   height: 80vh;
   object-fit: contain;
 }
@@ -72,11 +72,4 @@ img {
 .flip-card:hover .back {
   transform: rotateY(0);
   filter: drop-shadow(0 0 20px rgb(120, 185, 232));
-}
-
-.flip-card-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 10vh;
 }
