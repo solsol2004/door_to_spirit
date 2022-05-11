@@ -25,14 +25,12 @@ img {
 
 .flip-card {
   position: relative;
-  display: flex;
   width: 80vw;
   height: 70vh;
   perspective: 1600px;
   cursor: pointer;
   transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
   animation: movement 5s infinite;
-  margin-top: 10vh;
 }
 
 @keyframes movement {
