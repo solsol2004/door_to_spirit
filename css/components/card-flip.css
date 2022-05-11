@@ -8,10 +8,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../images/background-forloading.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .flip-card {
