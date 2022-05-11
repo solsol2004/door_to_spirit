@@ -43,7 +43,8 @@ img {
   position: absolute;
   margin: 0 auto;
   top: 10%;
-  left: 10%;
+  left: 20%;
+  right: 20%;
   backface-visibility: hidden;
   transition: 0.7s;
 
