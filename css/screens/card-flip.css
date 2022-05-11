@@ -25,7 +25,8 @@ img {
 }
 
 .flip-card {
-  margin: 0 5%;
+  width: 100%;
+  height: 100%;
   perspective: 1600px;
   cursor: pointer;
   transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
