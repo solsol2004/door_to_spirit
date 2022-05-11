@@ -1,48 +1,67 @@
-.grid {
-    width: 1170px;
-    margin: 0 auto;
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/hearthstone-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  perspective: 1400px;
+}
+
+.maoris-card {
+  position: relative;
+  width: 550px;
+  height: 809px;
+  cursor: pointer;
+  perspective: 1600px;
+  transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
+  animation: movement 5s infinite;
+}
+
+@keyframes movement {
+  50% {
+    transform: translateY(-40px) rotateX(8deg) rotateY(-10deg);
   }
-  
-  .list {
-    height: 652px;
-    position: relative;
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .card {
-    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    perspective: 1000;
-    -ms-transform: perspective(1000px);
-    -moz-transform: perspective(1000px);
-    -ms-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    float: left;
-    width: 222px;
-    height: 311px;
-    background-color: #eee;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 30px 0 15px 15px;
-  }
-  .card:nth-child(2n) {
-    margin-right: 0;
-  }
-  .card.ani0 {
-    right: 948px;
-    bottom: 326px;
-  }
-  .card.ani1 {
-    right: 711px;
-    bottom: 326px;
-  }
-  .card.ani2 {
-    right: 948px;
-    bottom: 0;
-  }
-  .card.ani3 {
-    right: 711px;
-    bottom: 0;
-  }
- 
+}
+
+.maoris-card div {
+  position: absolute;
+  margin: 0 auto;
+  top: 10%;
+  left: 7%;
+  backface-visibility: hidden;
+  transition: 0.7s;
+
+}
+
+.front {
+  filter: drop-shadow(0 0 30px #000);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+
+.maoris-card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.maoris-card:hover .back {
+  transform: rotateY(0);
+  filter: drop-shadow(0 0 20px rgba(253, 152, 45, 1));
+}
