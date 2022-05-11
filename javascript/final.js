@@ -77,6 +77,8 @@ $(".quiz-enter").click(function () {
         $(".hint-used-number").text(usedHintResult);
         if(usedHintResult <=5) {
             $(".hint-used-rating").text("수");
+            $(".card-front").attr("src", "images/호랑이.png");
+            myAnimal = '../../images/호랑이.png'
         } else if(usedHintResult >5 && usedHintResult >=10) {
             $(".hint-used-rating").text("우");
             $(".card-front").attr("src", "images/호랑이.png");
