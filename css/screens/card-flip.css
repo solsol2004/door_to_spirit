@@ -13,16 +13,17 @@ img {
   height: 100vh;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../assets/hearthstone-background.jpg");
+  background-image: url("../../images/background-forloading.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   perspective: 1400px;
 }
 
-.maoris-card {
+.flip-card {
   position: relative;
   width: 550px;
   height: 809px;
@@ -30,6 +31,7 @@ img {
   perspective: 1600px;
   transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
   animation: movement 5s infinite;
+  margin-top: 10vh;
 }
 
 @keyframes movement {
@@ -38,14 +40,25 @@ img {
   }
 }
 
-.maoris-card div {
+.flip-card div {
   position: absolute;
   margin: 0 auto;
-  top: 10%;
-  left: 7%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   backface-visibility: hidden;
   transition: 0.7s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.flip-card div img {
+  width: 90vw;
+  height: 70vh;
+  object-fit: contain;
 }
 
 .front {
@@ -57,11 +70,18 @@ img {
 }
 
 
-.maoris-card:hover .front {
+.flip-card:hover .front {
   transform: rotateY(-180deg);
 }
 
-.maoris-card:hover .back {
+.flip-card:hover .back {
   transform: rotateY(0);
-  filter: drop-shadow(0 0 20px rgba(253, 152, 45, 1));
+  filter: drop-shadow(0 0 20px rgb(120, 185, 232));
+}
+
+.flip-card-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20vh;
 }
