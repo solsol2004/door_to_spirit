@@ -31,7 +31,7 @@ img {
   perspective: 1600px;
   transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
   animation: movement 5s infinite;
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 @keyframes movement {
