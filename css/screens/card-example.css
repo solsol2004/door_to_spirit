@@ -23,8 +23,8 @@ img {
 
 .flip-card {
     position: relative;
-    width: 366px;
-    height: 600px;
+    width: 90vw;
+    height: 70vh;
     cursor: pointer;
     perspective: 1600px;
     transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
@@ -47,8 +47,8 @@ img {
 }
 
 .flip-card div img {
-    width: 366px;
-    height: 600px;
+    width: 90vw;
+    height: 70vh;
     object-fit: contain;
   }
 
