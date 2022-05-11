@@ -24,7 +24,7 @@
   </head>
 
   <body>
-  <div class="final-first main-background">
+  <div class="final-first main-background hidden">
     <img class="big-haechi" src="images/파랑 해치.png" />
     <div id="haechi5-says">
       <span>마지막 두 문제까지 다 풀어냈구나.</span>
@@ -141,13 +141,22 @@
   <button class="enter view-my-animal">나의 환생 보기</button>
 </div> 
 
-<div class="text-center reborn-animal hidden">
-  <div class="text-center">
-    <h3>카드 나오는 화면</h3>
-    <h4>공유 아이콘</h4>
+<div class="text-center reborn-animal">
+  <div class="card-container">
+    <div class="flip-card">
+      <div class="front">
+        <img src="images/귀문관카드뒤.png">
+      </div>
+      <div class="back">
+        <img src="images/인간.png">
+      </div>
+    </div>
+    <div class="flip-card-button text-center">
+    <a href="images/인간.png" download="인간.png"><button class="enter">Save</button></a>
+    <a href="final.html"><button type="submit" class="enter">Next</button></a>
   </div>
-   
-  <button class="enter close-animal">확인</button>
+</div>
+  </div>
 </div> 
 
 <div class="text-center flip-coin hidden">

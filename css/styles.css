@@ -5,6 +5,7 @@
 /* components */
 @import "components/answer.css";
 @import "components/nav-bar.css";
+@import "components/card-flip.css";
 
 /* screens */
 @import "screens/code-screen.css";
