@@ -29,7 +29,7 @@ img {
   cursor: pointer;
   transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
   animation: movement 5s infinite;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 @keyframes movement {
