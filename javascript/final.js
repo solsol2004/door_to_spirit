@@ -78,11 +78,11 @@ $(".quiz-enter").click(function () {
         if(usedHintResult <=5) {
             $(".hint-used-rating").text("수");
             $(".card-front").attr("src", "images/호랑이.png");
-            myAnimal = '../../images/호랑이.png'
+            myAnimal = 'https://lh3.googleusercontent.com/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc=w600'
         } else if(usedHintResult >5 && usedHintResult >=10) {
             $(".hint-used-rating").text("우");
             $(".card-front").attr("src", "images/호랑이.png");
-            myAnimal = '../../images/호랑이.png'
+            myAnimal = 'https://media.moddb.com/images/members/5/4550/4549205/duck.jpg'
         } else if(usedHintResult >10 && usedHintResult >=15) {
             $(".hint-used-rating").text("미");
             $(".card-front").attr("src", "images/토끼.png");
