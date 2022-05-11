@@ -33,8 +33,10 @@
 .flip-card div {
   position: absolute;
   margin: 0 auto;
-  left: 50%;
-  top: 50%;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
   backface-visibility: hidden;
   transition: 0.7s;
 
