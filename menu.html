@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>마법도술학교-귀문관</title>
+
+    <link
+      rel="shortcut icon"
+      href="images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/screens/menu.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+
+  <body>
+  <div class="book">
+      <input type="checkbox" id="c1">
+      <input type="checkbox" id="c2">
+      <input type="checkbox" id="c3">
+      <div id="cover"><img src="images/Stamp.png"></div>
+      <div class="flip-book">
+          <div class="flip" id="p1">
+              <div class="back text-center">
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_y6barpsd.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+               <label class="back-btn" for="c1">이전</label>
+              </div>
+              <div class="front">
+                  <h2>붉은 혼</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad, illum aut esse perspiciatis molestias illo officiis incidunt et sed accusantium voluptatum alias beatae maiores exercitationem blanditiis qui quidem aliquam.</p>
+                  <label class="next-btn" for="c1">다음</label>
+              </div>
+              
+          </div>
+          <div class="flip" id="p2">
+            <div class="back">
+                <img src="images/pink-fire.png">
+                <label class="back-btn" for="c2">이전</label>
+            </div>
+            <div class="front">
+                <h2>분홍 혼</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad, illum aut esse perspiciatis molestias illo officiis incidunt et sed accusantium voluptatum alias beatae maiores exercitationem blanditiis qui quidem aliquam.</p>
+                <label class="next-btn" for="c2">다음</label>
+            </div>
+            
+        </div>
+        <div class="flip" id="p3">
+            <div class="back">
+                <img src="images/green-fire.png">
+                <label class="back-btn" for="c3">이전</label>
+            </div>
+            <div class="front">
+                <h2>초록 혼</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad, illum aut esse perspiciatis molestias illo officiis incidunt et sed accusantium voluptatum alias beatae maiores exercitationem blanditiis qui quidem aliquam.</p>
+                <label class="next-btn" for="c3">다음</label>
+            </div>
+            
+        </div>
+      </div>
+
+  </div>
+  
+   <!-- Javascript -->
+   
+
+  </body>
+</html>
