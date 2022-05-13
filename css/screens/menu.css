@@ -18,18 +18,18 @@ input {
 }
 
 #cover {
-    width: 900px;
+    width: 200px;
     height: 300px;
 }
 
 #cover img {
-    width: 900px;
+    width: 200px;
     height: 300px;
     object-fit: cover;
 }
 
 .flip-book {
-    width: 900px;
+    width: 200px;
     height: 300px;
     position: relative;
     perspective: 1500px;
