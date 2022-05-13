@@ -1,38 +1,31 @@
 
 
 .card-container {
-  position: absolute; display: table; top: 0; left: 0; width: 100%; height: 100%;
-
-
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flip-card {
-  display: table-cell; text-align: center; vertical-align: middle;
-  position: relative;
   width: 100vw;
   height: 70vh;
   perspective: 1600px;
   cursor: pointer;
-  transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
   animation: movement 5s infinite;
-
-}
-
-@keyframes movement {
-  50% {
-    transform: translateY(-40px) rotateX(8deg) rotateY(-10deg);
-  }
 }
 
 .flip-card div {
   position: absolute;
-  display: inline-block;
-  vertical-align: middle; 
-  overflow: hidden;
-  height: 70vh; left: 0; right: 0; margin-left: auto; margin-right: auto; display: inline-block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   backface-visibility: hidden;
   transition: 0.7s;
-
 }
 
 .flip-card div img {
