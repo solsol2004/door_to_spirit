@@ -29,7 +29,7 @@
   display: inline-block;
   vertical-align: middle; 
   overflow: hidden;
-  height: 70vh; line-height: 40px; left: 0; right: 0; margin-left: auto; margin-right: auto; display: inline-block;
+  height: 70vh; left: 0; right: 0; margin-left: auto; margin-right: auto; display: inline-block;
   backface-visibility: hidden;
   transition: 0.7s;
 
