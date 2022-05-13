@@ -8,6 +8,9 @@ const realUsername = document.getElementById("username-change");
 
 const savedUsername = localStorage.getItem("username");
 
+//Firebase에 있는 코드를 만료하기 위해 사용하는 키//
+let userCodeEntered = localStorage.getItem("user-code");
+
 realUsername.innerText = `${savedUsername}님 안녕하세요!`;
 
 function thirdPage(event) {
@@ -15,6 +18,11 @@ function thirdPage(event) {
   pageThree.classList.add("hidden");
   pageFour.classList.remove("hidden");
   realUsername.innerText = `${savedUsername}님 안녕하세요!`;
+  db.collection("questCode")
+    .doc(userCodeEntered)
+    .update({
+      Used: "true"
+    });
 }
 
 function forthPage(event) {

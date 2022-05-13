@@ -77,19 +77,14 @@
 
 .very-last-haechi {
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     background-color: black;
 }
 
-.very-last-haechi-img {
-  object-fit: contain;
-  width: 70vw;
-  height:70vh;
-  margin: 0 0 7vh 0;
-}
 
-.very-final-word-video {
+.very-last-haechi lottie-player {
     width: 100vw;
     height: 80vh;
     object-fit: contain;
 }
+  

@@ -27,12 +27,10 @@
         <span class="third-row">귀문관에 응시하시겠습니까?</span>
       </div>
       <div class="text-center">
-      <div id="code-bottom"> 
-      <form method="get" class="answer">
-        <input id="code-input" class="input" placeholder="코드 입력" style="font-family: NanumSquare; font-weight: 500;"/>
-        <button type="submit" id="name-enter" class="enter enter-test" style="font-family: NanumSquare; font-weight: 500;">시험 입장</button>
-        </form>
-        <a href="find-code.html"><button class="sub-enter">코드를 찾으실 수 없나요?</button></a>
+      <div id="code-bottom text-center"> 
+        <input id="code-input" class="input" placeholder="코드 입력"/>
+        <button id="enter-the-test" class="enter enter-test"">시험 입장</button>
+        <h3><a class="text-white padT5" href="find-code.html">코드를 찾으실 수 없나요?</a></h3>
       </div> 
       <input class="input code-already-entered hidden" placeholder="이미 코드를 입력했습니다!" style="font-family: NanumSquare; font-weight: 500;"/>
       <a href="intro.html"><button type="submit" class="enter hidden resume-test" style="font-family: NanumSquare; font-weight: 500;">시험 계속하기</button></a>
@@ -58,7 +56,14 @@
 
     <!-- Javascript -->
     <script src="jquery/jquery.min.js"></script>
+
+     <!--Firebase-->
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+     <script src="javascript/personal-firebase.js"></script>
     <script src="javascript/index.js"></script>
+
     <script
       src="https://kit.fontawesome.com/fccfaa8152.js"
       crossorigin="anonymous"

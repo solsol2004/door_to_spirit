@@ -1,0 +1,13 @@
+.very-last-haechi {
+    width: 100vw;
+    height: 150vh;
+    background-color: black;
+}
+
+
+.very-last-haechi lottie-player {
+    width: 100vw;
+    height: 80vh;
+    object-fit: contain;
+}
+  

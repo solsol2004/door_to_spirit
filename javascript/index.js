@@ -5,6 +5,13 @@ let codeEntered = localStorage.getItem("code-entered");
 
 const HIDDEN_CLASSNAME = "hidden";
 
+//Firebase//
+const db = firebase.firestore();
+const storage = firebase.storage();
+
+//Firebase에 있는 코드를 만료하기 위해 사용하는 키//
+let userCodeEntered = localStorage.getItem("user-code");
+
 
 if (codeEntered === "true") {
   $(".resume-test").show();
@@ -26,10 +33,25 @@ function firstPage(event) {
   } else if (codeNum === "") {
 
   } else {
-    alert("이미 사용했거나 유효하지 않은 코드입니다");
+    //alert("이미 사용했거나 유효하지 않은 코드입니다");
     code.value = "";
   }
+
+  db.collection("questCode").where("Random", "==", codeNum)
+    .get()
+    .then(function(querySnapshot) {
+      querySnapshot.forEach(function(doc) {
+          // doc.data() is never undefined for query doc snapshots
+          localStorage.setItem("user-code", doc.id);
+      });
+  })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+
+    
 }
+
 
 function secondPage(event) {
   event.preventDefault();

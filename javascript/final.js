@@ -1,6 +1,7 @@
+let finalHaechiSaid = localStorage.getItem("final-haechi-said");
 let lastQuizEntered = localStorage.getItem("last-quiz-entered");
 let usedHintResult = parseInt(localStorage.getItem("used-hint"));
-let myAnimal = '../../images/인간.png'
+let userAnimal = "https://i.ibb.co/TwtKNNy/image.png";
 
 window.onload = function() {
     setTimeout (function () {
@@ -13,16 +14,13 @@ window.onload = function() {
 $(document).ready(function(){if(lastQuizEntered === "true"){
       $(".final-first").hide();
       $(".quiz1-background").hide();
-      $(".animation-background").show();
-      $('body').css('height', 100 + "vh");
-        $('body').css('width', 100 + "vw");
-        $('.animation-background').delay(300).fadeIn('slow');  
-        $('.animation-background').delay(4500).fadeOut('slow'); 
-        setTimeout(function(){
-            $('.haechi-final-words').show();
-            $('body').css('height', 150 + "vh");// or fade, css display however you'd like.
-         }, 4800);
-      }});
+      $(".haechi-final-words").show();
+} else if (finalHaechiSaid === "true") {
+    $(".final-first").hide();
+    $(".quiz1-background").show();
+}
+
+});
 
 
 $(".paste-final-answer").click(function () {
@@ -33,6 +31,7 @@ $(".paste-final-answer").click(function () {
 $(".show-last-quiz").click(function () {
     $(".final-first").hide();
     $(".quiz1-background").show();
+    localStorage.setItem("final-haechi-said", true);
 });
 
 
@@ -42,14 +41,8 @@ $(".quiz-enter").click(function () {
     {
         localStorage.setItem("last-quiz-entered", true);
         $(".quiz1-background").hide();
-        $('body').css('height', 100 + "vh");
-        $('body').css('width', 100 + "vw");
-        $('.animation-background').delay(300).fadeIn('slow');  
-        $('.animation-background').delay(4500).fadeOut('slow'); 
-        setTimeout(function(){
-            $('.haechi-final-words').show();
-            $('body').css('height', 150 + "vh");// or fade, css display however you'd like.
-         }, 4800);
+        $('.haechi-final-words').delay(1000).fadeIn('slow');
+
     } 
     //정답이 비어있을 때 //
     else if ($(".quiz-input").val().toUpperCase() === "") {return false;} 
@@ -77,20 +70,18 @@ $(".quiz-enter").click(function () {
         $(".hint-used-number").text(usedHintResult);
         if(usedHintResult <=5) {
             $(".hint-used-rating").text("수");
-            $(".card-front").attr("src", "images/호랑이.png");
-            myAnimal = 'https://lh3.googleusercontent.com/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc=w600'
-        } else if(usedHintResult >5 && usedHintResult >=10) {
+           } else if(usedHintResult >5 && usedHintResult <=10) {
             $(".hint-used-rating").text("우");
             $(".card-front").attr("src", "images/호랑이.png");
-            myAnimal = 'https://media.moddb.com/images/members/5/4550/4549205/duck.jpg'
-        } else if(usedHintResult >10 && usedHintResult >=15) {
+            userAnimal = "https://i.ibb.co/PYHBWjZ/image.png";
+        } else if(usedHintResult >10 && usedHintResult <=15) {
             $(".hint-used-rating").text("미");
             $(".card-front").attr("src", "images/토끼.png");
-            myAnimal = '../../images/토끼.png'
+            userAnimal = "https://i.ibb.co/pWJ306B/image.png";
         } else {
             $(".hint-used-rating").text("양");
             $(".card-front").attr("src", "images/강아지풀.png");
-            myAnimal = '../../images/강아지풀.png'
+            userAnimal = "https://i.ibb.co/kh7GnDs/image.png";
         }
     });
 
@@ -106,13 +97,8 @@ $(".quiz-enter").click(function () {
 
     $(".close-flip-coin").click(function () {
         $(".flip-coin").hide();
-        $('body').css('height', 100 + "vh");
-        $('body').css('width', 100 + "vw");
-        $('.very-last-haechi').delay(300).fadeIn('slow');
-        $('.very-final-word-video').playbackRate = 0.5; 
-        setTimeout(function(){
-            $('.end-test').show();
-         }, 10000);
+        window.location.href = "final-words.html";
+       
     } );
 
     $(".end-test").click(function () {
@@ -128,9 +114,7 @@ shareButton.addEventListener('click', event => {
     if (navigator.share) {
       navigator.share({
         title: '나의 환생',
-        url: myAnimal
-      }).then(() => {
-        console.log('Thanks for sharing!');
+        url: userAnimal
       })
       .catch(console.error);
     } 
