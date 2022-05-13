@@ -5,7 +5,9 @@
 }
 
 .input,
-.quiz-input {
+.quiz-input,
+.code-input,
+.name-input {
   width: 70vw;
   height: 6vh;
   border-radius: 10vh;
@@ -23,13 +25,17 @@
 }
 
 .input:focus,
-.quiz-input:focus {
+.quiz-input:focus
+.code-input:focus,
+.name-input:focus {
   outline: none;
   box-shadow: 0 0 0 3px #ffc400;
 }
 
 .input::placeholder,
-.quiz-input::placeholder {
+.quiz-input::placeholder,
+.code-input::placeholder,
+.name-input::placeholder {
   text-align: center;
   color: white;
   font-weight: 600;
