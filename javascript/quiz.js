@@ -150,7 +150,7 @@ db.collection("quiz")
     }
      else if(chapter >=6 && chapter <14) {
       $(".quiz1-background").css({"background-image":"url(images/덕수궁.jpg)"}); 
-    } else if(chapter >= 14) {$(".quiz1-background").css({"background-image":"url(images/돈의문.jpg)"}); }
+    } else if(chapter >= 14 && chapter <22) {$(".quiz1-background").css({"background-image":"url(images/돈의문.jpg)"}); }
     
 
     if (chapter < 7) {

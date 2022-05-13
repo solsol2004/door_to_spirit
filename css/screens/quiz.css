@@ -48,7 +48,7 @@ body {
 .sesil-text,
 .donyi-ticket-text {
   object-fit: contain;
-  width: 95vw;
+  width: 80vw;
   height: 70vh;
 }
 .quiz-text,
