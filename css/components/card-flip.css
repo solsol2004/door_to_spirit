@@ -15,14 +15,20 @@
   height: 70vh;
   perspective: 1600px;
   cursor: pointer;
-  transform: translateY(5px) rotateX(-8deg) rotateY(10deg);
   animation: movement 5s infinite;
 }
 
 @keyframes movement {
+  0% {
+    transform: none;
+  }
   50% {
     transform: translateY(-5px) rotateX(8deg) rotateY(-10deg);
   }
+  100% {
+    transform: none;
+  }
+
 }
 
 .flip-card div {
