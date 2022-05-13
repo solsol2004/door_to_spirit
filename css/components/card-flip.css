@@ -9,7 +9,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: -webkit-center;
 
 }
 
@@ -20,7 +19,6 @@
   cursor: pointer;
   transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
   animation: movement 5s infinite;
-  text-align: -webkit-center;
 
 }
 
@@ -32,13 +30,10 @@
 
 .flip-card div {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  margin-left: -50px; 
+  margin-right: -50px;
   backface-visibility: hidden;
   transition: 0.7s;
-  text-align: -webkit-center;
 
 }
 
