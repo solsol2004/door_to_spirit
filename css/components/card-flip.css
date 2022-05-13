@@ -20,7 +20,7 @@
 
 @keyframes movement {
   50% {
-    transform: translateY(-40px) rotateX(8deg) rotateY(-10deg);
+    transform: rotateX(8deg) rotateY(-10deg);
   }
 }
 
