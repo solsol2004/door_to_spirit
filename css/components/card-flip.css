@@ -9,6 +9,8 @@
 .flip-card {
   display: table-cell; text-align: center; vertical-align: middle;
   position: relative;
+  width: 100vw;
+  height: 70vh;
   perspective: 1600px;
   cursor: pointer;
   transform: translateY(40px) rotateX(-8deg) rotateY(10deg);
