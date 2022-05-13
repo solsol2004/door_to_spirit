@@ -60,7 +60,8 @@ p {
 }
 
 .front1,
-.front2 {
+.front2,
+.front3 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -74,7 +75,8 @@ p {
     
 }
 
-.front1 {
+.front1,
+.front3 {
     text-align: center;
 }
 
@@ -83,19 +85,23 @@ p {
 }
 
 .front1 img,
-.front2 img {
+.front2 img,
+.front3 img {
     width: 200px;
     height: 300px;
     object-fit: cover;
 }
 
+
 .front1 h2,
-.front2 h2 {
+.front2 h2,
+.front3 h2 {
     padding:5vh 0 3vh 0;
 }
 
 .front1 p,
-.front2 p {
+.front2 p,
+.front3 p {
     font-size: 3vw;
     font-family: 'GangwonEdu_OTFBoldA';
 }
@@ -108,7 +114,8 @@ p {
 
 .back1,
 .back2,
-.final-back {
+.final-back,
+.back3 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -129,8 +136,19 @@ p {
     background-image: url("../../images/book-image.jpg");
 }
 
+
 .back2 {
     background-color: rgb(255, 255, 255);
+}
+
+.back3 {
+    background-color: #151427;
+}
+
+.back3 img{
+    object-fit: contain;
+    width: 200px;
+    height: 300px;
 }
 
 .final-back {
@@ -182,12 +200,14 @@ p {
 }
 
 #p4,
-#b4 {
+#b4,
+#e4 {
     z-index: 2;
 }
 
 #p5,
-#b5 {
+#b5,
+#e5 {
     z-index: 1;
 }
 
@@ -214,14 +234,16 @@ p {
 }
 
 #c4:checked ~ .flip-book #p4,
-#a4:checked ~ .flip-book #b4
+#a4:checked ~ .flip-book #b4,
+#d4:checked ~ .flip-book #e4
 {
     transform: rotateY(-180deg);
     z-index: 4;
 }
 
 #c5:checked ~ .flip-book #p5,
-#a5:checked ~ .flip-book #b5
+#a5:checked ~ .flip-book #b5,
+#d5:checked ~ .flip-book #e5
 {
     transform: rotateY(-180deg);
     z-index: 5;
