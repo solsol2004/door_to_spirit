@@ -6,7 +6,9 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: "HeirofLightRegular";
-    background-image: url("../../images/background-forloading.jpg");
+    background-image: url("../../images/aaaaa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 input {
