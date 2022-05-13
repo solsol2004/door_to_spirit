@@ -102,7 +102,7 @@ p {
 
 .front2 p {
     color: white;
-    font-size: 2.6vw;
+    font-size: 2.4vw;
     padding: 3vh 0 0 0;
 }
 
@@ -181,11 +181,13 @@ p {
     z-index:3;
 }
 
-#p4 {
+#p4,
+#b4 {
     z-index: 2;
 }
 
-#p5 {
+#p5,
+#b5 {
     z-index: 1;
 }
 
@@ -211,13 +213,15 @@ p {
     z-index: 3;
 }
 
-#c4:checked ~ .flip-book #p4
+#c4:checked ~ .flip-book #p4,
+#a4:checked ~ .flip-book #b4
 {
     transform: rotateY(-180deg);
     z-index: 4;
 }
 
-#c5:checked ~ .flip-book #p5
+#c5:checked ~ .flip-book #p5,
+#a5:checked ~ .flip-book #b5
 {
     transform: rotateY(-180deg);
     z-index: 5;
