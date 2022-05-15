@@ -17,12 +17,18 @@ input {
 
 .title-book-page {
     width: 40vw;
-    padding-top: 10vh;
+    padding: 10vh 0 5vh 0;
 }
+
+.book-details{
+    margin: 7vh 0 4vh 0;
+}
+
+
 
 .book {
     display: flex;
-    margin-top: 12vh;
+    margin-top: 3vh;
 }
 
 .cover {

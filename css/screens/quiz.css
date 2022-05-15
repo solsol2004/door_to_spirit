@@ -156,27 +156,50 @@ margin-bottom: 7vh;
 }
 
 
-.donyi-arrive {
-  position: relative;
-}
-
-.donyi-arrive lottie-player {
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-.donyi-arrive span {
-  display: inline-block;
-  margin-top: 50vh;
-}
-
 .donyi-ticket-text {
   margin-top: 10vh;
 }
 
 .donyi-arrive-confirm {
   margin-top: 7vh;
+}
+
+.donyi-arrive,
+.donyi-start {
+  position: relative;
+}
+
+.donyi-arrive lottie-player,
+.donyi-start lottie-player {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+}
+
+.donyi-arrive h3,
+.donyi-start h3 {
+  padding-top: 60vh;
+}
+
+.deoksu-arrive,
+.deoksu-ticket {
+  position: relative;
+}
+
+.deoksu-arrive lottie-player,
+.deoksu-ticket lottie-player {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+}
+
+.deoksu-arrive h3,
+.deoksu-ticket h3 {
+  padding-top: 60vh;
 }

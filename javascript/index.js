@@ -25,18 +25,15 @@ $("#enter-the-test").click(function () {
           localStorage.setItem("code-entered", true);
           $("#first-page").hide();
           $("#second-page").show();
-        } else if (codeNum === ""){}
-        else {
-          alert("이미 사용한 코드입니다");
-          codeNum = "";
         }});
   })
-    .catch(function() {
-      alert("이미 사용했거나 유효하지 않은 코드입니다");
-      codeNum = "";
-    });
+    .catch(
+      $('.wrong-answer').delay(400).fadeIn('slow')
+    );
   });
 
+  $(".wrong-answer").click(function () {
+    $(".wrong-answer").hide()});
 
   $(".name-enter").click(function () {
     if ($(".name-input").val()==="") {
