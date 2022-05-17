@@ -53,21 +53,21 @@ body {
 }
 .quiz-text,
 .sesil-text{
-margin-bottom: 7vh;
+margin-bottom: 4vh;
 }
 
 .gurakbu-text {
   width: 85vw;
   height: 20vh;
   object-fit: contain;
-  margin: 5vh 0 7vh 0;
+  margin: 5vh 0 4vh 0;
 }
 
 .river-text {
   width: 85vw;
   height: 40vh;
   object-fit: contain;
-  margin: 5vh 0 7vh 0;
+  margin: 5vh 0 4vh 0;
 }
 
 .hidden {
@@ -203,3 +203,4 @@ margin-bottom: 7vh;
 .deoksu-ticket h3 {
   padding-top: 60vh;
 }
+

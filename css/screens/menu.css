@@ -113,13 +113,13 @@ p {
 .front1 p,
 .front2 p,
 .front3 p {
-    font-size: 3vw;
+    font-size: 13px;
     font-family: 'GangwonEdu_OTFBoldA';
 }
 
 .front2 p {
     color: white;
-    font-size: 2.4vw;
+    font-size: 11px;
     padding: 3vh 0 0 0;
 }
 
@@ -268,12 +268,16 @@ label {
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 15px;
 }
 
 h5 {
     font-size: 2.6vw;
     color: rgba(208, 205, 205, 0.5);
+}
+
+.book-details h2 {
+    font-size: 4vw;
 }
 
 .book-details {
@@ -307,21 +311,28 @@ h5 {
     margin-right: 3vw;
 }
 
-@media only screen and (min-device-width: 412px) and (orientation: portrait) {
+
+
+
+ /* Media Queries */
+/* Smartphones, small screens (portrait and landscape) ----------- */
+
+     
+@media only screen and (min-device-width : 290px) and (max-device-width : 480px) {
     .cover {
-        width: 150px;
+        width: 155px;
         height: 225px;
     
     }
     
     .cover img {
-        width: 150px;
+        width: 155px;
         height: 225px;
         object-fit: cover;
     }
     
     .flip-book {
-        width: 150px;
+        width: 155px;
         height: 225px;
         position: relative;
         perspective: 1500px;
@@ -331,15 +342,58 @@ h5 {
     .front1 img,
     .front2 img,
     .front3 img {
-         width: 150px;
+         width: 155px;
          height: 225px;
         object-fit: cover;
 }
 
     .back3 img{
         object-fit: contain;
-        width: 150px;
+        width: 155px;
         height: 225px;
 }
 
- }
+
+
+   .front1 p,
+    .front3 p {
+            font-size: 10px;
+    }
+
+    .front2 p {
+        color: white;
+        font-size: 8px;
+    }
+   
+    h2 {
+    font-size: 11px;
+    }
+
+
+}
+     
+
+
+
+@media only screen and (min-device-width: 480px) and (min-device-width: 736px) {
+    p {
+        font-size: 13px;
+    }
+
+   .front1 p,
+    .front2 p,
+    .front3 p {
+            font-size: 13px;
+    }
+
+    .front2 p {
+        color: white;
+        font-size: 12px;
+    }
+   
+    h2 {
+    font-size: 13px;
+    }
+
+
+    }
