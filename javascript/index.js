@@ -28,7 +28,7 @@ $("#enter-the-test").click(function () {
         }});
   })
     .catch(
-      $('.wrong-answer').delay(400).fadeIn('slow')
+      $('.wrong-answer').delay(700).fadeIn('slow')
     );
   });
 

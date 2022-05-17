@@ -306,3 +306,40 @@ h5 {
 .fa-bookmark {
     margin-right: 3vw;
 }
+
+@media only screen and (min-device-width: 412px) and (orientation: portrait) {
+    .cover {
+        width: 150px;
+        height: 225px;
+    
+    }
+    
+    .cover img {
+        width: 150px;
+        height: 225px;
+        object-fit: cover;
+    }
+    
+    .flip-book {
+        width: 150px;
+        height: 225px;
+        position: relative;
+        perspective: 1500px;
+        
+    }
+
+    .front1 img,
+    .front2 img,
+    .front3 img {
+         width: 150px;
+         height: 225px;
+        object-fit: cover;
+}
+
+    .back3 img{
+        object-fit: contain;
+        width: 150px;
+        height: 225px;
+}
+
+ }
