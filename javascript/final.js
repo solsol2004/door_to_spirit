@@ -1,5 +1,6 @@
 let finalHaechiSaid = localStorage.getItem("final-haechi-said");
 let lastQuizEntered = localStorage.getItem("last-quiz-entered");
+let rebornShowed = localStorage.getItem("reborn-showed");
 let usedHintResult = parseInt(localStorage.getItem("used-hint"));
 let userAnimal = "https://i.ibb.co/TwtKNNy/image.png";
 
@@ -12,11 +13,16 @@ window.onload = function() {
   
   }
 
-$(document).ready(function(){if(lastQuizEntered === "true"){
+$(document).ready(function(){
+if (rebornShowed === "true" && lastQuizEntered === "true") {
+        $(".final-first").hide();
+        $(".reborn-animal").show();
+    }   else if(lastQuizEntered === "true" && rebornShowed !== "true"){
       $(".final-first").hide();
       $(".quiz1-background").hide();
       $(".haechi-final-words").show();
-} else if (finalHaechiSaid === "true") {
+} 
+else if (finalHaechiSaid === "true" && rebornShowed !== "true") {
     $(".final-first").hide();
     $(".quiz1-background").show();
 }
@@ -90,12 +96,15 @@ $(".quiz-enter").click(function () {
 
     $(".view-my-animal").click(function () {
         $(".reborn-animation").hide();
-        $(".reborn-animal").show();});
+        $(".reborn-animal").show();
+        localStorage.setItem("reborn-showed", true);
+    });
 
 
      $(".view-flip-coin").click(function () {
         $(".reborn-animal").hide();
-        $(".flip-coin").show();});
+        $(".flip-coin").show();
+});
     
 
     $(".close-flip-coin").click(function () {
