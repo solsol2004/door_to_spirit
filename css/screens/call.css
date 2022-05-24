@@ -37,11 +37,13 @@
     font-size: 4.6vw;
 }
 
+
 .call-buttons {
-    margin-top: 55vh;
+    margin-top: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.call-buttons button {
-    margin: 0 15vw 0 15vw;
-}
 

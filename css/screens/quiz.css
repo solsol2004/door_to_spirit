@@ -93,9 +93,31 @@ margin-bottom: 4vh;
   top: 50%;
 }
 
-.wrong-answer span {
-  font-family: "BMHANNAAir";
+.wrong-answer-close {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px double hsla(41, 100%, 51%, 0.9);
+  border-radius:50%;
+  text-align: center;
+  display: none;
+  width:25px;
+  height: 25px;
+  margin: 0 auto;
+  left: 70%;
+  right: 0;
+  top: 49%;
+  z-index: 205;
 }
+
+.wrong-answer-close i {
+  color: white;
+}
+
+.wrong-answer-box div {
+  border-bottom: 1px solid white;
+}
+
+
 
 .gurakbu {
   margin-bottom: 9vh;
