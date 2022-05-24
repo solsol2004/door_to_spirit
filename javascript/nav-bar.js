@@ -65,9 +65,17 @@ $(".answer-button").click(function () {
         $(".hint-selection").hide();
         $(".answer-description").show();
       } else if (answerClicked ==="true"){
-        $(".hint-selection").hide();
+        $(".hint-selection").hide();    
         $(".answer-description").show();
-      }
+      } else if (hintClicked ==="true" && answerClicked !=="true" && answerClickedTemp !== true){
+        localStorage.setItem("used-hint", ++usedHint);
+        localStorage.setItem("answer-clicked", true);
+        answerClickedTemp = true;
+        $(".hint-selection").hide();
+        $(".answer-description").show();}
+        else if (hintClicked ==="true" && answerClicked !=="true" && answerClickedTemp === true){
+        $(".hint-selection").hide();
+        $(".answer-description").show();}
        else if (hintClicked !== "true" || hintClickedTemp !== true) {
         return false;
       }
