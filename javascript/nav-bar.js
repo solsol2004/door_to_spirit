@@ -4,6 +4,8 @@ let answerClicked = localStorage.getItem("answer-clicked");
 //사용한 총 힌트수//
 let usedHint = parseInt(localStorage.getItem("used-hint"));
 
+let hintClickedTemp = false;
+
 
 
 $(".image-button").click(function () {
@@ -28,7 +30,9 @@ $(".hint-select-button").click(function () {
     $(".nav-bar-details").show();
     if ( $('.hint-description').css('display') !== 'none' || $('.answer-description').css('display') !== 'none') { 
         $('.hint-description').hide();
-        $('.answer-description').hide();}
+        $('.answer-description').hide();
+        $(".nav-bar-details").hide();
+    }
     $(".hint-toggle").toggle(); 
     $(".map-detail").hide(); 
     $(".image-detail").hide();
@@ -40,29 +44,30 @@ $(".hint-button").click(function () {
     if(hintClicked !== "true"){
     localStorage.setItem("used-hint", ++usedHint);
     $(".select-answer-inactive").attr("src", "images/answer-white.png");
-    localStorage.setItem("hint-clicked", true);}
+    localStorage.setItem("hint-clicked", true);
+    hintClickedTemp = true;
+}
     $(".hint-selection").hide();
     $(".hint-description").show();
 });
 
 $(".answer-button").click(function () {
-    if (hintClicked !== "true") {
+    
+    if (answerClicked !== "true" && hintClickedTemp == true) {
+        localStorage.setItem("used-hint", ++usedHint);
+        localStorage.setItem("answer-clicked", true);
+      $(".hint-selection").hide();
+      $(".answer-description").show();}
+       else if (hintClicked !== "true" || hintClickedTemp !== true) {
         return false;
-      } else {
-        if (answerClicked !== "true") {
-          localStorage.setItem("used-hint", ++usedHint);
-          localStorage.setItem("answer-clicked", true);
-        }
-        $(".hint-selection").hide();
-        $(".answer-description").show();
       }
+      
 });
 
 $(document).on('click', function (e) {
     if ($(e.target).closest(".nav-bar").length === 0) {
         $(".nav-bar-details").hide();
-        if ( $('.hint-description').css('display') !== 'none' && answerClicked !== "true") { 
-            this.location.reload();}
+        
     }
 
 });

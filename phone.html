@@ -59,6 +59,8 @@
 
          $("audio").on("ended", function() {
             localStorage.setItem("direction-call-showed", true);
+            $(".incoming-call").show();
+            $(".calling").hide();
             window.location.href = "quiz.html";
         });
 

@@ -14,6 +14,8 @@ if (codeEntered === "true") {
 
 
 $("#enter-the-test").click(function () {
+  $("#code-top").css('opacity', 0.2)
+  $(".code-bottom-page").css('opacity', 0.2)
     db.collection("questCode").where("Random", "==", $(".code-input").val())
     .get()
     .then(function(querySnapshot) {
@@ -28,12 +30,17 @@ $("#enter-the-test").click(function () {
         }});
   })
     .catch(
-      $('.wrong-answer').delay(700).fadeIn('slow')
-    );
+      $('.wrong-answer').delay(1800).fadeIn('slow'),
+      $('.wrong-answer-close').delay(1800).fadeIn('slow')
+    )
   });
 
-  $(".wrong-answer").click(function () {
-    $(".wrong-answer").hide()});
+  $(".wrong-answer-close").click(function () {
+    $(".wrong-answer").hide()
+    $(".wrong-answer-close").hide()
+    $("#code-top").css('opacity', 1)
+    $(".code-bottom-page").css('opacity', 1)
+  });
 
   $(".name-enter").click(function () {
     if ($(".name-input").val()==="") {
