@@ -50,13 +50,15 @@ $(".quiz-enter").click(function () {
     //정답 틀릴 때 //
     else {
     $(".wrong-answer").show();
+    $(".wrong-answer-close").show();
     $(".nav-bar").css('opacity', 0.2);
     $(".quiz").css('opacity', 0.2);}
 
     });
 
-    $(".wrong-answer").click(function () {
+    $(".wrong-answer-close").click(function () {
       $(".wrong-answer").hide();
+      $(".wrong-answer-close").hide();
     $(".nav-bar").css('opacity', 1);
     $(".quiz").css('opacity', 1)});
 
