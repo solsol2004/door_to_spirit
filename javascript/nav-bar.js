@@ -6,6 +6,8 @@ let usedHint = parseInt(localStorage.getItem("used-hint"));
 
 let hintClickedTemp = false;
 
+let answerClickedTemp = false;
+
 
 
 $(".image-button").click(function () {
@@ -41,7 +43,7 @@ $(".hint-select-button").click(function () {
 
 
 $(".hint-button").click(function () {
-    if(hintClicked !== "true"){
+    if(hintClicked !== "true" && hintClickedTemp !== true){
     localStorage.setItem("used-hint", ++usedHint);
     $(".select-answer-inactive").attr("src", "images/answer-white.png");
     localStorage.setItem("hint-clicked", true);
@@ -53,11 +55,19 @@ $(".hint-button").click(function () {
 
 $(".answer-button").click(function () {
     
-    if (answerClicked !== "true" && hintClickedTemp == true) {
+    if (answerClicked !== "true" && hintClickedTemp == true && answerClickedTemp !== true ) {
         localStorage.setItem("used-hint", ++usedHint);
         localStorage.setItem("answer-clicked", true);
+        answerClickedTemp = true;
       $(".hint-selection").hide();
       $(".answer-description").show();}
+      else if(answerClicked !== "true" && hintClickedTemp == true && answerClickedTemp === true){
+        $(".hint-selection").hide();
+        $(".answer-description").show();
+      } else if (answerClicked ==="true"){
+        $(".hint-selection").hide();
+        $(".answer-description").show();
+      }
        else if (hintClicked !== "true" || hintClickedTemp !== true) {
         return false;
       }

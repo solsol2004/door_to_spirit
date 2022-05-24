@@ -3,6 +3,7 @@ let lastQuizEntered = localStorage.getItem("last-quiz-entered");
 let usedHintResult = parseInt(localStorage.getItem("used-hint"));
 let userAnimal = "https://i.ibb.co/TwtKNNy/image.png";
 
+
 window.onload = function() {
     setTimeout (function () {
       scrollTo(0,0);
