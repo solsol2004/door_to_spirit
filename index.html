@@ -9,7 +9,6 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <title>마법도술학교-귀문관</title>
-
     <link
       rel="shortcut icon"
       href="images/favicon.png"
@@ -18,6 +17,7 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/fccfaa8152.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="first-page" class="intro-background">
@@ -26,8 +26,8 @@
         <span class="second-row">제 1회 졸업시험</span>
         <span class="third-row">귀문관에 응시하시겠습니까?</span>
       </div>
-      <button class="wrong-answer-close"><i class="fa-solid fa-xmark fa-xl"></i></button>
-      <div class="wrong-answer hidden">
+      <button class="wrong-answer-close code-wrong-answer-close"><i class="fa-solid fa-xmark fa-xl"></i></button>
+      <div class="wrong-answer code-wrong-answer hidden">
         <h3>이미 사용했거나 유효하지 않은 코드입니다!</h3>
       </div>
       <div class="text-center">
@@ -37,7 +37,7 @@
         <h3><a class="text-white padT5" href="find-code.html">코드를 찾으실 수 없나요?</a></h3>
       </div> 
       <input class="input code-already-entered hidden" placeholder="이미 코드를 입력했습니다!" style="font-family: NanumSquare; font-weight: 500;"/>
-      <a href="intro.html"><button type="submit" class="enter hidden resume-test" style="font-family: NanumSquare; font-weight: 500;">시험 계속하기</button></a>
+     <button type="click" class="enter hidden resume-test" style="font-family: NanumSquare; font-weight: 500;">시험 계속하기</button>
     </div>
   </div>
 
@@ -51,6 +51,10 @@
           ><i class="fa-solid fa-circle-exclamation marR5"></i>예시: 속삭이는
           풀잎, 울부짖는 매, 펄럭이는 양말</span
         >
+      </div>
+      <button class="wrong-answer-close name-wrong-answer-close"><i class="fa-solid fa-xmark fa-xl"></i></button>
+      <div class="wrong-answer name-wrong-answer hidden">
+        <h3>닉네임을 입력해주세요!</h3>
       </div>
       <div class="text-center">
         <input class="name-input" placeholder="이름 입력"/>
@@ -68,9 +72,5 @@
      <script src="javascript/personal-firebase.js"></script>
      <script src="javascript/index.js"></script>
 
-    <script
-      src="https://kit.fontawesome.com/fccfaa8152.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.6.0",
     "firestore-export-import": "^1.1.0",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "lottie-web": "^5.9.4"
   },
   "name": "door_to_spirit",
   "version": "1.0.0",

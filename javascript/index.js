@@ -4,6 +4,8 @@ let codeEntered = localStorage.getItem("code-entered");
 const db = firebase.firestore();
 const storage = firebase.storage();
 
+let enteredUsername = localStorage.getItem("username");
+
 
 
 if (codeEntered === "true") {
@@ -30,10 +32,17 @@ $("#enter-the-test").click(function () {
         }});
   })
     .catch(
-      $('.wrong-answer').delay(1800).fadeIn('slow'),
-      $('.wrong-answer-close').delay(1800).fadeIn('slow')
+      $('.code-wrong-answer').delay(1800).fadeIn('slow'),
+      $('.code-wrong-answer-close').delay(1800).fadeIn('slow')
     )
   });
+
+  $(".resume-test").click(function () {
+    $("#first-page").hide();
+    $("#second-page").show();
+    $(".name-input").val() = enteredUsername;
+  });
+
 
   $(".wrong-answer-close").click(function () {
     $(".wrong-answer").hide()
@@ -44,7 +53,8 @@ $("#enter-the-test").click(function () {
 
   $(".name-enter").click(function () {
     if ($(".name-input").val()==="") {
-      alert("이름을 입력해주세요");
+      $('.name-wrong-answer').delay(300).fadeIn('slow');
+      $('.name-wrong-answer-close').delay(300).fadeIn('slow');
     } else {
       localStorage.setItem("username", $(".name-input").val());
       window.location.href = "intro.html";}

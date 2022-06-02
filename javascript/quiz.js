@@ -248,7 +248,7 @@ var sesilSpot = new naver.maps.LatLng(37.56670600, 126.97596600),
 
 function trainMap(){
   var HOME_PATH = window.HOME_PATH || ".";
-var trainSpot = new naver.maps.LatLng(37.57002400, 126.97596600),
+var trainSpot = new naver.maps.LatLng(37.57002400, 126.97121900),
   map = new naver.maps.Map("train-map", {
     center: trainSpot,
     zoom: 16,

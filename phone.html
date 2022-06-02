@@ -18,12 +18,17 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/fccfaa8152.js" crossorigin="anonymous"></script>
   </head>
   <body class="fit-height">
     <div class="call-background incoming-call">
       <div class="call-top text-center">
         <h1>해치 감독관님</h1>
         <h1 class="marT20">연결 중...</h1>
+      </div>
+      <button class="wrong-answer-close volume-up-close"><i class="fa-solid fa-xmark fa-xl"></i></button>
+      <div class="wrong-answer volume-up hidden">
+        <h3>볼륨을 높여주세요!</h3>
       </div>
       <div class="text-center call-buttons">
         <button class="accept-call">
@@ -41,6 +46,10 @@
       <h1>해치 감독관님</h1>
       <img src="images/call-display-buttons.png"/>
     </div>
+    <button class="wrong-answer-close"><i class="fa-solid fa-xmark fa-xl"></i></button>
+      <div class="wrong-answer hidden">
+        <h3>음성을 끝까지 들어주세요</h3>
+      </div>
     <div class="text-center">
         <img class="dont-quit-alert" src="images/거절.png"/></button>
   </div>
@@ -51,10 +60,8 @@
     <script>
      var callSound = document.getElementById('call-sound');
          $(".accept-call").click(function () {
-            alert("볼륨을 높여주세요!");
-            callSound.play();
-            $(".incoming-call").hide();
-            $(".calling").show();
+          $('.volume-up').delay(100).fadeIn('slow');
+          $('.volume-up-close').delay(100).fadeIn('slow');
          });
 
          $("audio").on("ended", function() {
@@ -65,8 +72,22 @@
         });
 
         $(".dont-quit-alert").click(function () {
-            alert("음성을 끝까지 들어주세요")
+          $('.wrong-answer').delay(300).fadeIn('slow');
+      $('.wrong-answer-close').delay(300).fadeIn('slow');
         });
+
+        $(".wrong-answer-close").click(function () {
+    $(".wrong-answer").hide()
+    $(".wrong-answer-close").hide()
+  });
+
+  $(".volume-up-close").click(function () {
+    $(".volume-up").hide()
+    $(".volume-up-close").hide()
+    callSound.play();
+            $(".incoming-call").hide();
+            $(".calling").show();
+  });
 
     </script>
   </body>
