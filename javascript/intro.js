@@ -15,7 +15,11 @@ $("#materials-yes").click(function () {
     db.collection("questCode")
     .doc(userCodeEntered)
     .update({
-      Used: "true"
+      Used: "true",
+      날짜: new Date(+new Date() + 3240 * 10000)
+        .toISOString()
+        .replace("T", " ")
+        .replace(/\..*/, "")
     });
   })
 
