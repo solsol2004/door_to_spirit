@@ -9,8 +9,6 @@ let userCodeEntered = localStorage.getItem("user-code");
 
 
 $("#materials-yes").click(function () {
-    $("#third-page").hide();
-    $("#page-four").show();
     $("#username-change").text(`${savedUsername}님 안녕하세요!`);
     db.collection("questCode")
     .doc(userCodeEntered)
@@ -20,6 +18,10 @@ $("#materials-yes").click(function () {
         .toISOString()
         .replace("T", " ")
         .replace(/\..*/, "")
-    });
+    })
+    .then((result) => {
+      $("#third-page").hide();
+      $("#page-four").show();
+    })
   })
 

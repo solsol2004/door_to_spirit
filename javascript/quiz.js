@@ -113,6 +113,7 @@ if(chapter === 22) {
     } else {
       $(".quiz-context").hide();
     $(".chapter-22").show();
+    $('body').css('height', 160 + "vh");
     }}
 
    
@@ -179,7 +180,7 @@ db.collection("quiz")
 
     if (chapter === 18) {
      $(".history-museum").show();
-     $('.image-detail').css('height', 60 + "vh");} else {$(".history-museum").hide();
+     $('.image-detail').css('height', 65 + "vh");} else {$(".history-museum").hide();
    }
 
    if(chapter === 23) {
